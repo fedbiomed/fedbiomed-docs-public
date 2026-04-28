@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">TasksQueue</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > TasksQueue</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5882,7 +5880,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/tasks_queue.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/tasks_queue.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="22 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages_queue_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">tmp_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="23 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Construct disk-persistent Queue.</span>
 <span class="linenos" data-linenos="24 "></span>
@@ -5985,7 +5983,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/tasks_queue.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/tasks_queue.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="39 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="40 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds a task to the queue</span>
 <span class="linenos" data-linenos="41 "></span>
@@ -6098,7 +6096,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/tasks_queue.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/tasks_queue.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="54 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">block</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="55 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the current task in the queue</span>
 <span class="linenos" data-linenos="56 "></span>
@@ -6163,7 +6161,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/tasks_queue.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/tasks_queue.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="77 "></span><span class="k">def</span><span class="w"> </span><span class="nf">qsize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="78 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve the size of the queue</span>
 <span class="linenos" data-linenos="79 "></span>
@@ -6217,7 +6215,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/tasks_queue.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/tasks_queue.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="85 "></span><span class="k">def</span><span class="w"> </span><span class="nf">task_done</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="86 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Indicate whether a formerly enqueued task is complete</span>
 <span class="linenos" data-linenos="87 "></span>
@@ -6257,9 +6255,6 @@
 
 
 
-
-  
-  
 
 
 

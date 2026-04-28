@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Filetools</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Filetools</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5935,7 +5933,7 @@ breakpoint_file: name of the file that will contain the state of an experiment.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/filetools.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/filetools.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 71 "></span><span class="k">def</span><span class="w"> </span><span class="nf">choose_bkpt_file</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 72 "></span>    <span class="n">experiments_dir</span><span class="p">,</span> <span class="n">experimentation_folder</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">round_</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos" data-linenos=" 73 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
@@ -5997,7 +5995,7 @@ breakpoint_file: name of the file that will contain the state of an experiment.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/filetools.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/filetools.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="361 "></span><span class="k">def</span><span class="w"> </span><span class="nf">copy_file</span><span class="p">(</span><span class="n">filepath</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">breakpoint_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="362 "></span>    <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
 <span class="linenos" data-linenos="363 "></span>    <span class="n">file_copy_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">breakpoint_path</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
@@ -6144,7 +6142,7 @@ is the number of experiments already run (<code>x</code>=0 for the first experim
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/filetools.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/filetools.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="17 "></span><span class="k">def</span><span class="w"> </span><span class="nf">create_exp_folder</span><span class="p">(</span><span class="n">experiments_dir</span><span class="p">,</span> <span class="n">experimentation_folder</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="18 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates a folder for the current experiment (ie the current run of the model).</span>
 <span class="linenos" data-linenos="19 "></span>
@@ -6314,7 +6312,7 @@ is the number of experiments already run (<code>x</code>=0 for the first experim
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/filetools.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/filetools.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="160 "></span><span class="k">def</span><span class="w"> </span><span class="nf">create_unique_file_link</span><span class="p">(</span><span class="n">breakpoint_folder_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="161 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="162 "></span><span class="sd">    Create a symbolic link in `breakpoint_folder_path` with a non-existing name derived from basename of</span>
@@ -6546,7 +6544,7 @@ is the number of experiments already run (<code>x</code>=0 for the first experim
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/filetools.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/filetools.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="113 "></span><span class="k">def</span><span class="w"> </span><span class="nf">create_unique_link</span><span class="p">(</span>
 <span class="linenos" data-linenos="114 "></span>    <span class="n">breakpoint_folder_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <span class="linenos" data-linenos="115 "></span>    <span class="n">link_src_prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6715,7 +6713,7 @@ exists). Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/filetools.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/filetools.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="263 "></span><span class="k">def</span><span class="w"> </span><span class="nf">find_breakpoint_path</span><span class="p">(</span>
 <span class="linenos" data-linenos="264 "></span>    <span class="n">experiment_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">breakpoint_folder_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="265 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
@@ -6831,9 +6829,6 @@ exists). Defaults to None.</p>
 
 
 
-
-  
-  
 
 
 

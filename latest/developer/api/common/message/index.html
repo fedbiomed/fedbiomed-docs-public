@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Message</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Message</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -14947,7 +14945,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="73 "></span><span class="k">def</span><span class="w"> </span><span class="nf">__post_init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="74 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Post init of dataclass</span>
 <span class="linenos" data-linenos="75 "></span>
@@ -15044,7 +15042,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="118 "></span><span class="k">def</span><span class="w"> </span><span class="nf">__validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fields</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="119 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks whether incoming field types match with attributes class type.</span>
 <span class="linenos" data-linenos="120 "></span>
@@ -15090,7 +15088,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="151 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="152 "></span><span class="k">def</span><span class="w"> </span><span class="nf">from_dict</span><span class="p">(</span><span class="n">obj</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="153 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;De-serializes the message&quot;&quot;&quot;</span>
@@ -15150,7 +15148,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="197 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="198 "></span><span class="k">def</span><span class="w"> </span><span class="nf">from_proto</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">proto</span><span class="p">:</span> <span class="n">ProtobufMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="199 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Converts given protobuf to python Dict&quot;&quot;&quot;</span>
@@ -15250,7 +15248,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="110 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="111 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns pairs (Message class attributes name, attributes values) into a dictionary</span>
 <span class="linenos" data-linenos="112 "></span>
@@ -15312,7 +15310,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="102 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_param</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="103 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the value of a given param</span>
 <span class="linenos" data-linenos="104 "></span>
@@ -15366,7 +15364,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="137 "></span><span class="k">def</span><span class="w"> </span><span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="138 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Serializes the message</span>
 <span class="linenos" data-linenos="139 "></span>
@@ -15403,7 +15401,7 @@ to access the messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="184 "></span><span class="k">def</span><span class="w"> </span><span class="nf">to_proto</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="185 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Converts recursively python dataclass to gRPC proto&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="186 "></span>
@@ -21971,7 +21969,7 @@ by the dataclass (TypeError) into our own exception (FedbiomedMessageError)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/message.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/message.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="23 "></span><span class="k">def</span><span class="w"> </span><span class="nf">catch_dataclass_exception</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Callable</span><span class="p">):</span>
 <span class="linenos" data-linenos="24 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Encapsulates the __init__() method of dataclass in order to transform the exceptions sent</span>
 <span class="linenos" data-linenos="25 "></span><span class="sd">    by the dataclass (TypeError) into our own exception (FedbiomedMessageError)</span>
@@ -22032,9 +22030,6 @@ by the dataclass (TypeError) into our own exception (FedbiomedMessageError)</p>
 
 
 
-
-  
-  
 
 
 

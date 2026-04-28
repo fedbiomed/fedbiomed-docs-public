@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Privacy</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Privacy</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5863,7 +5861,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/privacy/_dp_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/privacy/_dp_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="26 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dp_args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="27 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructs DPController with given model.</span>
 <span class="linenos" data-linenos="28 "></span>
@@ -5946,7 +5944,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/privacy/_dp_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/privacy/_dp_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="105 "></span><span class="k">def</span><span class="w"> </span><span class="nf">after_training</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="106 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;DP actions after the training.</span>
 <span class="linenos" data-linenos="107 "></span>
@@ -6056,7 +6054,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/privacy/_dp_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/privacy/_dp_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 44 "></span><span class="k">def</span><span class="w"> </span><span class="nf">before_training</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 45 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">NativeTorchOptimizer</span><span class="p">,</span> <span class="n">loader</span><span class="p">:</span> <span class="n">DataLoader</span>
 <span class="linenos" data-linenos=" 46 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">NativeTorchOptimizer</span><span class="p">,</span> <span class="n">DPDataLoader</span><span class="p">]:</span>
@@ -6194,7 +6192,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/privacy/_dp_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/privacy/_dp_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="144 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate_and_fix_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Module</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Module</span><span class="p">:</span>
 <span class="linenos" data-linenos="145 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Validate and Fix model to be DP-compliant.</span>
 <span class="linenos" data-linenos="146 "></span>
@@ -6245,9 +6243,6 @@
 
 
 
-
-  
-  
 
 
 

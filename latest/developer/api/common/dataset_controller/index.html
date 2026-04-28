@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Dataset Controller</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Dataset Controller</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6950,7 +6948,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="22 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="23 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>  <span class="c1"># initialises DataLoadingPlanMixin (self._dlp = None)</span>
 </code></pre></div>
@@ -7011,7 +7009,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="59 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="60 "></span>    <span class="k">pass</span>
@@ -7042,7 +7040,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="53 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="54 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="55 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve a data sample without applying transforms&quot;&quot;&quot;</span>
@@ -7070,7 +7068,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="63 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="64 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get `type` directly from values in `dict` returned by `get_sample`&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="65 "></span>    <span class="k">return</span> <span class="p">{</span><span class="n">_k</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">_v</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="k">for</span> <span class="n">_k</span><span class="p">,</span> <span class="n">_v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sample</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
@@ -7097,7 +7095,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="67 "></span><span class="k">def</span><span class="w"> </span><span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="68 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get `shape` directly from values in `dict` returned by `get_sample`&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="69 "></span>    <span class="c1"># Supported: int, float, dict, PIL.Image, None and obj.shape (if available)</span>
@@ -7174,7 +7172,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 98 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 99 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Validates coherence of controller</span>
 <span class="linenos" data-linenos="100 "></span>
@@ -7280,7 +7278,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="18 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="19 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Args:</span>
 <span class="linenos" data-linenos="20 "></span><span class="sd">        root: Dataset root directory (must exist on disk).</span>
@@ -7369,7 +7367,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="50 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="51 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Not supported — length is owned by CustomDataset.</span>
 <span class="linenos" data-linenos="52 "></span>
@@ -7403,7 +7401,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="36 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="linenos" data-linenos="37 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Not meaningful for custom datasets — data access is owned by CustomDataset.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="38 "></span>    <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
@@ -7433,7 +7431,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="43 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="44 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Not meaningful for custom datasets — type info is owned by CustomDataset.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="45 "></span>    <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
@@ -7463,7 +7461,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_custom_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="29 "></span><span class="k">def</span><span class="w"> </span><span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="30 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Not meaningful for custom datasets — shape is owned by CustomDataset.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="31 "></span>    <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
@@ -7577,7 +7575,7 @@ root
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_image_folder_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_image_folder_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="38 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="39 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the class</span>
 <span class="linenos" data-linenos="40 "></span>
@@ -7659,7 +7657,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_image_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_image_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="78 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="79 "></span>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_samples</span><span class="p">)</span>
 </code></pre></div>
@@ -7685,7 +7683,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_image_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_image_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="67 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="68 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve a data sample without applying transforms&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="69 "></span>    <span class="k">try</span><span class="p">:</span>
@@ -7804,7 +7802,7 @@ root
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_mednist_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_mednist_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="73 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="74 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the class</span>
 <span class="linenos" data-linenos="75 "></span>
@@ -7882,7 +7880,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_mednist_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_mednist_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="108 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="109 "></span>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span><span class="p">)</span>
 </code></pre></div>
@@ -7908,7 +7906,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_mednist_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_mednist_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 98 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos=" 99 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve a data sample without applying transforms&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="100 "></span>    <span class="k">try</span><span class="p">:</span>
@@ -8046,7 +8044,7 @@ root
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="49 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="50 "></span>    <span class="n">root</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span>
@@ -8284,7 +8282,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="514 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="515 "></span>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_samples</span><span class="p">)</span>
 </code></pre></div>
@@ -8416,7 +8414,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="457 "></span><span class="k">def</span><span class="w"> </span><span class="nf">available_subjects</span><span class="p">(</span>
 <span class="linenos" data-linenos="458 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="459 "></span>    <span class="n">subjects_from_index</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">],</span>
@@ -8473,7 +8471,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="212 "></span><span class="k">def</span><span class="w"> </span><span class="nf">demographics_column_names</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">]):</span>
 <span class="linenos" data-linenos="213 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_demographics</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span>
 </code></pre></div>
@@ -8501,7 +8499,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="522 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="523 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_dataset_type</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DatasetTypes</span><span class="p">:</span>
 <span class="linenos" data-linenos="524 "></span>    <span class="k">return</span> <span class="n">DatasetTypes</span><span class="o">.</span><span class="n">MEDICAL_FOLDER</span>
@@ -8528,7 +8526,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="493 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span>
 <span class="linenos" data-linenos="494 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span>
 <span class="linenos" data-linenos="495 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">NiftiReader</span><span class="o">.</span><span class="n">data_type</span> <span class="o">|</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
@@ -8669,7 +8667,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="164 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="165 "></span><span class="k">def</span><span class="w"> </span><span class="nf">read_demographics</span><span class="p">(</span>
 <span class="linenos" data-linenos="166 "></span>    <span class="n">tabular_file</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">PathLike</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span>
@@ -8740,7 +8738,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="517 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_dlp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dlp</span><span class="p">):</span>
 <span class="linenos" data-linenos="518 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Ensures validation of controller object after set_dlp is executed&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="519 "></span>    <span class="n">DataLoadingPlanMixin</span><span class="o">.</span><span class="n">set_dlp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dlp</span><span class="p">)</span>
@@ -8801,7 +8799,7 @@ It represents subject folder names. Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="417 "></span><span class="k">def</span><span class="w"> </span><span class="nf">subject_modality_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="418 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Scans subjects and checks which modalities exist for each subject</span>
 <span class="linenos" data-linenos="419 "></span>
@@ -8862,7 +8860,7 @@ It represents subject folder names. Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_medical_folder_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="398 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="399 "></span>    <span class="c1"># Filter subjects to contain all modalities</span>
 <span class="linenos" data-linenos="400 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_modalities</span><span class="p">,</span> <span class="n">df_dir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prepare_df_dir_for_use</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">df_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dlp</span><span class="p">)</span>
@@ -8921,7 +8919,7 @@ It represents subject folder names. Defaults to None.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/constants.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/constants.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="261 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
 <span class="linenos" data-linenos="262 "></span>    <span class="bp">cls</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span>
 <span class="linenos" data-linenos="263 "></span>    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
@@ -9105,7 +9103,7 @@ root
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_mnist_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_mnist_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="30 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="31 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="32 "></span>    <span class="n">root</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span>
@@ -9190,7 +9188,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_mnist_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_mnist_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="72 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="73 "></span>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span><span class="p">)</span>
 </code></pre></div>
@@ -9216,7 +9214,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_mnist_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_mnist_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="62 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="63 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve a data sample without applying transforms&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="64 "></span>    <span class="k">try</span><span class="p">:</span>
@@ -9322,7 +9320,7 @@ root
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="18 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="19 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="20 "></span>    <span class="n">root</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span>
@@ -9393,7 +9391,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="59 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reader</span><span class="o">.</span><span class="n">len</span><span class="p">()</span>
 </code></pre></div>
@@ -9419,7 +9417,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="36 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>  <span class="c1"># type: ignore[override]</span>
 <span class="linenos" data-linenos="37 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve a data sample without applying transforms&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="38 "></span>    <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__len__</span><span class="p">():</span>
@@ -9450,7 +9448,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="65 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="66 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get dtypes of the columns in the Tabular dataset&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="67 "></span>    <span class="k">return</span> <span class="p">{</span>
@@ -9557,7 +9555,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="44 "></span><span class="k">def</span><span class="w"> </span><span class="nf">normalize_columns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">columns</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="45 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Validate and normalize `columns` to a list of column names</span>
 <span class="linenos" data-linenos="46 "></span>
@@ -9592,7 +9590,7 @@ root
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset_controller/_tabular_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="62 "></span><span class="k">def</span><span class="w"> </span><span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="63 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reader</span><span class="o">.</span><span class="n">shape</span><span class="p">()</span>
 </code></pre></div>
@@ -9623,9 +9621,6 @@ root
 
 
 
-
-  
-  
 
 
 

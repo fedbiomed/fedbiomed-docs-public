@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Strategies</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Strategies</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5937,7 +5935,7 @@ and to check whether nodes have responded or not</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/strategy.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/strategies/strategy.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="29 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="30 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="31 "></span>
@@ -6122,7 +6120,7 @@ with respect to the whole</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/default_strategy.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/strategies/default_strategy.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 51 "></span><span class="k">def</span><span class="w"> </span><span class="nf">refine</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 52 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_replies</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">TrainReply</span><span class="p">],</span> <span class="n">round_i</span><span class="p">:</span> <span class="nb">int</span>
 <span class="linenos" data-linenos=" 53 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span>
@@ -6316,7 +6314,7 @@ this round <code>round_i</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/default_strategy.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/strategies/default_strategy.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="35 "></span><span class="k">def</span><span class="w"> </span><span class="nf">sample_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">from_nodes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">round_i</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="36 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Samples and selects nodes on which to train local model. In this strategy we will consider all existing</span>
 <span class="linenos" data-linenos="37 "></span><span class="sd">    nodes</span>
@@ -6409,7 +6407,7 @@ used for federated training.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/strategy.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/strategies/strategy.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="29 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="30 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="31 "></span>
@@ -6484,7 +6482,7 @@ used for federated training.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/strategy.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/strategies/strategy.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 95 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state_breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]):</span>
 <span class="linenos" data-linenos=" 96 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos=" 97 "></span><span class="sd">    Method for loading strategy state from breakpoint state</span>
@@ -6592,7 +6590,7 @@ used for federated training.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/strategy.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/strategies/strategy.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="55 "></span><span class="k">def</span><span class="w"> </span><span class="nf">refine</span><span class="p">(</span>
 <span class="linenos" data-linenos="56 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_replies</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">TrainReply</span><span class="p">],</span> <span class="n">round_i</span><span class="p">:</span> <span class="nb">int</span>
 <span class="linenos" data-linenos="57 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span>
@@ -6687,7 +6685,7 @@ used for federated training.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/strategy.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/strategies/strategy.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="40 "></span><span class="k">def</span><span class="w"> </span><span class="nf">sample_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">from_nodes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">round_i</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="linenos" data-linenos="41 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="42 "></span><span class="sd">    Abstract method that must be implemented by child class</span>
@@ -6748,7 +6746,7 @@ used for federated training.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/strategies/strategy.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/strategies/strategy.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="80 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_state_breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="81 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="82 "></span><span class="sd">    Method for saving strategy state for saving breakpoints</span>
@@ -6791,9 +6789,6 @@ used for federated training.</p>
 
 
 
-
-  
-  
 
 
 

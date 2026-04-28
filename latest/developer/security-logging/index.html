@@ -945,7 +945,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5737,10 +5737,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#required-event-fields" class="md-nav__link">
+  <a href="#1-required-event-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Required event fields
+        1) Required event fields
       
     </span>
   </a>
@@ -5748,10 +5748,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dont-log-secrets" class="md-nav__link">
+  <a href="#2-dont-log-secrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Don’t log secrets
+        2) Don’t log secrets
       
     </span>
   </a>
@@ -5794,7 +5794,8 @@
 
 <h1 id="security-logging-in-fedlogger">Security Logging in FedLogger<a class="headerlink" href="#security-logging-in-fedlogger" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Security logs are audit-grade records of security-relevant activity. They exist for a different purpose than application logs:</p>
+<p>Security logs are audit-grade records of security-relevant activity. </p>
+<p>They serve a different purpose than application logs:</p>
 <p>Application logs help developers debug and operate the system (errors, warnings, performance, flow).
 Security logs provide an audit trail of sensitive actions and security events (who did what, when, and with what outcome).</p>
 <p>Security logs should be:</p>
@@ -5872,7 +5873,10 @@ Security logs provide an audit trail of sensitive actions and security events (w
     <span class="p">},</span>
 <span class="p">)</span>
 </code></pre></div>
-<p><strong><em>Important</em></strong>: <code>Operation</code> is a required field in security logs. It is used as a stable identifier to separate security logs from application logs. Any security log without an <code>operation</code> field will raise an error.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p><code>Operation</code> is a required field in security logs. It is used as a stable identifier to separate security logs from application logs. Any security log without an <code>operation</code> field will raise an error.</p>
+</div>
 <h2 id="setting-shared-fields-with-security-context">Setting shared fields with Security Context<a class="headerlink" href="#setting-shared-fields-with-security-context" title="Permanent link">&para;</a></h2>
 <p>Many security events share the same context fields (e.g., researcher_id, round_number, component, session_id). Instead of passing them repeatedly, you can set a common context once using <code>security_context()</code> and then emit multiple events.</p>
 <p>Example
@@ -5958,7 +5962,7 @@ Security logs provide an audit trail of sensitive actions and security events (w
 </ul>
 <p>For node configuration files, recent configuration migration code also writes these same defaults into the <code>[syslog]</code> section in the <code>config.ini</code> file when upgrading the older configuration files.</p>
 <h2 id="practical-guidance-and-conventions">Practical guidance and conventions<a class="headerlink" href="#practical-guidance-and-conventions" title="Permanent link">&para;</a></h2>
-<h3 id="required-event-fields">Required event fields<a class="headerlink" href="#required-event-fields" title="Permanent link">&para;</a></h3>
+<h3 id="1-required-event-fields">1) Required event fields<a class="headerlink" href="#1-required-event-fields" title="Permanent link">&para;</a></h3>
 <p>For meaningful security logs, include:</p>
 <ul>
 <li>operation (required): stable event name (researcher_join, dataset_access, training_start, training_stop, auth_failed, etc.)</li>
@@ -5967,13 +5971,15 @@ Security logs provide an audit trail of sensitive actions and security events (w
 <li>additional identifiers as needed (dataset id, round_number, etc.)</li>
 </ul>
 <p>Information regarding the node (node id, node name), fedbiomed version and timestamp are included by default.</p>
-<h3 id="dont-log-secrets">Don’t log secrets<a class="headerlink" href="#dont-log-secrets" title="Permanent link">&para;</a></h3>
-<p>Never include:</p>
+<h3 id="2-dont-log-secrets">2) Don’t log secrets<a class="headerlink" href="#2-dont-log-secrets" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Never include:</p>
 <ul>
 <li>Credentials, tokens, keys, passwords</li>
 <li>Personal data unless necessary and approved</li>
 <li>Full exception payloads of sensitive objects</li>
 </ul>
+</div>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Use security logs for auditability, not debugging.</li>

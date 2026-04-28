@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">DatasetManager</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Node > DatasetManager</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6148,7 +6146,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="34 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">min_samples</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
 <span class="linenos" data-linenos="35 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize with database path.</span>
 <span class="linenos" data-linenos="36 "></span>
@@ -6487,7 +6485,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="137 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_database</span><span class="p">(</span>
 <span class="linenos" data-linenos="138 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="139 "></span>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6781,7 +6779,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="188 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_dynamic_dataset</span><span class="p">(</span>
 <span class="linenos" data-linenos="189 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="190 "></span>    <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6949,7 +6947,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="356 "></span><span class="k">def</span><span class="w"> </span><span class="nf">delete_dataset_by_id</span><span class="p">(</span>
 <span class="linenos" data-linenos="357 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="358 "></span>    <span class="n">dataset_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7124,7 +7122,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="326 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_dataset_entry_by_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">dict</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="327 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="328 "></span><span class="sd">    Validates that the dataset exists and returns its DB entry and dataset type.</span>
@@ -7241,7 +7239,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 79 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_dlp_by_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dlp_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">dict</span><span class="p">]]:</span>
 <span class="linenos" data-linenos=" 80 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get a data loading plan and its associated data loading blocks by ID.</span>
 <span class="linenos" data-linenos=" 81 "></span>
@@ -7350,7 +7348,7 @@ Defaults to 0 (no minimum enforced).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="451 "></span><span class="k">def</span><span class="w"> </span><span class="nf">list_my_datasets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">dict</span><span class="p">]:</span>
 <span class="linenos" data-linenos="452 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Lists all datasets on the node.</span>
 <span class="linenos" data-linenos="453 "></span>
@@ -7453,7 +7451,7 @@ prevent sharing this information with a researcher through a reply message.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="491 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="492 "></span><span class="k">def</span><span class="w"> </span><span class="nf">obfuscate_private_information</span><span class="p">(</span>
 <span class="linenos" data-linenos="493 "></span>    <span class="n">database_metadata</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span>
@@ -7580,7 +7578,7 @@ Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="111 "></span><span class="k">def</span><span class="w"> </span><span class="nf">read_csv</span><span class="p">(</span>
 <span class="linenos" data-linenos="112 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">csv_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">index_col</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="113 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
@@ -7660,7 +7658,7 @@ Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="438 "></span><span class="k">def</span><span class="w"> </span><span class="nf">remove_dlp_by_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dlp_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="439 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Remove a data loading plan (DLP) and its associated data loading blocks (DLBs).</span>
 <span class="linenos" data-linenos="440 "></span>
@@ -7750,7 +7748,7 @@ Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="471 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_data_loading_plan</span><span class="p">(</span>
 <span class="linenos" data-linenos="472 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">data_loading_plan</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DataLoadingPlan</span><span class="p">]</span>
 <span class="linenos" data-linenos="473 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
@@ -7847,7 +7845,7 @@ Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/dataset_manager/_dataset_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="49 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Raise FedbiomedError if n_samples is below the configured minimum.</span>
 <span class="linenos" data-linenos="50 "></span>
@@ -7890,9 +7888,6 @@ Defaults to None.</p>
 
 
 
-
-  
-  
 
 
 

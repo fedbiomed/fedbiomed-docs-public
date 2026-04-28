@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Optimizers</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Optimizers</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -7080,7 +7078,7 @@ be a subset of the generic Model type).</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="72 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">OT</span><span class="p">):</span>
 <span class="linenos" data-linenos="73 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the optimizer wrapper that sets a reference to model and optimizer.</span>
 <span class="linenos" data-linenos="74 "></span>
@@ -7155,7 +7153,7 @@ be a subset of the generic Model type).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="135 "></span><span class="k">def</span><span class="w"> </span><span class="nf">count_nb_auxvar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="136 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Counts number of auxiliary variables needed for the given optimizer&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="137 "></span>    <span class="k">return</span> <span class="mi">0</span>
@@ -7182,7 +7180,7 @@ be a subset of the generic Model type).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="92 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_training</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="93 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets up training and misceallenous parameters so the model is ready for training&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="94 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_model</span><span class="o">.</span><span class="n">init_training</span><span class="p">()</span>
@@ -7280,7 +7278,7 @@ be a subset of the generic Model type).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="100 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state</span><span class="p">(</span>
 <span class="linenos" data-linenos="101 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">optim_state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">load_from_state</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="linenos" data-linenos="102 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="s2">&quot;BaseOptimizer&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
@@ -7346,7 +7344,7 @@ be a subset of the generic Model type).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="119 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="120 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets optimizer state.</span>
 <span class="linenos" data-linenos="121 "></span>
@@ -7382,7 +7380,7 @@ be a subset of the generic Model type).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="132 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_to_device</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="133 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;GPU support&quot;&quot;&quot;</span>
 </code></pre></div>
@@ -7412,7 +7410,7 @@ be a subset of the generic Model type).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="96 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="97 "></span><span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="98 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs an optimisation step and updates model weights.&quot;&quot;&quot;</span>
@@ -7508,7 +7506,7 @@ or fedbiomed optimizer (that wraps declearn optimizer)</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="147 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="148 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">FedOptimizer</span><span class="p">,</span> <span class="n">declearn</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">Optimizer</span><span class="p">]</span>
 <span class="linenos" data-linenos="149 "></span><span class="p">):</span>
@@ -7583,7 +7581,7 @@ or fedbiomed optimizer (that wraps declearn optimizer)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="195 "></span><span class="k">def</span><span class="w"> </span><span class="nf">count_nb_auxvar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="196 "></span>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">get_aux_names</span><span class="p">())</span>
 </code></pre></div>
@@ -7607,7 +7605,7 @@ or fedbiomed optimizer (that wraps declearn optimizer)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="191 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_aux</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AuxVar</span><span class="p">]]:</span>
 <span class="linenos" data-linenos="192 "></span>    <span class="n">aux</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">get_aux</span><span class="p">()</span>
 <span class="linenos" data-linenos="193 "></span>    <span class="k">return</span> <span class="n">aux</span>
@@ -7632,7 +7630,7 @@ or fedbiomed optimizer (that wraps declearn optimizer)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="169 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_training</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="170 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">init_training</span><span class="p">()</span>
 <span class="linenos" data-linenos="171 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">init_round</span><span class="p">()</span>
@@ -7794,7 +7792,7 @@ latest state that both state has in common. Defaults to False.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="198 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state</span><span class="p">(</span>
 <span class="linenos" data-linenos="199 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">optim_state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">load_from_state</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="linenos" data-linenos="200 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;DeclearnOptimizer&quot;</span><span class="p">:</span>
@@ -7961,7 +7959,7 @@ to such changes, displays a warning.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="366 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optimizer_processing</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SklearnOptimizerProcessing</span><span class="p">:</span>
 <span class="linenos" data-linenos="367 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Provides a context manager able to do some actions before and after setting up an Optimizer, mainly</span>
 <span class="linenos" data-linenos="368 "></span><span class="sd">    disabling scikit-learn internal optimizer.</span>
@@ -8036,7 +8034,7 @@ to such changes, displays a warning.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="340 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="341 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets optimizer state.</span>
 <span class="linenos" data-linenos="342 "></span>
@@ -8066,7 +8064,7 @@ to such changes, displays a warning.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="395 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_to_device</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="396 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">send_to_device</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span>
 </code></pre></div>
@@ -8090,7 +8088,7 @@ to such changes, displays a warning.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="185 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_aux</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aux</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AuxVar</span><span class="p">]):</span>
 <span class="linenos" data-linenos="186 "></span>    <span class="c1"># FIXME: for imported tensors in PyTorch sent as auxiliary variables,</span>
 <span class="linenos" data-linenos="187 "></span>    <span class="c1"># we should push it on the appropriate device (ie cpu/gpu)</span>
@@ -8119,7 +8117,7 @@ to such changes, displays a warning.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="173 "></span><span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="174 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs one optimization step&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="175 "></span>    <span class="c1"># NOTA: for sklearn, gradients retrieved are unscaled because we are using learning rate equal to 1.</span>
@@ -8178,7 +8176,7 @@ method of the model.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="351 "></span><span class="k">def</span><span class="w"> </span><span class="nf">zero_grad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="352 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Zeroes gradients of the Pytorch model. Basically calls the `zero_grad`</span>
 <span class="linenos" data-linenos="353 "></span><span class="sd">    method of the model.</span>
@@ -8333,7 +8331,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="213 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="214 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="215 "></span>    <span class="n">encrypted</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span>
@@ -8477,7 +8475,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="309 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span>
 <span class="linenos" data-linenos="310 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="311 "></span>    <span class="n">other</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span>
@@ -8606,7 +8604,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="244 "></span><span class="k">def</span><span class="w"> </span><span class="nf">concatenate</span><span class="p">(</span>
 <span class="linenos" data-linenos="245 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="246 "></span>    <span class="n">other</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span>
@@ -8679,7 +8677,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="318 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="319 "></span><span class="k">def</span><span class="w"> </span><span class="nf">concatenate_from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Self</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
 <span class="linenos" data-linenos="320 "></span>    <span class="n">auxvar</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
@@ -8767,7 +8765,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="348 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="349 "></span><span class="k">def</span><span class="w"> </span><span class="nf">from_dict</span><span class="p">(</span>
 <span class="linenos" data-linenos="350 "></span>    <span class="bp">cls</span><span class="p">,</span>
@@ -8824,7 +8822,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="325 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_mapping_encrypted_aux_var</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
 <span class="linenos" data-linenos="326 "></span>    <span class="n">nodes_id</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cleartext</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;clients&quot;</span><span class="p">])</span>
 <span class="linenos" data-linenos="327 "></span>    <span class="k">return</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="n">p</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nodes_id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">encrypted</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">)}</span>
@@ -8851,7 +8849,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="236 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_num_expected_params</span><span class="p">(</span>
 <span class="linenos" data-linenos="237 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="238 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -8905,7 +8903,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="329 "></span><span class="k">def</span><span class="w"> </span><span class="nf">to_dict</span><span class="p">(</span>
 <span class="linenos" data-linenos="330 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="331 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
@@ -9015,7 +9013,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="471 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">SkLearnModel</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="472 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the Optimizer wrapper for scikit-learn native models.</span>
 <span class="linenos" data-linenos="473 "></span>
@@ -9061,7 +9059,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="492 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optimizer_processing</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SklearnOptimizerProcessing</span><span class="p">:</span>
 <span class="linenos" data-linenos="493 "></span>    <span class="k">return</span> <span class="n">SklearnOptimizerProcessing</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_model</span><span class="p">,</span> <span class="n">disable_internal_optimizer</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
@@ -9087,7 +9085,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="486 "></span><span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="487 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs an optimization step and updates model weights.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="488 "></span>    <span class="n">gradients</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model</span><span class="o">.</span><span class="n">get_gradients</span><span class="p">()</span>
@@ -9208,7 +9206,7 @@ object.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="404 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">TorchModel</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Optimizer</span><span class="p">):</span>
 <span class="linenos" data-linenos="405 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the optimizer wrapper</span>
 <span class="linenos" data-linenos="406 "></span>
@@ -9294,7 +9292,7 @@ any adaptive component, e.g. due to RMSProp, Adam or such.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="433 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_learning_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
 <span class="linenos" data-linenos="434 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets learning rates from param groups in Pytorch optimizer.</span>
 <span class="linenos" data-linenos="435 "></span>
@@ -9349,7 +9347,7 @@ any adaptive component, e.g. due to RMSProp, Adam or such.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="423 "></span><span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="424 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs an optimization step and updates model weights&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="425 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
@@ -9377,7 +9375,7 @@ method of the optimizer.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="427 "></span><span class="k">def</span><span class="w"> </span><span class="nf">zero_grad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="428 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Zeroes gradients of the Pytorch model. Basically calls the `zero_grad`</span>
 <span class="linenos" data-linenos="429 "></span><span class="sd">    method of the optimizer.</span>
@@ -9531,7 +9529,7 @@ name and a config dict (to specify some hyper-parameters).</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="22 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="23 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="24 "></span>    <span class="n">lr</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
@@ -9681,7 +9679,7 @@ declearn optimizer.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 79 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos=" 80 "></span><span class="k">def</span><span class="w"> </span><span class="nf">from_declearn_optimizer</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 81 "></span>    <span class="bp">cls</span><span class="p">,</span>
@@ -9762,7 +9760,7 @@ production via this method can have internal side effects;
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="159 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_aux</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AuxVar</span><span class="p">]:</span>
 <span class="linenos" data-linenos="160 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return auxiliary variables that need to be shared across network.</span>
 <span class="linenos" data-linenos="161 "></span>
@@ -9807,7 +9805,7 @@ production via this method can have internal side effects;
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="209 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_aux_names</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="210 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gathers list of names of modules requiring auxiliary variables&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="211 "></span>    <span class="n">aux_names</span> <span class="o">=</span> <span class="p">[]</span>
@@ -9865,7 +9863,7 @@ file, and used to re-create this Optimizer using the
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="218 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="219 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the configuration and current states of this Optimizer.</span>
 <span class="linenos" data-linenos="220 "></span>
@@ -9907,7 +9905,7 @@ file, and used to re-create this Optimizer using the
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="104 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_round</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="105 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Trigger start-of-training-round behavior of wrapped regularizers.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="106 "></span>    <span class="k">try</span><span class="p">:</span>
@@ -10021,7 +10019,7 @@ or fails to set up a declearn Optimizer and set back its state.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="237 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="238 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
 <span class="linenos" data-linenos="239 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Instantiate an Optimizer from its breakpoint state dict.</span>
@@ -10076,7 +10074,7 @@ or fails to set up a declearn Optimizer and set back its state.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="269 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_to_device</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bool</span><span class="p">],</span> <span class="n">idx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="270 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;GPU support&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="271 "></span>    <span class="c1"># for now GPU support on Researcher side is disabled</span>
@@ -10171,7 +10169,7 @@ side effects; this method should therefore be called sparingly.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="181 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_aux</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aux</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AuxVar</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="182 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Update plug-in modules based on received shared auxiliary variables.</span>
 <span class="linenos" data-linenos="183 "></span>
@@ -10306,7 +10304,7 @@ concrete type of which is same as input <code>grads</code> and <code>weights</co
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/optimizer.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/optimizer.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="113 "></span><span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">weights</span><span class="p">:</span> <span class="n">Vector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Vector</span><span class="p">:</span>
 <span class="linenos" data-linenos="114 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Run an optimization step to compute and return model weight updates.</span>
 <span class="linenos" data-linenos="115 "></span>
@@ -10443,7 +10441,7 @@ to apply declearn one or to keep it (False)</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="35 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">SkLearnModel</span><span class="p">,</span> <span class="n">disable_internal_optimizer</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="36 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the object. Sets internal variables</span>
 <span class="linenos" data-linenos="37 "></span>
@@ -10487,7 +10485,7 @@ to apply declearn one or to keep it (False)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="46 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="47 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Called when entering context manager&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="48 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_disable_internal_optimizer</span><span class="p">:</span>
@@ -10578,7 +10576,7 @@ to apply declearn one or to keep it (False)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/generic_optimizers.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="51 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__exit__</span><span class="p">(</span>
 <span class="linenos" data-linenos="52 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="53 "></span>    <span class="nb">type</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">type</span><span class="p">[</span><span class="ne">BaseException</span><span class="p">],</span> <span class="kc">None</span><span class="p">],</span>
@@ -10736,7 +10734,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="27 "></span><span class="k">def</span><span class="w"> </span><span class="nf">flatten_auxvar_for_secagg</span><span class="p">(</span>
 <span class="linenos" data-linenos="28 "></span>    <span class="n">aux_var</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AuxVar</span><span class="p">],</span>
 <span class="linenos" data-linenos="29 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span>
@@ -10937,7 +10935,7 @@ source <code>AuxVar</code> subtype.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/optimizers/_secagg.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/optimizers/_secagg.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="104 "></span><span class="k">def</span><span class="w"> </span><span class="nf">unflatten_auxvar_after_secagg</span><span class="p">(</span>
 <span class="linenos" data-linenos="105 "></span>    <span class="n">decrypted</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
 <span class="linenos" data-linenos="106 "></span>    <span class="n">enc_specs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ValueSpec</span><span class="p">],</span>
@@ -10993,9 +10991,6 @@ source <code>AuxVar</code> subtype.</p>
 
 
 
-
-  
-  
 
 
 

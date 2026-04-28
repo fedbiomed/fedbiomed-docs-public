@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">TrainingPlans</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > TrainingPlans</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -7767,7 +7765,7 @@ training data at the beginning of the training routine.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="68 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="69 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Construct the base training plan.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="70 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_dependencies</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
@@ -7981,7 +7979,7 @@ passed to it depend on this parameter.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="373 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_preprocess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">process_type</span><span class="p">:</span> <span class="n">ProcessTypes</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="374 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Register a pre-processing method to be executed on training data.</span>
 <span class="linenos" data-linenos="375 "></span>
@@ -8062,7 +8060,7 @@ being used over <code>get_model_params</code> at the end of training rounds.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="700 "></span><span class="k">def</span><span class="w"> </span><span class="nf">after_training_params</span><span class="p">(</span>
 <span class="linenos" data-linenos="701 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="702 "></span>    <span class="n">flatten</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
@@ -8176,7 +8174,7 @@ outside of a training context) and export results using
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="726 "></span><span class="k">def</span><span class="w"> </span><span class="nf">export_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="727 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Export the wrapped model to a dump file.</span>
 <span class="linenos" data-linenos="728 "></span>
@@ -8301,7 +8299,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="318 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_model_params</span><span class="p">(</span>
 <span class="linenos" data-linenos="319 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos="320 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
@@ -8379,7 +8377,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 97 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_model_wrapper_class</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Model</span><span class="p">]:</span>
 <span class="linenos" data-linenos=" 98 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets training plan&#39;s model wrapper class.</span>
 <span class="linenos" data-linenos=" 99 "></span>
@@ -8475,7 +8473,7 @@ the loaded values into the wrapped model.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="753 "></span><span class="k">def</span><span class="w"> </span><span class="nf">import_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="754 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Import and replace the wrapped model from a dump file.</span>
 <span class="linenos" data-linenos="755 "></span>
@@ -8556,7 +8554,7 @@ the loaded values into the wrapped model.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="220 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_dependencies</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="221 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Default method where dependencies are returned</span>
 <span class="linenos" data-linenos="222 "></span>
@@ -8624,7 +8622,7 @@ the loaded values into the wrapped model.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="355 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="356 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="357 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Method for declaring optimizer by default</span>
@@ -8679,7 +8677,7 @@ the loaded values into the wrapped model.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="804 "></span><span class="k">def</span><span class="w"> </span><span class="nf">loader_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="805 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve loader arguments</span>
 <span class="linenos" data-linenos="806 "></span>
@@ -8714,7 +8712,7 @@ the loaded values into the wrapped model.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="90 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="91 "></span><span class="k">def</span><span class="w"> </span><span class="nf">model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="92 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets model instance of the training plan&quot;&quot;&quot;</span>
@@ -8764,7 +8762,7 @@ the loaded values into the wrapped model.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="788 "></span><span class="k">def</span><span class="w"> </span><span class="nf">model_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="789 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve model arguments.</span>
 <span class="linenos" data-linenos="790 "></span>
@@ -8824,7 +8822,7 @@ It is not the human-readable name of the node, which is set by the node creator.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="820 "></span><span class="k">def</span><span class="w"> </span><span class="nf">node_id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="821 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve node id</span>
 <span class="linenos" data-linenos="822 "></span>
@@ -8896,7 +8894,7 @@ It is not the human-readable name of the node, which is set by the node creator.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="114 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BaseOptimizer</span><span class="p">]:</span>
 <span class="linenos" data-linenos="115 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the BaseOptimizer wrapped by this training plan.</span>
 <span class="linenos" data-linenos="116 "></span>
@@ -8954,7 +8952,7 @@ It is not the human-readable name of the node, which is set by the node creator.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="812 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optimizer_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>  <span class="c1"># noqa: F811</span>
 <span class="linenos" data-linenos="813 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves optimizer arguments</span>
 <span class="linenos" data-linenos="814 "></span>
@@ -9072,7 +9070,7 @@ to True.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="129 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="130 "></span><span class="k">def</span><span class="w"> </span><span class="nf">post_init</span><span class="p">(</span>
 <span class="linenos" data-linenos="131 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -9206,7 +9204,7 @@ to True.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="259 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">from_code</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="260 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Saves the class source/codes of the training plan class that is created byuser.</span>
 <span class="linenos" data-linenos="261 "></span>
@@ -9275,7 +9273,7 @@ to True.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="352 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_aggregator_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aggregator_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]):</span>
 <span class="linenos" data-linenos="353 "></span>    <span class="k">raise</span> <span class="n">FedbiomedTrainingPlanError</span><span class="p">(</span><span class="s2">&quot;method not implemented and needed&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -9348,7 +9346,7 @@ to True.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="199 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_data_loaders</span><span class="p">(</span>
 <span class="linenos" data-linenos="200 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="201 "></span>    <span class="n">train_data_loader</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">DataLoader</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
@@ -9424,7 +9422,7 @@ This method is called by the node that executes the training.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="189 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_dataset_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="190 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Dataset path setter for TrainingPlan</span>
 <span class="linenos" data-linenos="191 "></span>
@@ -9491,7 +9489,7 @@ to their value.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="340 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_model_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="341 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Assign new values to the model&#39;s trainable parameters.</span>
 <span class="linenos" data-linenos="342 "></span>
@@ -9524,7 +9522,7 @@ to their value.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="126 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">BaseOptimizer</span><span class="p">):</span>
 <span class="linenos" data-linenos="127 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_optimizer</span> <span class="o">=</span> <span class="n">optimizer</span>
 </code></pre></div>
@@ -9548,7 +9546,7 @@ to their value.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="244 "></span><span class="k">def</span><span class="w"> </span><span class="nf">source</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="245 "></span>    <span class="k">try</span><span class="p">:</span>
 <span class="linenos" data-linenos="246 "></span>        <span class="n">class_source</span> <span class="o">=</span> <span class="n">get_class_source</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
@@ -9678,7 +9676,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="560 "></span><span class="k">def</span><span class="w"> </span><span class="nf">testing_routine</span><span class="p">(</span>
 <span class="linenos" data-linenos="561 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="562 "></span>    <span class="n">metric</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">MetricTypes</span><span class="p">],</span>
@@ -9838,7 +9836,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="796 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="797 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve training arguments</span>
 <span class="linenos" data-linenos="798 "></span>
@@ -9893,7 +9891,7 @@ that it has been provided</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="307 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="308 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;All subclasses must provide a training_data routine the purpose of this actual code is to detect</span>
 <span class="linenos" data-linenos="309 "></span><span class="sd">    that it has been provided</span>
@@ -9981,7 +9979,7 @@ supported for scikit-learn models and thus will be ignored.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="543 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="544 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_routine</span><span class="p">(</span>
 <span class="linenos" data-linenos="545 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -10021,7 +10019,7 @@ supported for scikit-learn models and thus will be ignored.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_base_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="106 "></span><span class="k">def</span><span class="w"> </span><span class="nf">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TrainingPlans</span><span class="p">:</span>
 <span class="linenos" data-linenos="107 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Getter for training plan type&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="108 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_type</span>
@@ -10072,7 +10070,7 @@ makes it equivalent to an actual scikit-learn Perceptron model.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="293 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="294 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="295 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -10107,7 +10105,7 @@ makes it equivalent to an actual scikit-learn Perceptron model.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="297 "></span><span class="k">def</span><span class="w"> </span><span class="nf">post_init</span><span class="p">(</span>
 <span class="linenos" data-linenos="298 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="299 "></span>    <span class="n">model_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -10188,7 +10186,7 @@ makes it equivalent to an actual scikit-learn Perceptron model.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="258 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="259 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize the sklearn SGDClassifier training plan.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="260 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -10246,7 +10244,7 @@ makes it equivalent to an actual scikit-learn Perceptron model.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_models.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="244 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="245 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize the sklearn SGDRegressor training plan.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="246 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -10397,7 +10395,7 @@ outside of Fed-BioMed.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="64 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="65 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize the SKLearnTrainingPlan.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="66 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -10478,7 +10476,7 @@ a Fedbiomed <a class="autorefs autorefs-internal" title="Optimizer" href="../opt
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="228 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">FedOptimizer</span><span class="p">]:</span>
 <span class="linenos" data-linenos="229 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates and configures optimizer. By default, returns None (meaning native inner scikit</span>
 <span class="linenos" data-linenos="230 "></span><span class="sd">    learn optimization SGD based will be used).</span>
@@ -10532,7 +10530,7 @@ a Fedbiomed <a class="autorefs autorefs-internal" title="Optimizer" href="../opt
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="167 "></span><span class="k">def</span><span class="w"> </span><span class="nf">model</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BaseEstimator</span><span class="p">]:</span>
 <span class="linenos" data-linenos="168 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve the wrapped scikit-learn model instance.</span>
 <span class="linenos" data-linenos="169 "></span>
@@ -10648,7 +10646,7 @@ researcher-side aggregator.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 87 "></span><span class="k">def</span><span class="w"> </span><span class="nf">post_init</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 88 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 89 "></span>    <span class="n">model_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -10765,7 +10763,7 @@ researcher-side aggregator.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="134 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_data_loaders</span><span class="p">(</span>
 <span class="linenos" data-linenos="135 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="136 "></span>    <span class="n">train_data_loader</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">SkLearnDataLoader</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
@@ -10895,7 +10893,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="306 "></span><span class="k">def</span><span class="w"> </span><span class="nf">testing_routine</span><span class="p">(</span>
 <span class="linenos" data-linenos="307 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="308 "></span>    <span class="n">metric</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">MetricTypes</span><span class="p">],</span>
@@ -11014,7 +11012,7 @@ supported for scikit-learn models and thus will be ignored.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_sklearn_training_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="236 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_routine</span><span class="p">(</span>
 <span class="linenos" data-linenos="237 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="238 "></span>    <span class="n">history_monitor</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;HistoryMonitor&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -11228,7 +11226,7 @@ outside of Fed-BioMed.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 79 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos=" 80 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Construct training plan&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos=" 81 "></span>
@@ -11379,7 +11377,7 @@ outside of Fed-BioMed.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="818 "></span><span class="k">def</span><span class="w"> </span><span class="nf">__norm_l2</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="linenos" data-linenos="819 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Regularize L2 that is used by FedProx optimization</span>
 <span class="linenos" data-linenos="820 "></span>
@@ -11450,7 +11448,7 @@ Otherwise, the default behaviour is to return the complete <code>state_dict</cod
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="756 "></span><span class="k">def</span><span class="w"> </span><span class="nf">after_training_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">flatten</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]:</span>
 <span class="linenos" data-linenos="757 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the wrapped model&#39;s parameters for aggregation.</span>
 <span class="linenos" data-linenos="758 "></span>
@@ -11539,7 +11537,7 @@ Otherwise, the default behaviour is to return the complete <code>state_dict</cod
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="192 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="193 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="194 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract method where model should be defined.&quot;&quot;&quot;</span>
@@ -11566,7 +11564,7 @@ Otherwise, the default behaviour is to return the complete <code>state_dict</cod
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="247 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FedOptimizer</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Optimizer</span><span class="p">]:</span>
 <span class="linenos" data-linenos="248 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract method for declaring optimizer by default&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="249 "></span>    <span class="k">try</span><span class="p">:</span>
@@ -11626,7 +11624,7 @@ Otherwise, the default behaviour is to return the complete <code>state_dict</cod
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="239 "></span><span class="k">def</span><span class="w"> </span><span class="nf">initial_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="240 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns initial parameters without DP or training applied</span>
 <span class="linenos" data-linenos="241 "></span>
@@ -11655,7 +11653,7 @@ Otherwise, the default behaviour is to return the complete <code>state_dict</cod
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="204 "></span><span class="k">def</span><span class="w"> </span><span class="nf">model</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">]:</span>
 <span class="linenos" data-linenos="205 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="206 "></span>        <span class="k">return</span> <span class="kc">None</span>
@@ -11706,7 +11704,7 @@ Otherwise, the default behaviour is to return the complete <code>state_dict</cod
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="230 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optimizer_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="231 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves optimizer arguments</span>
 <span class="linenos" data-linenos="232 "></span>
@@ -11822,7 +11820,7 @@ side configuration to prepare optimizer for the training.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="130 "></span><span class="k">def</span><span class="w"> </span><span class="nf">post_init</span><span class="p">(</span>
 <span class="linenos" data-linenos="131 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="132 "></span>    <span class="n">model_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -11979,7 +11977,7 @@ to the specified device.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="415 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_to_device</span><span class="p">(</span>
 <span class="linenos" data-linenos="416 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">to_send</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">,</span> <span class="nb">dict</span><span class="p">],</span> <span class="n">device</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span>
 <span class="linenos" data-linenos="417 "></span><span class="p">):</span>
@@ -12066,7 +12064,7 @@ name with its value (eg 'aggregator_correction' with correction states)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="732 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_aggregator_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aggregator_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]):</span>
 <span class="linenos" data-linenos="733 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Handles and loads aggregators arguments to received from the researcher</span>
 <span class="linenos" data-linenos="734 "></span>
@@ -12187,7 +12185,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="693 "></span><span class="k">def</span><span class="w"> </span><span class="nf">testing_routine</span><span class="p">(</span>
 <span class="linenos" data-linenos="694 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="695 "></span>    <span class="n">metric</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">MetricTypes</span><span class="p">],</span>
@@ -12253,7 +12251,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="200 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="201 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="202 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract method to return training data&quot;&quot;&quot;</span>
@@ -12384,7 +12382,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="447 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_routine</span><span class="p">(</span>
 <span class="linenos" data-linenos="448 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="449 "></span>    <span class="n">history_monitor</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -12610,7 +12608,7 @@ reported back through <code>history_monitor</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="196 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="197 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="198 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract method, all subclasses must provide a training_step.&quot;&quot;&quot;</span>
@@ -12669,7 +12667,7 @@ model, parameters which may have changed during training (eg learning rate).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_torchnn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_torchnn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="209 "></span><span class="k">def</span><span class="w"> </span><span class="nf">update_optimizer_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="210 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="211 "></span><span class="sd">    Updates `_optimizer_args` variable. Can prove useful</span>
@@ -12912,7 +12910,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">training_plan</span><span class="p">:</span> <span class="n">TBaseTrainingPlan</span><span class="p">):</span>
 <span class="linenos" data-linenos="49 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize the class.</span>
 <span class="linenos" data-linenos="50 "></span>
@@ -13147,7 +13145,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="262 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountant</span><span class="p">:</span> <span class="n">TTrainingIterationsAccountant</span><span class="p">):</span>
 <span class="linenos" data-linenos="263 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_accountant</span> <span class="o">=</span> <span class="n">accountant</span>
 </code></pre></div>
@@ -13183,7 +13181,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="279 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="280 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns this iterator&#39;s instance.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="281 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_accountant</span><span class="o">.</span><span class="n">cur_batch</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13234,7 +13232,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="265 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="266 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs next batch iteration</span>
 <span class="linenos" data-linenos="267 "></span>
@@ -13312,7 +13310,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="232 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountant</span><span class="p">:</span> <span class="n">TTrainingIterationsAccountant</span><span class="p">):</span>
 <span class="linenos" data-linenos="233 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_accountant</span> <span class="o">=</span> <span class="n">accountant</span>
 </code></pre></div>
@@ -13348,7 +13346,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="250 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="251 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns this iterator&#39;s instance.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="252 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_accountant</span><span class="o">.</span><span class="n">cur_epoch</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13400,7 +13398,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="235 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="236 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs next epoch iteration</span>
 <span class="linenos" data-linenos="237 "></span>
@@ -13447,7 +13445,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="71 "></span><span class="k">def</span><span class="w"> </span><span class="nf">increment_sample_counters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="linenos" data-linenos="72 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Increments internal counter for numbers of observed samples&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="73 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">num_samples_observed_in_epoch</span> <span class="o">+=</span> <span class="n">n_samples</span>
@@ -13475,7 +13473,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="288 "></span><span class="k">def</span><span class="w"> </span><span class="nf">iterate_batches</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="289 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns an instance of a batches iterator.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="290 "></span>    <span class="k">return</span> <span class="n">MiniBatchTrainingIterationsAccountant</span><span class="o">.</span><span class="n">BatchIter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -13502,7 +13500,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="284 "></span><span class="k">def</span><span class="w"> </span><span class="nf">iterate_epochs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="285 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns an instance of an epochs iterator.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="286 "></span>    <span class="k">return</span> <span class="n">MiniBatchTrainingIterationsAccountant</span><span class="o">.</span><span class="n">EpochsIter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -13529,7 +13527,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="64 "></span><span class="k">def</span><span class="w"> </span><span class="nf">num_batches_in_this_epoch</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="65 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the number of iterations to be performed in the current epoch&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="66 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cur_epoch</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">epochs</span><span class="p">:</span>
@@ -13559,7 +13557,7 @@ outputted by the reporting functions (see their docstrings for more details).</p
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="136 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reporting_on_epoch</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="linenos" data-linenos="137 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the optional index of the current epoch, for reporting.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="138 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_training_plan</span><span class="o">.</span><span class="n">training_args</span><span class="p">()[</span><span class="s2">&quot;num_updates&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
@@ -13626,7 +13624,7 @@ while the maximum number of iterations will be computed specifically for the cur
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="111 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reporting_on_num_iter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="linenos" data-linenos="112 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Outputs useful reporting information about the number of iterations</span>
 <span class="linenos" data-linenos="113 "></span>
@@ -13710,7 +13708,7 @@ If the researcher specified epochs, then both values will be specific to the cur
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 76 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reporting_on_num_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="linenos" data-linenos=" 77 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Outputs useful reporting information about the number of observed samples</span>
 <span class="linenos" data-linenos=" 78 "></span>
@@ -13774,7 +13772,7 @@ If the researcher specified epochs, then both values will be specific to the cur
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_plans/_training_iterations.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_plans/_training_iterations.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="143 "></span><span class="k">def</span><span class="w"> </span><span class="nf">should_log_this_batch</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="144 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Whether the current batch should be logged or not.</span>
 <span class="linenos" data-linenos="145 "></span>
@@ -13815,9 +13813,6 @@ If the researcher specified epochs, then both values will be specific to the cur
 
 
 
-
-  
-  
 
 
 

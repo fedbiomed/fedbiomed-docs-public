@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Datasets</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Datasets</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5913,7 +5911,7 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/datasets.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/datasets.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="23 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="24 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Construct FederatedDataset object.</span>
 <span class="linenos" data-linenos="25 "></span>
@@ -5984,7 +5982,7 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/datasets.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/datasets.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 95 "></span><span class="k">def</span><span class="w"> </span><span class="nf">data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 96 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve FederatedDataset as [`dict`][dict].</span>
 <span class="linenos" data-linenos=" 97 "></span>
@@ -6038,7 +6036,7 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/datasets.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/datasets.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="103 "></span><span class="k">def</span><span class="w"> </span><span class="nf">node_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="104 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve Node ids from `FederatedDataset`.</span>
 <span class="linenos" data-linenos="105 "></span>
@@ -6093,7 +6091,7 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/datasets.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/datasets.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="111 "></span><span class="k">def</span><span class="w"> </span><span class="nf">sample_sizes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="linenos" data-linenos="112 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve list of sample sizes of node&#39;s dataset.</span>
 <span class="linenos" data-linenos="113 "></span>
@@ -6185,7 +6183,7 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/datasets.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/datasets.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="38 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_federated_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">datasets</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="39 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Set federated dataset.</span>
 <span class="linenos" data-linenos="40 "></span>
@@ -6276,7 +6274,7 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/datasets.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/datasets.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="124 "></span><span class="k">def</span><span class="w"> </span><span class="nf">shapes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="linenos" data-linenos="125 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get shape of FederatedDatasets by node ids.</span>
 <span class="linenos" data-linenos="126 "></span>
@@ -6318,9 +6316,6 @@ of the dataset associated to this node in the federated dataset.</p>
 
 
 
-
-  
-  
 
 
 

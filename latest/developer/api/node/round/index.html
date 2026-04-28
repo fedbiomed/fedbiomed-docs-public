@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Round</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Node > Round</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6594,7 +6592,7 @@ researcher-side aggregator.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/round.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/round.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 48 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 49 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 50 "></span>    <span class="n">root_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7139,7 +7137,7 @@ researcher-side aggregator.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/round.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/round.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="142 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="143 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class destructor&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="144 "></span>    <span class="c1"># remove temporary files directory</span>
@@ -7193,7 +7191,7 @@ FedbiomedRoundError.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/round.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/round.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="909 "></span><span class="k">def</span><span class="w"> </span><span class="nf">collect_optim_aux_var</span><span class="p">(</span>
 <span class="linenos" data-linenos="910 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="911 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AuxVar</span><span class="p">]:</span>
@@ -7301,7 +7299,7 @@ Node state loading and saving.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/round.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/round.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="171 "></span><span class="k">def</span><span class="w"> </span><span class="nf">initialize_arguments</span><span class="p">(</span>
 <span class="linenos" data-linenos="172 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">previous_state_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="173 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
@@ -7370,7 +7368,7 @@ Node state loading and saving.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/round.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/round.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="752 "></span><span class="k">def</span><span class="w"> </span><span class="nf">process_optim_aux_var</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="753 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Process researcher-emitted Optimizer auxiliary variables, if any.</span>
 <span class="linenos" data-linenos="754 "></span>
@@ -7553,7 +7551,7 @@ Node state loading and saving.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/round.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/round.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="194 "></span><span class="k">def</span><span class="w"> </span><span class="nf">run_model_training</span><span class="p">(</span>
 <span class="linenos" data-linenos="195 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="196 "></span>    <span class="n">tp_approval</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
@@ -7998,9 +7996,6 @@ Node state loading and saving.</p>
 
 
 
-
-  
-  
 
 
 

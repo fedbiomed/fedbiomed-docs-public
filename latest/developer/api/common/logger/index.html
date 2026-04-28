@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Logger</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Logger</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6657,7 +6655,7 @@ without the default level</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="285 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLevelName</span><span class="p">(</span><span class="n">DEFAULT_LOG_LEVEL</span><span class="p">)):</span>
 <span class="linenos" data-linenos="286 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of base class</span>
 <span class="linenos" data-linenos="287 "></span>
@@ -6749,7 +6747,7 @@ without the default level</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="888 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="n">Any</span><span class="p">):</span>
 <span class="linenos" data-linenos="889 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calls the method from self._logger if not override by this class&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="890 "></span>
@@ -6837,7 +6835,7 @@ without the default level</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="663 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_console_handler</span><span class="p">(</span>
 <span class="linenos" data-linenos="664 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_FORMAT</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="n">DEFAULT_LOG_LEVEL</span>
 <span class="linenos" data-linenos="665 "></span><span class="p">):</span>
@@ -6962,7 +6960,7 @@ without the default level</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="644 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_file_handler</span><span class="p">(</span>
 <span class="linenos" data-linenos="645 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="646 "></span>    <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_LOG_FILE</span><span class="p">,</span>
@@ -7068,7 +7066,7 @@ research get all ERROR/CRITICAL messages</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="687 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_grpc_handler</span><span class="p">(</span>
 <span class="linenos" data-linenos="688 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">on_log</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">INFO</span>
 <span class="linenos" data-linenos="689 "></span><span class="p">):</span>
@@ -7180,7 +7178,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="385 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_security_file_handler</span><span class="p">(</span>
 <span class="linenos" data-linenos="386 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="387 "></span>    <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_SECURITY_LOG_FILE</span><span class="p">,</span>
@@ -7328,7 +7326,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="596 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_syslog_handler</span><span class="p">(</span>
 <span class="linenos" data-linenos="597 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="598 "></span>    <span class="n">host</span><span class="p">,</span>
@@ -7396,7 +7394,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="350 "></span><span class="k">def</span><span class="w"> </span><span class="nf">configure_security</span><span class="p">(</span>
 <span class="linenos" data-linenos="351 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="352 "></span>    <span class="o">*</span><span class="p">,</span>
@@ -7434,7 +7432,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="858 "></span><span class="k">def</span><span class="w"> </span><span class="nf">critical</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">broadcast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">researcher_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="859 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Same as info message&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="860 "></span>    <span class="c1"># Merge extra dicts properly to support is_security flag</span>
@@ -7472,7 +7470,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="828 "></span><span class="k">def</span><span class="w"> </span><span class="nf">debug</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">broadcast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">researcher_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="829 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Same as info message&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="830 "></span>    <span class="c1"># Merge extra dicts properly to support is_security flag</span>
@@ -7508,7 +7506,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="641 "></span><span class="k">def</span><span class="w"> </span><span class="nf">del_syslog_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">handler_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;SYSLOG&quot;</span><span class="p">):</span>
 <span class="linenos" data-linenos="642 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_internal_add_handler</span><span class="p">(</span><span class="n">handler_key</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 </code></pre></div>
@@ -7534,7 +7532,7 @@ Automatically rotates daily at midnight. Old logs are never deleted.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="873 "></span><span class="k">def</span><span class="w"> </span><span class="nf">error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">broadcast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">researcher_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="874 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Same as info message&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="875 "></span>    <span class="c1"># Merge extra dicts properly to support is_security flag</span>
@@ -7650,7 +7648,7 @@ to also write to security log file</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="800 "></span><span class="k">def</span><span class="w"> </span><span class="nf">info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">broadcast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">researcher_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="801 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extends arguments of info message.</span>
 <span class="linenos" data-linenos="802 "></span>
@@ -7701,7 +7699,7 @@ to also write to security log file</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="722 "></span><span class="k">def</span><span class="w"> </span><span class="nf">log</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="723 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Overrides the logging.log() method to allow the use of string instead of a logging.* level&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="724 "></span>
@@ -7734,7 +7732,7 @@ to also write to security log file</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="365 "></span><span class="nd">@contextmanager</span>
 <span class="linenos" data-linenos="366 "></span><span class="k">def</span><span class="w"> </span><span class="nf">security_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Any</span><span class="p">):</span>
 <span class="linenos" data-linenos="367 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -7888,7 +7886,7 @@ Use higher values when calling <code>security_event</code> from within wrappers.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="420 "></span><span class="k">def</span><span class="w"> </span><span class="nf">security_event</span><span class="p">(</span>
 <span class="linenos" data-linenos="421 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="422 "></span>    <span class="o">*</span><span class="p">,</span>
@@ -8075,7 +8073,7 @@ change the level of all known handlers</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="728 "></span><span class="k">def</span><span class="w"> </span><span class="nf">setLevel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">htype</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="729 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Overrides the setLevel method, to deal with level given as a string and to change le level of</span>
 <span class="linenos" data-linenos="730 "></span><span class="sd">    one or all known handlers</span>
@@ -8169,7 +8167,7 @@ change the level of all known handlers</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="768 "></span><span class="k">def</span><span class="w"> </span><span class="nf">setPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="769 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets a log prefix for all handlers.</span>
 <span class="linenos" data-linenos="770 "></span>
@@ -8200,7 +8198,7 @@ change the level of all known handlers</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="344 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_security_logs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="345 "></span>    <span class="n">security_log_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_path</span><span class="p">,</span> <span class="s2">&quot;log&quot;</span><span class="p">)</span>
 <span class="linenos" data-linenos="346 "></span>    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">security_log_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -8229,7 +8227,7 @@ change the level of all known handlers</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/logger.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/logger.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="843 "></span><span class="k">def</span><span class="w"> </span><span class="nf">warning</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">broadcast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">researcher_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="844 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Same as info message&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="845 "></span>    <span class="c1"># Merge extra dicts properly to support is_security flag</span>
@@ -8272,9 +8270,6 @@ change the level of all known handlers</p>
 
 
 
-
-  
-  
 
 
 

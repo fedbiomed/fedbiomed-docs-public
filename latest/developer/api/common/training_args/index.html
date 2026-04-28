@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">TrainingArgs</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > TrainingArgs</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6285,7 +6283,7 @@ by supplying an extra_scheme at TrainingArgs instantiation.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 59 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">ta</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">extra_scheme</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">only_required</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos=" 60 "></span><span class="p">):</span>
@@ -6467,7 +6465,7 @@ by supplying an extra_scheme at TrainingArgs instantiation.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="462 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="463 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="464 "></span><span class="sd">    Returns a copy of the value associated to a key.</span>
@@ -6567,7 +6565,7 @@ Args:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="504 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__ixor__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s2">&quot;TrainingArgs&quot;</span><span class="p">):</span>
 <span class="linenos" data-linenos="505 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="506 "></span><span class="sd">    Syntax sugar for update().</span>
@@ -6633,7 +6631,7 @@ Args:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="425 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="426 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="427 "></span><span class="sd">    Display the Training_Args full content for debugging purpose.</span>
@@ -6758,7 +6756,7 @@ Args:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="434 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="435 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="436 "></span><span class="sd">    Validate and then set a (key, value) pair to the current object.</span>
@@ -6832,7 +6830,7 @@ Args:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="416 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="417 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="418 "></span><span class="sd">    Display the Training_Args values as a string.</span>
@@ -6956,7 +6954,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="309 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="310 "></span><span class="k">def</span><span class="w"> </span><span class="nf">default_scheme</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="311 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -7163,7 +7161,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="535 "></span><span class="k">def</span><span class="w"> </span><span class="nf">default_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="536 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="537 "></span><span class="sd">    Returns the default value for the key.</span>
@@ -7214,7 +7212,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="563 "></span><span class="k">def</span><span class="w"> </span><span class="nf">dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="564 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns a copy of the training_args as a dictionary.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="565 "></span>
@@ -7265,7 +7263,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="177 "></span><span class="k">def</span><span class="w"> </span><span class="nf">dp_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="178 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extracts the arguments for differential privacy</span>
 <span class="linenos" data-linenos="179 "></span>
@@ -7343,7 +7341,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="596 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="597 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Mimics the get() method of dict, provided for backward compatibility.</span>
 <span class="linenos" data-linenos="598 "></span>
@@ -7379,7 +7377,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="569 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_state_breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="570 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns JSON serializable dict as state for breakpoints&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="571 "></span>
@@ -7419,7 +7417,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="582 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="583 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state_breakpoint</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;TrainingArgs&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="584 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Loads training arguments state&quot;&quot;&quot;</span>
@@ -7479,7 +7477,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="147 "></span><span class="k">def</span><span class="w"> </span><span class="nf">loader_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="148 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extracts data loader arguments</span>
 <span class="linenos" data-linenos="149 "></span>
@@ -7508,7 +7506,7 @@ for additional information on typing and constraints.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="155 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optimizer_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="156 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;optimizer_args&quot;</span><span class="p">]</span>
 </code></pre></div>
@@ -7608,7 +7606,7 @@ or the required type(s)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="288 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="289 "></span><span class="k">def</span><span class="w"> </span><span class="nf">optional_type</span><span class="p">(</span><span class="n">typespec</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Type</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Type</span><span class="p">,</span> <span class="o">...</span><span class="p">]],</span> <span class="n">argname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="290 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Utility factory function to generate functions that check for an optional type(s).</span>
@@ -7674,7 +7672,7 @@ or the required type(s)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="158 "></span><span class="k">def</span><span class="w"> </span><span class="nf">pure_training_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="159 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extracts the arguments that are only necessary for training_routine</span>
 <span class="linenos" data-linenos="160 "></span>
@@ -7740,7 +7738,7 @@ or the required type(s)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="524 "></span><span class="k">def</span><span class="w"> </span><span class="nf">scheme</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="525 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="526 "></span><span class="sd">    Returns the scheme of a TrainingArgs instance.</span>
@@ -7797,7 +7795,7 @@ or the required type(s)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="130 "></span><span class="k">def</span><span class="w"> </span><span class="nf">testing_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="131 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extract testing arguments from training arguments</span>
 <span class="linenos" data-linenos="132 "></span>
@@ -7914,7 +7912,7 @@ or the required type(s)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/training_args.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/training_args.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="487 "></span><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s2">&quot;TrainingArgs&quot;</span><span class="p">):</span>
 <span class="linenos" data-linenos="488 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="489 "></span><span class="sd">    Update multiple keys of the training arguments.</span>
@@ -7959,9 +7957,6 @@ or the required type(s)</p>
 
 
 
-
-  
-  
 
 
 

@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Server</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Transport > Server</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6237,7 +6235,7 @@ instantiated in the main thread</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="293 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="294 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="295 "></span>    <span class="n">host</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6365,7 +6363,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="566 "></span><span class="k">def</span><span class="w"> </span><span class="nf">broadcast</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="567 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Broadcast message to all known and reachable nodes</span>
 <span class="linenos" data-linenos="568 "></span>
@@ -6457,7 +6455,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="589 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_all_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">NodeAgent</span><span class="p">]:</span>
 <span class="linenos" data-linenos="590 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns all known nodes</span>
 <span class="linenos" data-linenos="591 "></span>
@@ -6573,7 +6571,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="606 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_id</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">NodeAgent</span><span class="p">]:</span>
 <span class="linenos" data-linenos="607 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns given node</span>
 <span class="linenos" data-linenos="608 "></span>
@@ -6662,7 +6660,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="628 "></span><span class="k">def</span><span class="w"> </span><span class="nf">is_alive</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="629 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the thread running gRPC server still alive</span>
 <span class="linenos" data-linenos="630 "></span>
@@ -6787,7 +6785,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="542 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="543 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Send message to a specific node.</span>
 <span class="linenos" data-linenos="544 "></span>
@@ -6834,7 +6832,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="507 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="508 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Starts async GrpcServer&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="509 "></span>
@@ -6960,7 +6958,7 @@ instantiated in the main thread</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="68 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">agent_store</span><span class="p">:</span> <span class="n">AgentStore</span><span class="p">,</span> <span class="n">on_message</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="69 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of gRPC researcher servicer</span>
 <span class="linenos" data-linenos="70 "></span>
@@ -7055,7 +7053,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="261 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">Feedback</span><span class="p">(</span>
 <span class="linenos" data-linenos="262 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">ProtoBufMessage</span><span class="p">,</span> <span class="n">unused_context</span><span class="p">:</span> <span class="n">grpc</span><span class="o">.</span><span class="n">aio</span><span class="o">.</span><span class="n">ServicerContext</span>
 <span class="linenos" data-linenos="263 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -7154,7 +7152,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 79 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">GetTaskUnary</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 80 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">ProtoBufMessage</span><span class="p">,</span> <span class="n">context</span><span class="p">:</span> <span class="n">grpc</span><span class="o">.</span><span class="n">aio</span><span class="o">.</span><span class="n">ServicerContext</span>
 <span class="linenos" data-linenos=" 81 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -7373,7 +7371,7 @@ instantiated in the main thread</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="224 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">ReplyTask</span><span class="p">(</span>
 <span class="linenos" data-linenos="225 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="226 "></span>    <span class="n">request_iterator</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">ProtoBufMessage</span><span class="p">],</span>
@@ -7499,7 +7497,7 @@ instantiated in the main thread</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/server.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/server.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="52 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">cert</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="53 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Reads private key and cert file</span>
 <span class="linenos" data-linenos="54 "></span>
@@ -7593,9 +7591,6 @@ instantiated in the main thread</p>
 
 
 
-
-  
-  
 
 
 

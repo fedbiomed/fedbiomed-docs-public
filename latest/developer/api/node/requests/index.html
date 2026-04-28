@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Requests</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Node > Requests</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6186,7 +6184,7 @@ async def _FinalExample(self, value: int) -&gt; None:
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/requests/_n2n_controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="49 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="50 "></span>    <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6298,7 +6296,7 @@ Cannot be interrupted, thus should not launch treatment that may hang.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_n2n_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="115 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">final</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="116 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calls the final processing for a received message protocol.</span>
 <span class="linenos" data-linenos="117 "></span>
@@ -6428,7 +6426,7 @@ Empty dict or <code>None</code> if no <code>kwargs</code> expected of no final h
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_n2n_controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 90 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 91 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">overlay_msg</span><span class="p">:</span> <span class="n">OverlayMessage</span><span class="p">,</span> <span class="n">inner_msg</span><span class="p">:</span> <span class="n">InnerMessage</span>
 <span class="linenos" data-linenos=" 92 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]:</span>
@@ -6592,7 +6590,7 @@ Empty dict or <code>None</code> if no <code>kwargs</code> expected of no final h
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_router.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/requests/_n2n_router.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="215 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="216 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="217 "></span>    <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6741,7 +6739,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_router.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_n2n_router.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="269 "></span><span class="k">def</span><span class="w"> </span><span class="nf">format_outgoing_overlay</span><span class="p">(</span>
 <span class="linenos" data-linenos="270 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">InnerMessage</span><span class="p">,</span> <span class="n">researcher_id</span><span class="p">:</span> <span class="nb">str</span>
 <span class="linenos" data-linenos="271 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">]:</span>
@@ -6787,7 +6785,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_router.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_n2n_router.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="249 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="250 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Starts the node to node router.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="251 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
@@ -6850,7 +6848,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_n2n_router.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_n2n_router.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="253 "></span><span class="k">def</span><span class="w"> </span><span class="nf">submit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="n">OverlayMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="254 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Submits a received message to the node to node router for processing.</span>
 <span class="linenos" data-linenos="255 "></span>
@@ -6972,7 +6970,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_overlay.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/requests/_overlay.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="218 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">grpc_client</span><span class="p">:</span> <span class="n">GrpcController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="219 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor</span>
 <span class="linenos" data-linenos="220 "></span>
@@ -7162,7 +7160,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_overlay.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_overlay.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="489 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">format_incoming_overlay</span><span class="p">(</span>
 <span class="linenos" data-linenos="490 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">overlay_msg</span><span class="p">:</span> <span class="n">OverlayMessage</span>
 <span class="linenos" data-linenos="491 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">InnerMessage</span><span class="p">:</span>
@@ -7401,7 +7399,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_overlay.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_overlay.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="416 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">format_outgoing_overlay</span><span class="p">(</span>
 <span class="linenos" data-linenos="417 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">InnerMessage</span><span class="p">,</span> <span class="n">researcher_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">setup</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="linenos" data-linenos="418 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">]:</span>
@@ -7555,7 +7553,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_overlay.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_overlay.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="289 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_local_public_key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distant_node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span><span class="p">:</span>
 <span class="linenos" data-linenos="290 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets local public key for peering with a given distant peer node</span>
 <span class="linenos" data-linenos="291 "></span>
@@ -7684,7 +7682,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_overlay.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_overlay.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="584 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send_node_setup</span><span class="p">(</span>
 <span class="linenos" data-linenos="585 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="586 "></span>    <span class="n">researcher_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7842,7 +7840,7 @@ encryption key, nonce for the inner message encryption</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_overlay.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_overlay.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="300 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">set_distant_key</span><span class="p">(</span>
 <span class="linenos" data-linenos="301 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="302 "></span>    <span class="n">distant_node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -8059,7 +8057,7 @@ Default to False, return with <code>status</code> to False when not all answers 
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/requests/_send_nodes.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/requests/_send_nodes.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="16 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_nodes</span><span class="p">(</span>
 <span class="linenos" data-linenos="17 "></span>    <span class="n">n2n_router</span><span class="p">:</span> <span class="n">NodeToNodeRouter</span><span class="p">,</span>
 <span class="linenos" data-linenos="18 "></span>    <span class="n">grpc_client</span><span class="p">:</span> <span class="n">GrpcController</span><span class="p">,</span>
@@ -8154,9 +8152,6 @@ Default to False, return with <code>status</code> to False when not all answers 
 
 
 
-
-  
-  
 
 
 

@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">DataLoader</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > DataLoader</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6200,7 +6198,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_dataloader.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloader/_dataloader.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="16 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="17 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="18 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor&quot;&quot;&quot;</span>
@@ -6241,7 +6239,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="24 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="25 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterable</span><span class="p">:</span>
 <span class="linenos" data-linenos="26 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns an iterator over batches of data&quot;&quot;&quot;</span>
@@ -6272,7 +6270,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="20 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="21 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="22 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns number of batches of the encapsulated dataset&quot;&quot;&quot;</span>
@@ -6318,7 +6316,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_dataloader.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloader/_dataloader.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="16 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="17 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="18 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor&quot;&quot;&quot;</span>
@@ -6479,7 +6477,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="46 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="47 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="48 "></span>    <span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span>
@@ -6586,7 +6584,7 @@ generic code for DataLoaders.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="101 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;_SkLearnBatchIterator&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="102 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns an iterator over batches of data&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="103 "></span>    <span class="k">return</span> <span class="n">_SkLearnBatchIterator</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -6613,7 +6611,7 @@ generic code for DataLoaders.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="94 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="95 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the number of batches of the encapsulated dataset&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="96 "></span>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span><span class="p">)</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">_batch_size</span>
@@ -6643,7 +6641,7 @@ generic code for DataLoaders.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="114 "></span><span class="k">def</span><span class="w"> </span><span class="nf">batch_size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="115 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the batch size&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="116 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_batch_size</span>
@@ -6670,7 +6668,7 @@ generic code for DataLoaders.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="118 "></span><span class="k">def</span><span class="w"> </span><span class="nf">drop_last</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="119 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the boolean drop_last attribute&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="120 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drop_last</span>
@@ -6697,7 +6695,7 @@ generic code for DataLoaders.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="128 "></span><span class="k">def</span><span class="w"> </span><span class="nf">n_remainder_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="129 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the remainder of the division between dataset length and batch size.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="130 "></span>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span><span class="p">)</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_batch_size</span>
@@ -6724,7 +6722,7 @@ generic code for DataLoaders.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloader/_sklearn_dataloader.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="124 "></span><span class="k">def</span><span class="w"> </span><span class="nf">shuffle</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="125 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the boolean shuffle attribute&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="126 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shuffle</span>
@@ -6756,9 +6754,6 @@ generic code for DataLoaders.</p>
 
 
 
-
-  
-  
 
 
 

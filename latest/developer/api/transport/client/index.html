@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Client</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Transport > Client</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6346,7 +6344,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 85 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">researcher</span><span class="p">:</span> <span class="n">ResearcherCredentials</span><span class="p">):</span>
 <span class="linenos" data-linenos=" 86 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Create channels and stubs</span>
 <span class="linenos" data-linenos=" 87 "></span>
@@ -6436,7 +6434,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="122 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stub_type</span><span class="p">:</span> <span class="n">_StubType</span> <span class="o">=</span> <span class="n">_StubType</span><span class="o">.</span><span class="n">ANY_STUB</span><span class="p">):</span>
 <span class="linenos" data-linenos="123 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Connects gRPC server and instantiates stubs.</span>
 <span class="linenos" data-linenos="124 "></span>
@@ -6536,7 +6534,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="107 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">stub</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stub_type</span><span class="p">:</span> <span class="n">_StubType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ResearcherServiceStub</span><span class="p">:</span>
 <span class="linenos" data-linenos="108 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get stub for a given stub type.</span>
 <span class="linenos" data-linenos="109 "></span>
@@ -6776,7 +6774,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="204 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="205 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">researcher</span><span class="p">:</span> <span class="n">ResearcherCredentials</span><span class="p">,</span> <span class="n">update_id_map</span><span class="p">:</span> <span class="n">Awaitable</span>
 <span class="linenos" data-linenos="206 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -6902,7 +6900,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="273 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="274 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sends messages from node to researcher server.</span>
 <span class="linenos" data-linenos="275 "></span>
@@ -6989,7 +6987,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="244 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">on_task</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Task</span><span class="p">:</span>
 <span class="linenos" data-linenos="245 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Start researcher gRPC agent.</span>
 <span class="linenos" data-linenos="246 "></span>
@@ -7091,7 +7089,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="382 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channels</span><span class="p">:</span> <span class="n">Channels</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="383 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructs task listener channels</span>
 <span class="linenos" data-linenos="384 "></span>
@@ -7187,7 +7185,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="435 "></span><span class="k">def</span><span class="w"> </span><span class="nf">listen</span><span class="p">(</span>
 <span class="linenos" data-linenos="436 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">callback</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="437 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]]:</span>
@@ -7405,7 +7403,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="628 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="629 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="630 "></span>    <span class="n">channels</span><span class="p">:</span> <span class="n">Channels</span><span class="p">,</span>
@@ -7493,7 +7491,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="781 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="782 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Send a message to peer researcher.</span>
 <span class="linenos" data-linenos="783 "></span>
@@ -7635,7 +7633,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="512 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="513 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="514 "></span>    <span class="n">channels</span><span class="p">:</span> <span class="n">Channels</span><span class="p">,</span>
@@ -7746,7 +7744,7 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/client.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/client.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="57 "></span><span class="k">def</span><span class="w"> </span><span class="nf">is_server_alive</span><span class="p">(</span><span class="n">host</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">port</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="58 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the server is alive</span>
 <span class="linenos" data-linenos="59 "></span>
@@ -7789,9 +7787,6 @@ for the replies from the node that are going to be sent back to researcher.</p>
 
 
 
-
-  
-  
 
 
 

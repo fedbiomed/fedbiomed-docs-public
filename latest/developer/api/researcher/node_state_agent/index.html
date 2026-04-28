@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">NodeStateAgent</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > NodeStateAgent</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5842,7 +5840,7 @@ no previous node state yet)</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/node_state_agent.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/node_state_agent.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="17 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">federated_dataset</span><span class="p">:</span> <span class="n">FederatedDataset</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="18 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor for NodeStateAgent.</span>
 <span class="linenos" data-linenos="19 "></span>
@@ -5913,7 +5911,7 @@ no previous node state yet)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/node_state_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/node_state_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="31 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_last_node_states</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="32 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns a dictionary mapping &lt;node_id, state_id&gt; from latest `Nodes` replies.</span>
 <span class="linenos" data-linenos="33 "></span>
@@ -5977,7 +5975,7 @@ no previous node state yet)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/node_state_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/node_state_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 96 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state_breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
 <span class="linenos" data-linenos=" 97 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Loads NodeStateAgent&#39;s state from saved state.</span>
 <span class="linenos" data-linenos=" 98 "></span>
@@ -6031,7 +6029,7 @@ no previous node state yet)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/node_state_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/node_state_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="88 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_state_breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="89 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;NodeStateAgent&#39;s state, to be saved in a breakpoint.</span>
 <span class="linenos" data-linenos="90 "></span>
@@ -6133,7 +6131,7 @@ do not belong to the current Round anymore.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/node_state_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/node_state_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="41 "></span><span class="k">def</span><span class="w"> </span><span class="nf">update_node_states</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">resp</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="42 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Updates the state_id collection with respect to current nodes and latest Nodes replies.</span>
 <span class="linenos" data-linenos="43 "></span>
@@ -6189,9 +6187,6 @@ do not belong to the current Round anymore.</p>
 
 
 
-
-  
-  
 
 
 

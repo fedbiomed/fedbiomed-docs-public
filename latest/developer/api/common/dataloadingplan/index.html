@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">DataLoadingPlan</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > DataLoadingPlan</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6532,7 +6530,7 @@ must respect the following conditions:</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="311 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="312 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">__serialization_id</span> <span class="o">=</span> <span class="s2">&quot;serialized_dlb_&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
 <span class="linenos" data-linenos="313 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_serialization_validator</span> <span class="o">=</span> <span class="n">SerializationValidation</span><span class="p">()</span>
@@ -6598,7 +6596,7 @@ must respect the following conditions:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="349 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="350 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="351 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract method representing an application of the DataLoadingBlock&quot;&quot;&quot;</span>
@@ -6658,7 +6656,7 @@ must respect the following conditions:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="335 "></span><span class="k">def</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">load_from</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TDataLoadingBlock</span><span class="p">:</span>
 <span class="linenos" data-linenos="336 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Reconstruct the DataLoadingBlock from a serialized version.</span>
 <span class="linenos" data-linenos="337 "></span>
@@ -6695,7 +6693,7 @@ must respect the following conditions:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="318 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_serialization_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="319 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Expose serialization id as read-only&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="320 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__serialization_id</span>
@@ -6764,7 +6762,7 @@ metadata in the format returned by the serialize function.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="354 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="355 "></span><span class="k">def</span><span class="w"> </span><span class="nf">instantiate_class</span><span class="p">(</span><span class="n">loading_block</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TDataLoadingBlock</span><span class="p">:</span>
 <span class="linenos" data-linenos="356 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Instantiate one [DataLoadingBlock][fedbiomed.common.dataloadingplan.DataLoadingBlock]</span>
@@ -6933,7 +6931,7 @@ regarding the passed arguments</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="386 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="387 "></span><span class="k">def</span><span class="w"> </span><span class="nf">instantiate_key</span><span class="p">(</span>
 <span class="linenos" data-linenos="388 "></span>    <span class="n">key_module</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key_classname</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">loading_block_key_str</span><span class="p">:</span> <span class="nb">str</span>
@@ -7020,7 +7018,7 @@ regarding the passed arguments</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="322 "></span><span class="k">def</span><span class="w"> </span><span class="nf">serialize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="323 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Serializes the class in a format similar to json.</span>
 <span class="linenos" data-linenos="324 "></span>
@@ -7145,7 +7143,7 @@ as a dict.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="507 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="508 "></span>    <span class="nb">super</span><span class="p">(</span><span class="n">DataLoadingPlan</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 <span class="linenos" data-linenos="509 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">dlp_id</span> <span class="o">=</span> <span class="s2">&quot;dlp_&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
@@ -7254,7 +7252,7 @@ as a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="517 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">DataLoadingBlockTypes</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">DataLoadingBlock</span><span class="p">):</span>
 <span class="linenos" data-linenos="518 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Type-check the arguments then call dict.__setitem__.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="519 "></span>    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">DataLoadingBlockTypes</span><span class="p">):</span>
@@ -7295,7 +7293,7 @@ as a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="597 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="598 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;User-friendly string representation&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="599 "></span>    <span class="k">return</span> <span class="p">(</span>
@@ -7380,7 +7378,7 @@ second output of the serialize function</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="558 "></span><span class="k">def</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span>
 <span class="linenos" data-linenos="559 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">serialized_dlp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">serialized_loading_blocks</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span>
 <span class="linenos" data-linenos="560 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TDataLoadingPlan</span><span class="p">:</span>
@@ -7481,7 +7479,7 @@ apply some heuristics to guess the type of dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="604 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="605 "></span><span class="k">def</span><span class="w"> </span><span class="nf">infer_dataset_type</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DatasetTypes</span><span class="p">:</span>
 <span class="linenos" data-linenos="606 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Infer the type of a given dataset.</span>
@@ -7576,7 +7574,7 @@ apply some heuristics to guess the type of dataset.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="535 "></span><span class="k">def</span><span class="w"> </span><span class="nf">serialize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">dict</span><span class="p">,</span> <span class="n">List</span><span class="p">]:</span>
 <span class="linenos" data-linenos="536 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Serializes the class in a format similar to json.</span>
 <span class="linenos" data-linenos="537 "></span>
@@ -7644,7 +7642,7 @@ using the helper function apply_dlb defined below.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="660 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="661 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_dlp</span> <span class="o">=</span> <span class="kc">None</span>
 </code></pre></div>
@@ -7770,7 +7768,7 @@ functionality is not required</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="691 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply_dlb</span><span class="p">(</span>
 <span class="linenos" data-linenos="692 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="693 "></span>    <span class="n">default_ret_value</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span>
@@ -7832,7 +7830,7 @@ functionality is not required</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="688 "></span><span class="k">def</span><span class="w"> </span><span class="nf">clear_dlp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="689 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_dlp</span> <span class="o">=</span> <span class="kc">None</span>
 </code></pre></div>
@@ -7858,7 +7856,7 @@ functionality is not required</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="663 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_dlp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dlp</span><span class="p">:</span> <span class="n">DataLoadingPlan</span><span class="p">):</span>
 <span class="linenos" data-linenos="664 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets the dlp if the target dataset type is appropriate&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="665 "></span>    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dlp</span><span class="p">,</span> <span class="n">DataLoadingPlan</span><span class="p">):</span>
@@ -7936,7 +7934,7 @@ provided that they are given different type_id via the constructor.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="436 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="437 "></span>    <span class="nb">super</span><span class="p">(</span><span class="n">MapperBlock</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 <span class="linenos" data-linenos="438 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="p">{}</span>
@@ -8021,7 +8019,7 @@ provided that they are given different type_id via the constructor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="467 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
 <span class="linenos" data-linenos="468 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the value mapped to the key, if it exists.</span>
 <span class="linenos" data-linenos="469 "></span>
@@ -8089,7 +8087,7 @@ from a serialized version.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="454 "></span><span class="k">def</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">load_from</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataLoadingBlock</span><span class="p">:</span>
 <span class="linenos" data-linenos="455 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Reconstruct the [DataLoadingBlock][fedbiomed.common.dataloadingplan.DataLoadingBlock]</span>
 <span class="linenos" data-linenos="456 "></span><span class="sd">    from a serialized version.</span>
@@ -8158,7 +8156,7 @@ from a serialized version.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="443 "></span><span class="k">def</span><span class="w"> </span><span class="nf">serialize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="444 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Serializes the class in a format similar to json.</span>
 <span class="linenos" data-linenos="445 "></span>
@@ -8253,7 +8251,7 @@ class.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="61 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="62 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_validation_scheme</span> <span class="o">=</span> <span class="p">{}</span>
 </code></pre></div>
@@ -8293,7 +8291,7 @@ class.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="232 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="233 "></span><span class="k">def</span><span class="w"> </span><span class="nf">dlb_default_scheme</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="234 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The dictionary of default validation rules for a serialized [DataLoadingBlock].&quot;&quot;&quot;</span>
@@ -8338,7 +8336,7 @@ class.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="250 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="251 "></span><span class="k">def</span><span class="w"> </span><span class="nf">dlp_default_scheme</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="252 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The dictionary of default validation rules for a serialized [DataLoadingPlan].&quot;&quot;&quot;</span>
@@ -8415,7 +8413,7 @@ class.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="103 "></span><span class="k">def</span><span class="w"> </span><span class="nf">update_validation_scheme</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_scheme</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="104 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Updates the validation scheme.</span>
 <span class="linenos" data-linenos="105 "></span>
@@ -8509,7 +8507,7 @@ node database.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataloadingplan/_data_loading_plan.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 64 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 65 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 66 "></span>    <span class="n">dlb_metadata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span>
@@ -8576,9 +8574,6 @@ node database.</p>
 
 
 
-
-  
-  
 
 
 

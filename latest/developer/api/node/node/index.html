@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Node</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Node > Node</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6070,7 +6068,7 @@ executing tasks requested by researcher stored in the queue.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 65 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 66 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 67 "></span>    <span class="n">config</span><span class="p">:</span> <span class="n">NodeConfig</span><span class="p">,</span>
@@ -6356,7 +6354,7 @@ executing tasks requested by researcher stored in the queue.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="164 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="165 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds a task to the pending tasks queue.</span>
 <span class="linenos" data-linenos="166 "></span>
@@ -6419,7 +6417,7 @@ executing tasks requested by researcher stored in the queue.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="717 "></span><span class="k">def</span><span class="w"> </span><span class="nf">is_connected</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="718 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if node is ready for communication with researcher</span>
 <span class="linenos" data-linenos="719 "></span>
@@ -6487,7 +6485,7 @@ mainly:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="181 "></span><span class="k">def</span><span class="w"> </span><span class="nf">on_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="182 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Handler to be used with `Messaging` class (ie the messager).</span>
 <span class="linenos" data-linenos="183 "></span>
@@ -6726,7 +6724,7 @@ mainly:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="429 "></span><span class="k">def</span><span class="w"> </span><span class="nf">parser_task_train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="n">TrainRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Round</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="430 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Parses a given training task message to create a round instance</span>
 <span class="linenos" data-linenos="431 "></span>
@@ -6952,7 +6950,7 @@ regardless of specific researcher.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="725 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_error</span><span class="p">(</span>
 <span class="linenos" data-linenos="726 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="727 "></span>    <span class="n">errnum</span><span class="p">:</span> <span class="n">ErrorNumbers</span> <span class="o">=</span> <span class="n">ErrorNumbers</span><span class="o">.</span><span class="n">FB300</span><span class="p">,</span>
@@ -7088,7 +7086,7 @@ Callable has no argument.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="701 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start_messaging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">on_finish</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="702 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calls the start method of messaging class.</span>
 <span class="linenos" data-linenos="703 "></span>
@@ -7127,7 +7125,7 @@ Callable has no argument.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="697 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start_protocol</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="698 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Start the node to node router thread, for handling node to node message&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="699 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_n2n_router</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
@@ -7154,7 +7152,7 @@ Callable has no argument.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/node.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/node.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="530 "></span><span class="k">def</span><span class="w"> </span><span class="nf">task_manager</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="531 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Manages training tasks in the queue.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="532 "></span>
@@ -7349,9 +7347,6 @@ Callable has no argument.</p>
 
 
 
-
-  
-  
 
 
 

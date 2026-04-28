@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Controller</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Transport > Controller</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5998,7 +5996,7 @@ are awaitable, except the constructor.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="23 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="24 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="25 "></span>    <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6081,7 +6079,7 @@ are awaitable, except the constructor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="145 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">is_connected</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="146 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if there is running tasks&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="147 "></span>
@@ -6167,7 +6165,7 @@ node state messages (e.g. general Error)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="102 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">broadcast</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="103 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sends message to researcher.</span>
 <span class="linenos" data-linenos="104 "></span>
@@ -6215,7 +6213,7 @@ node state messages (e.g. general Error)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 69 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 70 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot; &quot;Starts the tasks for each GrpcClient&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos=" 71 "></span>    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
@@ -6318,7 +6316,7 @@ different threads than the one grpc client runs.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="23 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="24 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="25 "></span>    <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6444,7 +6442,7 @@ different threads than the one grpc client runs.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="231 "></span><span class="k">def</span><span class="w"> </span><span class="nf">is_connected</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="232 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot; &quot;Checks GrpcController is connected to any RPC client.</span>
 <span class="linenos" data-linenos="233 "></span>
@@ -6572,7 +6570,7 @@ The attribute <code>researcher_id</code> in the message should be <code>&lt;unkn
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="204 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">broadcast</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="205 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sends given message to researcher</span>
 <span class="linenos" data-linenos="206 "></span>
@@ -6654,7 +6652,7 @@ Callable has no argument. If None, then no action is taken.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/controller.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/controller.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="189 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">on_finish</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="190 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Start GRPCClients in a thread.</span>
 <span class="linenos" data-linenos="191 "></span>
@@ -6697,9 +6695,6 @@ Callable has no argument. If None, then no action is taken.</p>
 
 
 
-
-  
-  
 
 
 

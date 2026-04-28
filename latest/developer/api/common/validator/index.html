@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Validator</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Validator</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6238,7 +6236,7 @@ with the following grammar:</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="188 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scheme</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]):</span>
 <span class="linenos" data-linenos="189 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="190 "></span><span class="sd">    Create a SchemeValidator instance, and validate the scheme passed as input.</span>
@@ -6385,7 +6383,7 @@ with the following grammar:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="340 "></span><span class="k">def</span><span class="w"> </span><span class="nf">__validate_scheme</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scheme</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="341 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="342 "></span><span class="sd">    Scheme validation function (internal).</span>
@@ -6494,7 +6492,7 @@ with the following grammar:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="403 "></span><span class="k">def</span><span class="w"> </span><span class="nf">is_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="404 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="405 "></span><span class="sd">    Status of the scheme passed at creation time.</span>
@@ -6635,7 +6633,7 @@ to be done by the user.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="286 "></span><span class="k">def</span><span class="w"> </span><span class="nf">populate_with_defaults</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">only_required</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="287 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="288 "></span><span class="sd">    Inject default values defined in the rule to a given dictionary.</span>
@@ -6735,7 +6733,7 @@ to be done by the user.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="412 "></span><span class="k">def</span><span class="w"> </span><span class="nf">scheme</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]:</span>
 <span class="linenos" data-linenos="413 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="414 "></span><span class="sd">    Scheme getter.</span>
@@ -6823,7 +6821,7 @@ to be done by the user.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="247 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="248 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="249 "></span><span class="sd">    Validate a value against the scheme passed at creation time.</span>
@@ -6945,7 +6943,7 @@ to be done by the user.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="441 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="442 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="443 "></span><span class="sd">    Create an instance of Validator. For now, nothing to do.</span>
@@ -7015,7 +7013,7 @@ to be done by the user.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="660 "></span><span class="k">def</span><span class="w"> </span><span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="661 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="662 "></span><span class="sd">    Delete a rule from the rulebook.</span>
@@ -7102,7 +7100,7 @@ to be done by the user.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="604 "></span><span class="k">def</span><span class="w"> </span><span class="nf">is_known_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="605 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="606 "></span><span class="sd">    Information about rule registration.</span>
@@ -7249,7 +7247,7 @@ it will be rejected, except if override is True</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="616 "></span><span class="k">def</span><span class="w"> </span><span class="nf">register</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">hook</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">override</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="617 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="618 "></span><span class="sd">    Add a rule/validation_function to the rulebook.</span>
@@ -7370,7 +7368,7 @@ it will be rejected, except if override is True</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="589 "></span><span class="k">def</span><span class="w"> </span><span class="nf">rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="590 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="591 "></span><span class="sd">    Return a presumably stored rule.</span>
@@ -7500,7 +7498,7 @@ it will be rejected, except if override is True</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="447 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">strict</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="448 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="449 "></span><span class="sd">    Validate a value against a validation rule.</span>
@@ -7671,7 +7669,7 @@ will not change the accuracy (True/False) of the feedback.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/validator.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/validator.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="131 "></span><span class="k">def</span><span class="w"> </span><span class="nf">validator_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
 <span class="linenos" data-linenos="132 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="133 "></span><span class="sd">    Ease the writing of validation function/hooks.</span>
@@ -7732,9 +7730,6 @@ will not change the accuracy (True/False) of the feedback.</p>
 
 
 
-
-  
-  
 
 
 

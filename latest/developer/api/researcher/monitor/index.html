@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Monitor</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Monitor</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6031,7 +6029,7 @@ for validation on local updates</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/monitor.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/monitor.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 44 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_iteration</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 45 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 46 "></span>    <span class="n">node</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6171,7 +6169,7 @@ for validation on local updates</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/monitor.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/monitor.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="228 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="229 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the class.</span>
 <span class="linenos" data-linenos="230 "></span>
@@ -6218,7 +6216,7 @@ for validation on local updates</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/monitor.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/monitor.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="303 "></span><span class="k">def</span><span class="w"> </span><span class="nf">close_writer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="304 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Closes `SummaryWriter` for each node&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="305 "></span>    <span class="c1"># Close each open SummaryWriter</span>
@@ -6280,7 +6278,7 @@ of the command (currently the command is only add_scalar).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/monitor.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/monitor.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="257 "></span><span class="k">def</span><span class="w"> </span><span class="nf">on_message_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]):</span>
 <span class="linenos" data-linenos="258 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Handler for messages received through general/monitoring channel. This method is used as callback function</span>
 <span class="linenos" data-linenos="259 "></span><span class="sd">    in Requests class</span>
@@ -6369,7 +6367,7 @@ received.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/monitor.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/monitor.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="242 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_round</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">round_</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="243 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets round number that metric results will be received for.</span>
 <span class="linenos" data-linenos="244 "></span>
@@ -6440,7 +6438,7 @@ Non-bool values are rejected and the flag defaults to <code>False</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/monitor.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/monitor.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="289 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_tensorboard</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tensorboard</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="290 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets whether scalar metrics are written to TensorBoard log files.</span>
 <span class="linenos" data-linenos="291 "></span>
@@ -6482,9 +6480,6 @@ Non-bool values are rejected and the flag defaults to <code>False</code>.</p>
 
 
 
-
-  
-  
 
 
 

@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Singleton</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Singleton</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5827,7 +5825,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/singleton.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/singleton.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="22 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="23 "></span>    <span class="k">with</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_lock_instantiation</span><span class="p">:</span>
 <span class="linenos" data-linenos="24 "></span>        <span class="k">if</span> <span class="bp">cls</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_objects</span><span class="p">:</span>
@@ -5909,7 +5907,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/singleton.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/singleton.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="42 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="43 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Replace default class creation for classes using this metaclass, executed before the constructor&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="44 "></span>
@@ -5947,9 +5945,6 @@
 
 
 
-
-  
-  
 
 
 

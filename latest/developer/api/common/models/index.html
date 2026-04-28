@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Model</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Model</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -7408,7 +7406,7 @@ or for regression supervised-learning tasks.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="72 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="73 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="74 "></span>    <span class="n">model</span><span class="p">:</span> <span class="n">BaseEstimator</span><span class="p">,</span>
@@ -7556,7 +7554,7 @@ parameters' values.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="212 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply_updates</span><span class="p">(</span>
 <span class="linenos" data-linenos="213 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="214 "></span>    <span class="n">updates</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
@@ -7598,7 +7596,7 @@ apply a learning rate that may be scheduled to vary along time).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="360 "></span><span class="k">def</span><span class="w"> </span><span class="nf">disable_internal_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="361 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Disable the scikit-learn internal optimizer.</span>
 <span class="linenos" data-linenos="362 "></span>
@@ -7649,7 +7647,7 @@ due to calling the counterpart <code>disable_internal_optimizer</code> method.</
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="386 "></span><span class="k">def</span><span class="w"> </span><span class="nf">enable_internal_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="387 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Enable the scikit-learn internal optimizer.</span>
 <span class="linenos" data-linenos="388 "></span>
@@ -7722,7 +7720,7 @@ due to calling the counterpart <code>disable_internal_optimizer</code> method.</
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="396 "></span><span class="k">def</span><span class="w"> </span><span class="nf">export</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="397 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Export the wrapped model to a dump file.</span>
 <span class="linenos" data-linenos="398 "></span>
@@ -7837,7 +7835,7 @@ buffers.)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="141 "></span><span class="k">def</span><span class="w"> </span><span class="nf">flatten</span><span class="p">(</span>
 <span class="linenos" data-linenos="142 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos="143 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
@@ -7931,7 +7929,7 @@ gradient's numpy array.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="301 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_gradients</span><span class="p">(</span>
 <span class="linenos" data-linenos="302 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="303 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
@@ -8004,7 +8002,7 @@ a list of several learning rates, one for each layer of the model.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="468 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="469 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_learning_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
 <span class="linenos" data-linenos="470 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves learning rate of the model. Method implementation will</span>
@@ -8094,7 +8092,7 @@ with all the hyperparameters. Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="326 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="327 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the wrapped scikit-learn model&#39;s hyperparameters.</span>
 <span class="linenos" data-linenos="328 "></span>
@@ -8231,7 +8229,7 @@ numpy array, or as a declearn NumpyVector wrapping such a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="101 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_weights</span><span class="p">(</span>
 <span class="linenos" data-linenos="102 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos="103 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
@@ -8317,7 +8315,7 @@ numpy array, or as a declearn NumpyVector wrapping such a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="89 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_training</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="90 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialises the training by setting up attributes.</span>
 <span class="linenos" data-linenos="91 "></span>
@@ -8406,7 +8404,7 @@ numpy array, or as a declearn NumpyVector wrapping such a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="227 "></span><span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span>
 <span class="linenos" data-linenos="228 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="229 "></span>    <span class="n">inputs</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -8502,7 +8500,7 @@ numpy array, or as a declearn NumpyVector wrapping such a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="416 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="417 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Import and replace the wrapped model from a dump file.</span>
 <span class="linenos" data-linenos="418 "></span>
@@ -8548,7 +8546,7 @@ numpy array, or as a declearn NumpyVector wrapping such a dict.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="322 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_gradients</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gradients</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="323 "></span>    <span class="c1"># TODO: either document or remove this (useless) method</span>
 <span class="linenos" data-linenos="324 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_gradients</span> <span class="o">=</span> <span class="n">gradients</span>
@@ -8613,7 +8611,7 @@ will depend on the scikit learn model wrapped.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="456 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="457 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_init_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="458 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Zeroes scikit learn model parameters.</span>
@@ -8705,7 +8703,7 @@ for further details.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="344 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="345 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Assign some hyperparameters to the wrapped scikit-learn model.</span>
 <span class="linenos" data-linenos="346 "></span>
@@ -8776,7 +8774,7 @@ to their numpy array.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="198 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_weights</span><span class="p">(</span>
 <span class="linenos" data-linenos="199 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="200 "></span>    <span class="n">weights</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
@@ -8901,7 +8899,7 @@ Used to plot model losses. Defaults to None.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="241 "></span><span class="k">def</span><span class="w"> </span><span class="nf">train</span><span class="p">(</span>
 <span class="linenos" data-linenos="242 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="243 "></span>    <span class="n">inputs</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -9071,7 +9069,7 @@ buffers.)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="164 "></span><span class="k">def</span><span class="w"> </span><span class="nf">unflatten</span><span class="p">(</span>
 <span class="linenos" data-linenos="165 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="166 "></span>    <span class="n">weights_vector</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
@@ -9147,7 +9145,7 @@ buffers.)</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="553 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">BaseEstimator</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="554 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_null_optim_params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
 <span class="linenos" data-linenos="555 "></span>        <span class="s2">&quot;learning_rate_init&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
@@ -9207,7 +9205,7 @@ buffers.)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="560 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_learning_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
 <span class="linenos" data-linenos="561 "></span>    <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">learning_rate_init</span><span class="p">]</span>
 </code></pre></div>
@@ -9315,7 +9313,7 @@ buffers.)</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="28 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">_MT</span><span class="p">):</span>
 <span class="linenos" data-linenos="29 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of Model abstract class</span>
 <span class="linenos" data-linenos="30 "></span>
@@ -9414,7 +9412,7 @@ buffers.)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="88 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="89 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">updates</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">DT</span><span class="p">]):</span>
 <span class="linenos" data-linenos="90 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Applies updates to the model.</span>
@@ -9486,7 +9484,7 @@ buffers.)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="148 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="149 "></span><span class="k">def</span><span class="w"> </span><span class="nf">export</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="150 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Export the wrapped model to a dump file.</span>
@@ -9601,7 +9599,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="131 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="132 "></span><span class="k">def</span><span class="w"> </span><span class="nf">flatten</span><span class="p">(</span>
 <span class="linenos" data-linenos="133 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
@@ -9669,7 +9667,7 @@ gradient's value.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="122 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="123 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_gradients</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">DT</span><span class="p">]:</span>
 <span class="linenos" data-linenos="124 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return computed gradients attached to the model.</span>
@@ -9778,7 +9776,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 96 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos=" 97 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_weights</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 98 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
@@ -9822,7 +9820,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="56 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="57 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_training</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="58 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize parameters before model training.&quot;&quot;&quot;</span>
@@ -9907,7 +9905,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="77 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="78 "></span><span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="79 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return model predictions given input values.</span>
@@ -10004,7 +10002,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="163 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="164 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="165 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Import and replace the wrapped model from a dump file.</span>
@@ -10076,7 +10074,7 @@ attribute.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="37 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">_MT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="38 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Replace the wrapped model with a new one.</span>
 <span class="linenos" data-linenos="39 "></span>
@@ -10145,7 +10143,7 @@ to their value.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="113 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="114 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">weights</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">DT</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="115 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Assign new values to the model&#39;s trainable weights.</span>
@@ -10238,7 +10236,7 @@ so to initialize parameters needed for model training"</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="60 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="61 "></span><span class="k">def</span><span class="w"> </span><span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">targets</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="62 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Perform a training step given inputs and targets data.</span>
@@ -10371,7 +10369,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_model.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_model.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="189 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="190 "></span><span class="k">def</span><span class="w"> </span><span class="nf">unflatten</span><span class="p">(</span>
 <span class="linenos" data-linenos="191 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -10441,7 +10439,7 @@ include them.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="486 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">BaseEstimator</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="487 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 <span class="linenos" data-linenos="488 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_null_optim_params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
@@ -10526,7 +10524,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="524 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_init_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="525 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize the model&#39;s trainable parameters.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="526 "></span>    <span class="c1"># Set up zero-valued start weights, for binary of multiclass classif.</span>
@@ -10590,7 +10588,7 @@ include them.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="486 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">BaseEstimator</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="487 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 <span class="linenos" data-linenos="488 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_null_optim_params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
@@ -10675,7 +10673,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="505 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_init_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]):</span>
 <span class="linenos" data-linenos="506 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize the model&#39;s trainable parameters.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="507 "></span>    <span class="n">init_params</span> <span class="o">=</span> <span class="p">{</span>
@@ -10828,7 +10826,7 @@ SGDClassifier() instead of SGDClassifier object)</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="590 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseEstimator</span><span class="p">]):</span>
 <span class="linenos" data-linenos="591 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the model builder.</span>
 <span class="linenos" data-linenos="592 "></span>
@@ -10953,7 +10951,7 @@ SGDClassifier() instead of SGDClassifier object)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="635 "></span><span class="k">def</span><span class="w"> </span><span class="nf">__deepcopy__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memo</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;SkLearnModel&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="636 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Provides a deepcopy of the object.</span>
 <span class="linenos" data-linenos="637 "></span>
@@ -11059,7 +11057,7 @@ SGDClassifier() instead of SGDClassifier object)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_sklearn.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_sklearn.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="619 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="620 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Wraps all functions/attributes of factory class members.</span>
 <span class="linenos" data-linenos="621 "></span>
@@ -11166,7 +11164,7 @@ Set when calling <code>init_training</code>.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="30 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="31 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Instantiates the wrapper over a torch Module instance.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="32 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
@@ -11279,7 +11277,7 @@ Set when calling <code>init_training</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="198 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_corrections_to_gradients</span><span class="p">(</span>
 <span class="linenos" data-linenos="199 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="200 "></span>    <span class="n">corrections</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">],</span>
@@ -11348,7 +11346,7 @@ Set when calling <code>init_training</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="183 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply_updates</span><span class="p">(</span>
 <span class="linenos" data-linenos="184 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="185 "></span>    <span class="n">updates</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">],</span>
@@ -11427,7 +11425,7 @@ Set when calling <code>init_training</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="266 "></span><span class="k">def</span><span class="w"> </span><span class="nf">export</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="267 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Export the wrapped model to a dump file.</span>
 <span class="linenos" data-linenos="268 "></span>
@@ -11544,7 +11542,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 86 "></span><span class="k">def</span><span class="w"> </span><span class="nf">flatten</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 87 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos=" 88 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
@@ -11614,7 +11612,7 @@ torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="35 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_gradients</span><span class="p">(</span>
 <span class="linenos" data-linenos="36 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="37 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]:</span>
@@ -11734,7 +11732,7 @@ torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_weights</span><span class="p">(</span>
 <span class="linenos" data-linenos="59 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">only_trainable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_buffers</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos="60 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]:</span>
@@ -11786,7 +11784,7 @@ torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="241 "></span><span class="k">def</span><span class="w"> </span><span class="nf">init_training</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="242 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initializes and sets attributes before the training.</span>
 <span class="linenos" data-linenos="243 "></span>
@@ -11876,7 +11874,7 @@ torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="213 "></span><span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span>
 <span class="linenos" data-linenos="214 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="215 "></span>    <span class="n">inputs</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
@@ -11976,7 +11974,7 @@ torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="287 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="288 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Import and replace the wrapped model from a dump file.</span>
 <span class="linenos" data-linenos="289 "></span>
@@ -12051,7 +12049,7 @@ torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="230 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send_to_device</span><span class="p">(</span>
 <span class="linenos" data-linenos="231 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="232 "></span>    <span class="n">device</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">,</span>
@@ -12117,7 +12115,7 @@ to their torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="149 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_weights</span><span class="p">(</span>
 <span class="linenos" data-linenos="150 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="151 "></span>    <span class="n">weights</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">],</span>
@@ -12172,7 +12170,7 @@ to their torch tensor.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="254 "></span><span class="k">def</span><span class="w"> </span><span class="nf">train</span><span class="p">(</span>
 <span class="linenos" data-linenos="255 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="256 "></span>    <span class="n">inputs</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
@@ -12297,7 +12295,7 @@ include them.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/models/_torch.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/models/_torch.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="109 "></span><span class="k">def</span><span class="w"> </span><span class="nf">unflatten</span><span class="p">(</span>
 <span class="linenos" data-linenos="110 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="111 "></span>    <span class="n">weights_vector</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
@@ -12365,9 +12363,6 @@ include them.</p>
 
 
 
-
-  
-  
 
 
 

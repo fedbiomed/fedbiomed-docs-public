@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Jobs</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Jobs</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6324,7 +6322,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_fa_request_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_fa_request_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="21 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="22 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="23 "></span>    <span class="n">experiment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6443,7 +6441,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_fa_request_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_fa_request_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 56 "></span><span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">FAReply</span><span class="p">]:</span>
 <span class="linenos" data-linenos=" 57 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Send the FA request to all nodes and collect replies.</span>
 <span class="linenos" data-linenos=" 58 "></span>
@@ -6669,7 +6667,7 @@ of the job.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="31 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="32 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="33 "></span>    <span class="o">*</span><span class="p">,</span>
@@ -6821,7 +6819,7 @@ my_timer
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="81 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]):</span>
 <span class="linenos" data-linenos="82 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="83 "></span><span class="sd">    Constructor of NodeTimer</span>
@@ -6861,7 +6859,7 @@ my_timer
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="90 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="91 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_timer</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
 <span class="linenos" data-linenos="92 "></span>        <span class="p">{</span><span class="n">node_id</span><span class="p">:</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span> <span class="k">for</span> <span class="n">node_id</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timer</span><span class="o">.</span><span class="n">keys</span><span class="p">()}</span>
@@ -6888,7 +6886,7 @@ my_timer
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 96 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">traceback</span><span class="p">):</span>
 <span class="linenos" data-linenos=" 97 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_timer</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 98 "></span>        <span class="p">{</span>
@@ -6957,7 +6955,7 @@ my_timer
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="105 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="106 "></span><span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="107 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Payload of the job.</span>
@@ -7023,7 +7021,7 @@ Args:
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_preproc_request_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_preproc_request_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="26 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="27 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="28 "></span>    <span class="n">experiment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7117,7 +7115,7 @@ Args:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_preproc_request_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_preproc_request_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 59 "></span><span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">PreprocReply</span><span class="p">]:</span>
 <span class="linenos" data-linenos=" 60 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Executes preprocessing request</span>
 <span class="linenos" data-linenos=" 61 "></span>
@@ -7435,7 +7433,7 @@ are coherent with each other as to expected information exchange.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_training_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_training_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="26 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="27 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="28 "></span>    <span class="n">experiment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7551,7 +7549,7 @@ are coherent with each other as to expected information exchange.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_training_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_training_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="126 "></span><span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span>
 <span class="linenos" data-linenos="127 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="128 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span>
@@ -7757,7 +7755,7 @@ are coherent with each other as to expected information exchange.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="20 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">training_plan</span><span class="p">:</span> <span class="n">BaseTrainingPlan</span><span class="p">,</span> <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="21 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the class.</span>
 <span class="linenos" data-linenos="22 "></span>
@@ -7859,7 +7857,7 @@ are coherent with each other as to expected information exchange.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="36 "></span><span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="37 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Requests the approval of the provided TrainingPlan.</span>
 <span class="linenos" data-linenos="38 "></span>
@@ -7980,7 +7978,7 @@ are coherent with each other as to expected information exchange.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="55 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">training_plan</span><span class="p">:</span> <span class="n">BaseTrainingPlan</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="56 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructor of the class.</span>
 <span class="linenos" data-linenos="57 "></span>
@@ -8053,7 +8051,7 @@ So, researchers can find out if their model has been approved</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/jobs/_training_plan_approval_job.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 70 "></span><span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 71 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks whether model is approved or not.</span>
 <span class="linenos" data-linenos=" 72 "></span>
@@ -8136,9 +8134,6 @@ So, researchers can find out if their model has been approved</p>
 
 
 
-
-  
-  
 
 
 

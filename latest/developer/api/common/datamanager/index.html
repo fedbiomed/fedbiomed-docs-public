@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">DataManager</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > DataManager</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6258,7 +6256,7 @@ structured dataset</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_data_manager.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/datamanager/_data_manager.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="43 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="44 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dataset</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
 <span class="linenos" data-linenos="45 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -6399,7 +6397,7 @@ structured dataset</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="144 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="145 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Wraps all functions/attributes of factory class members.</span>
 <span class="linenos" data-linenos="146 "></span>
@@ -6512,7 +6510,7 @@ structured dataset</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="114 "></span><span class="k">def</span><span class="w"> </span><span class="nf">complete_dataset_initialization</span><span class="p">(</span>
 <span class="linenos" data-linenos="115 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">controller_kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
 <span class="linenos" data-linenos="116 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -6599,7 +6597,7 @@ it is not replaced.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="74 "></span><span class="k">def</span><span class="w"> </span><span class="nf">extend_loader_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">extension</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="75 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extends the class&#39; loader arguments</span>
 <span class="linenos" data-linenos="76 "></span>
@@ -6696,7 +6694,7 @@ it is not replaced.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 93 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tp_type</span><span class="p">:</span> <span class="n">TrainingPlans</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 94 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Loads proper DataManager based on given TrainingPlan and</span>
 <span class="linenos" data-linenos=" 95 "></span><span class="sd">    `dataset`, `target` attributes.</span>
@@ -6831,7 +6829,7 @@ it is not replaced.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="75 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="76 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="77 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor</span>
@@ -6964,7 +6962,7 @@ as state.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="272 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="273 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Loads state of the data loader</span>
 <span class="linenos" data-linenos="274 "></span>
@@ -7024,7 +7022,7 @@ as state.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="259 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="260 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets state of the data loader.</span>
 <span class="linenos" data-linenos="261 "></span>
@@ -7158,7 +7156,7 @@ subset at each execution. If False, reuse previous split when possible.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_framework_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="118 "></span><span class="k">def</span><span class="w"> </span><span class="nf">split</span><span class="p">(</span>
 <span class="linenos" data-linenos="119 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="120 "></span>    <span class="n">test_ratio</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
@@ -7373,7 +7371,7 @@ subset at each execution. If False, reuse previous split when possible.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_sklearn_data_manager.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/datamanager/_sklearn_data_manager.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="80 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="81 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor</span>
 <span class="linenos" data-linenos="82 "></span>
@@ -7444,7 +7442,7 @@ subset at each execution. If False, reuse previous split when possible.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_sklearn_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_sklearn_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 96 "></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">_SkLearnSubset</span><span class="p">]:</span>
 <span class="linenos" data-linenos=" 97 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets validation subset of the dataset.</span>
 <span class="linenos" data-linenos=" 98 "></span>
@@ -7499,7 +7497,7 @@ subset at each execution. If False, reuse previous split when possible.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_sklearn_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_sklearn_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="106 "></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_train</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">_SkLearnSubset</span><span class="p">]:</span>
 <span class="linenos" data-linenos="107 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets train subset of the dataset.</span>
 <span class="linenos" data-linenos="108 "></span>
@@ -7621,7 +7619,7 @@ subset at each execution. If False, reuse previous split when possible.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="137 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="138 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Class constructor</span>
 <span class="linenos" data-linenos="139 "></span>
@@ -7696,7 +7694,7 @@ is defined while initializing the class</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="175 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_all_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PytorchDataLoader</span><span class="p">:</span>
 <span class="linenos" data-linenos="176 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Loading all samples as PyTorch DataLoader without splitting.</span>
 <span class="linenos" data-linenos="177 "></span>
@@ -7752,7 +7750,7 @@ is defined while initializing the class</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="156 "></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">_TorchSubset</span><span class="p">]:</span>
 <span class="linenos" data-linenos="157 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets validation subset of the dataset.</span>
 <span class="linenos" data-linenos="158 "></span>
@@ -7807,7 +7805,7 @@ is defined while initializing the class</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/datamanager/_torch_data_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="166 "></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_train</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">_TorchSubset</span><span class="p">]:</span>
 <span class="linenos" data-linenos="167 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets train subset of the dataset.</span>
 <span class="linenos" data-linenos="168 "></span>
@@ -7843,9 +7841,6 @@ is defined while initializing the class</p>
 
 
 
-
-  
-  
 
 
 

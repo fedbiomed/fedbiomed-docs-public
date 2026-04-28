@@ -27,7 +27,7 @@
     
     
       
-        <title>Developer usages and tools - Fed-BioMed Documentation</title>
+        <title>Usage and Tools - Fed-BioMed Documentation</title>
       
     
     
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Developer usages and tools
+              Usage and Tools
             
           </span>
         </div>
@@ -509,8 +509,6 @@
     <div class="fbm-doc-hero-container">
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Usage and Tools</h1>
-            
-            <p class="fbm-doc-hero-subtitle">Developer > Usage and Tools</p>
             
         </div>
     </div>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -5594,6 +5592,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#product-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Product goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#product-backlog" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6214,6 +6223,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#product-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Product goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#product-backlog" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6528,7 +6548,7 @@ If there is some reason to keep it, it should then be renamed to something start
 <h2 id="organization-and-scrum">Organization and Scrum<a class="headerlink" href="#organization-and-scrum" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>The development team</strong> is in charge of implementing Fed-BioMed's project goal and roadmap. It carries the bulk of the development effort, coordinating the work of Reviewers, Team Developers, Core Developers.</p>
+<p><strong>The development team</strong> is in charge of implementing Fed-BioMed's product goal, using product backlog and roadmap. It carries the bulk of the development effort, coordinating the work of Reviewers, Team Developers, Core Developers.</p>
 <p>It works as an agile team inspiring from <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">Scrum</a> and loosely implementing it. Development team's work is usually organized in sprints.</p>
 <p>Reviewers, Team Developers and Core Developers are welcome to the team meetings (daily meeting, sprint review, sprint retrospective) in the developer Discord lounge.</p>
 <p>Core Developers are invited to sprint planning meetings.
@@ -6539,22 +6559,35 @@ Reviewers and Team Developers can be invited to sprint planning meetings dependi
 <p><strong>External developers</strong> are autonomous developers (Contributors) working at their own pace. This typically fits primarily for punctual contribution, work on some specific function, PoC, etc. External developers are encouraged to interact with the development team to ensure coherence of their planned contributions with the rest of the development activity.</p>
 </li>
 </ul>
+<h3 id="product-goal">Product goal<a class="headerlink" href="#product-goal" title="Permanent link">&para;</a></h3>
+<p>Fed-BioMed is an open-source software platform for collaborative health data programs. It enables hospitals, biobanks, registries, clinical networks, and any organization holding sensitive health or subject data to collaborate with research teams and industry partners in a privacy-preserving way - without sharing or moving that data.</p>
+<p>Fed-BioMed is an ecosystem of partners with diverse objectives - researchers, industry, consortia - united by a shared commitment to collaborative studies in the healthcare domain.</p>
+<p>Fed-BioMed offers a modular set of core capabilities that can work together or be adopted selectively to fit the specific needs of each organization:</p>
+<ul>
+<li>Federated framework: Provides the foundation to deploy, connect, and manage distributed data nodes across institutions, supporting long-term, multi-study collaboration within a federation of partners, by joining an existing federation or creating a new one.</li>
+<li>Federated access control: Enforces fine-grained, role-based, decentralized permissions over who can access data and trigger computations across the federation, translating governance rules and regulatory requirements into consistent, auditable controls</li>
+<li>Federated discovery: Enables exploration and querying of distributed datasets for cohort definition and feasibility studies through shared metadata, relying on common data models and standards. </li>
+<li>Federated preparation: Provides coordinated methods for preprocessing, harmonization, augmentation and presentation of distributed datasets consistently across sites</li>
+<li>Federated analytics: Performs distributed statistical analysis and exploratory computations to extract global insights across datasets without pooling data</li>
+<li>Federated learning: Trains and evaluates machine learning models across distributed datasets producing globally informed models while data stays local</li>
+<li>Federated integration: Interoperates with existing software pipelines at each site by leveraging common data models, standardized data exchange formats and shared metadata schemas</li>
+</ul>
+<p>Fed-BioMed is built on key transversal principles:</p>
+<ul>
+<li>Security by design: Raw data never leaves its original location. Access is minimized, local and secured at every layer.</li>
+<li>Governance: Data owners retain full control, defining study-specific permissions that contribute to compliance with legal and regulatory requirements.</li>
+<li>Accessible user experience: The platform provides interfaces for users with diverse backgrounds, from clinicians to data scientists.</li>
+<li>Easy deployment: Organizations can set up their federated node quickly, and operate it with minimal effort</li>
+</ul>
 <h3 id="product-backlog">Product backlog<a class="headerlink" href="#product-backlog" title="Permanent link">&para;</a></h3>
 <p>Product backlog is a <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">Scrum artifact</a>
 composed of the product goal and product backlog entries. Each product backlog entry can contain a functional requirement, a user story, a task, etc.</p>
-<p>The current product goal content is:</p>
-<ol>
-<li><strong>priority 1</strong> : translating Collaborative Learning to real world healthcare applications</li>
-<li><strong>priority 2</strong> : as an open source software initiative, developing of the community, welcoming other contributions</li>
-<li><strong>priority 3</strong> : supporting initiatives that use Fed-BioMed</li>
-<li><strong>priority 4</strong> : experimenting new research and technologies</li>
-</ol>
 <p>Product backlog entries are:</p>
 <ul>
 <li>all milestones except those with a <em>[PoC]</em> mark starting their title</li>
 <li>issues with a <em>product backlog</em> label</li>
 </ul>
-<p>Product backlog is modified <strong>by the product owner only or with explicit validation of the product owner</strong>.</p>
+<p>Product backlog is modified <strong>by the product owner or with explicit validation of the product owner</strong>.</p>
 <p>Modifications of the product backlog include:</p>
 <ul>
 <li>adding new entries (issues/milestones) to the <em>product backlog</em></li>
@@ -6693,9 +6726,6 @@ We sort labels in several categories:</p>
 
 
 
-
-  
-  
 
 
 

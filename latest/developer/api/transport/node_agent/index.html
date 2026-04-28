@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">NodeAgent</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Transport > NodeAgent</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6290,7 +6288,7 @@ same event loop for async operations</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="330 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="331 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="332 "></span>    <span class="n">loop</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">AbstractEventLoop</span><span class="p">,</span>
@@ -6379,7 +6377,7 @@ same event loop for async operations</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="390 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">NodeAgent</span><span class="p">]:</span>
 <span class="linenos" data-linenos="391 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets node agent by given node id</span>
 <span class="linenos" data-linenos="392 "></span>
@@ -6438,7 +6436,7 @@ same event loop for async operations</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="377 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_all</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">NodeAgent</span><span class="p">]:</span>
 <span class="linenos" data-linenos="378 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns all node agents regardless of their status (ACTIVE, DISCONNECTED, ...).</span>
 <span class="linenos" data-linenos="379 "></span>
@@ -6516,7 +6514,7 @@ registers a new agent.</p>
 </details>
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="351 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">retrieve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NodeAgent</span><span class="p">:</span>
 <span class="linenos" data-linenos="352 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves a node agent for a given node ID.</span>
 <span class="linenos" data-linenos="353 "></span>
@@ -6763,7 +6761,7 @@ the previous one is completed.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="36 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="37 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="38 "></span>    <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6924,7 +6922,7 @@ the previous one is completed.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="307 "></span><span class="k">def</span><span class="w"> </span><span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">stopped</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="308 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Flush processed replies</span>
 <span class="linenos" data-linenos="309 "></span>
@@ -6987,7 +6985,7 @@ the previous one is completed.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="316 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">on_reply</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="317 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Send message to researcher.</span>
 <span class="linenos" data-linenos="318 "></span>
@@ -7100,7 +7098,7 @@ the previous one is completed.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="36 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="37 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="38 "></span>    <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7218,7 +7216,7 @@ the previous one is completed.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="265 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">change_node_status_after_task</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="266 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Coroutine to execute each time RPC call is completed&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="267 "></span>    <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_status_lock</span><span class="p">:</span>
@@ -7302,7 +7300,7 @@ the previous one is completed.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 89 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">stopped</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 90 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Flushes processed reply</span>
 <span class="linenos" data-linenos=" 91 "></span>
@@ -7377,7 +7375,7 @@ the time of first sending attempt in seconds since epoch</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="113 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_task</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">Message</span><span class="p">]:</span>
 <span class="linenos" data-linenos="114 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get tasks assigned by the main thread</span>
 <span class="linenos" data-linenos="115 "></span>
@@ -7416,7 +7414,7 @@ the time of first sending attempt in seconds since epoch</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="125 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_reply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="126 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Callback to execute each time new reply received from the node&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="127 "></span>    <span class="n">message</span> <span class="o">=</span> <span class="n">Message</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
@@ -7578,7 +7576,7 @@ the time of first sending attempt in seconds since epoch</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="181 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send_async</span><span class="p">(</span>
 <span class="linenos" data-linenos="182 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="183 "></span>    <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span>
@@ -7670,7 +7668,7 @@ the time of first sending attempt in seconds since epoch</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="246 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">set_active</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="247 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Updates node status as active&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="248 "></span>
@@ -7735,7 +7733,7 @@ the time of first sending attempt in seconds since epoch</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="70 "></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">status_async</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NodeActiveStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="71 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Getter for node status.</span>
 <span class="linenos" data-linenos="72 "></span>
@@ -7768,7 +7766,7 @@ the time of first sending attempt in seconds since epoch</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/transport/node_agent.py</code></summary>
+              <summary>Source code in <code>fedbiomed/transport/node_agent.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="261 "></span><span class="k">def</span><span class="w"> </span><span class="nf">task_done</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="262 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Acknowledge completion of a de-queued task&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="263 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_queue</span><span class="o">.</span><span class="n">task_done</span><span class="p">()</span>
@@ -7829,9 +7827,6 @@ the time of first sending attempt in seconds since epoch</p>
 
 
 
-
-  
-  
 
 
 

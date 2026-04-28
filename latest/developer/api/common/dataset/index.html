@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Dataset</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Dataset</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6928,7 +6926,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_mappings.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_mappings.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="52 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="53 "></span><span class="k">def</span><span class="w"> </span><span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
 <span class="linenos" data-linenos="54 "></span>    <span class="n">field_names</span> <span class="o">=</span> <span class="p">{</span><span class="n">f</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fields</span><span class="p">(</span><span class="bp">cls</span><span class="p">)}</span>
@@ -6957,7 +6955,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_mappings.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_mappings.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="49 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert entry to dictionary - removes None values&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="50 "></span>    <span class="k">return</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">asdict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">}</span>
@@ -7034,7 +7032,7 @@ for use in federated learning scenarios.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_custom_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_custom_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="155 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="156 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves a sample and its target by index.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="157 "></span>    <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_item</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
@@ -7070,7 +7068,7 @@ for use in federated learning scenarios.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_custom_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_custom_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="21 "></span><span class="k">def</span><span class="w"> </span><span class="nf">__init_subclass__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="linenos" data-linenos="22 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Prevents subclasses from overriding reserved methods and enforces required ones.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="23 "></span>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__init_subclass__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -7129,7 +7127,7 @@ for use in federated learning scenarios.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_custom_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_custom_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="71 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="72 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="73 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the number of samples in the dataset.&quot;&quot;&quot;</span>
@@ -7204,7 +7202,7 @@ for use in federated learning scenarios.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_custom_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_custom_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 76 "></span><span class="k">def</span><span class="w"> </span><span class="nf">complete_initialization</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 77 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">controller_kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">to_format</span><span class="p">:</span> <span class="n">DataReturnFormat</span>
 <span class="linenos" data-linenos=" 78 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -7312,7 +7310,7 @@ for use in federated learning scenarios.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_custom_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_custom_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="62 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="63 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
 <span class="linenos" data-linenos="64 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return a (data, target) tuple for the given index.</span>
@@ -7350,7 +7348,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_custom_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_custom_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="53 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="54 "></span><span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="55 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Reads the dataset from the specified path.</span>
@@ -7499,7 +7497,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="57 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">DatasetDataItem</span><span class="p">,</span> <span class="n">DatasetDataItem</span><span class="p">]:</span>
 <span class="linenos" data-linenos="59 "></span>    <span class="k">pass</span>
@@ -7526,7 +7524,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="372 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="373 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Iterator to properly control iteration over dataset items.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="374 "></span>    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)):</span>
@@ -7552,7 +7550,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="364 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="365 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controller</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="366 "></span>        <span class="k">raise</span> <span class="n">FedbiomedError</span><span class="p">(</span>
@@ -7637,7 +7635,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="284 "></span><span class="k">def</span><span class="w"> </span><span class="nf">apply_transforms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="285 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Apply transforms to sample in place</span>
 <span class="linenos" data-linenos="286 "></span>
@@ -7716,7 +7714,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="47 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="nf">complete_initialization</span><span class="p">(</span>
 <span class="linenos" data-linenos="49 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -7858,7 +7856,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="336 "></span><span class="k">def</span><span class="w"> </span><span class="nf">compute_stats</span><span class="p">(</span>
 <span class="linenos" data-linenos="337 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="338 "></span>    <span class="n">dataset_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -7926,7 +7924,7 @@ from the given path and prepare it for use.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_image_label_dataset.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset/_image_label_dataset.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="39 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="40 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="41 "></span>    <span class="n">transform</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -7989,7 +7987,7 @@ from the given path and prepare it for use.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_image_label_dataset.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset/_image_label_dataset.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="39 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="40 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="41 "></span>    <span class="n">transform</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -8156,7 +8154,7 @@ from the given path and prepare it for use.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="41 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="42 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="43 "></span>    <span class="n">data_modalities</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
@@ -8313,7 +8311,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="305 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">DatasetDataItem</span><span class="p">,</span> <span class="n">DatasetDataItem</span><span class="p">]:</span>
 <span class="linenos" data-linenos="306 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get a sample from the dataset with proper preprocessing and transforms&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="307 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controller</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -8366,7 +8364,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="335 "></span><span class="k">def</span><span class="w"> </span><span class="nf">analytics_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="336 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return schema associated with federated analytics.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="337 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controller</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -8459,7 +8457,7 @@ from the given path and prepare it for use.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_medical_folder_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="220 "></span><span class="k">def</span><span class="w"> </span><span class="nf">complete_initialization</span><span class="p">(</span>
 <span class="linenos" data-linenos="221 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="222 "></span>    <span class="n">controller_kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -8651,7 +8649,7 @@ from the given path and prepare it for use.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_image_label_dataset.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset/_image_label_dataset.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="39 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="40 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="41 "></span>    <span class="n">transform</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -8767,7 +8765,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_native_dataset.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset/_native_dataset.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="33 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="34 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize with basic checks, without loading data to memory.</span>
 <span class="linenos" data-linenos="35 "></span>
@@ -8876,7 +8874,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_native_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_native_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="120 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">DatasetDataItem</span><span class="p">,</span> <span class="n">DatasetDataItem</span><span class="p">]:</span>
 <span class="linenos" data-linenos="121 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch one item and convert to requested framework format.</span>
 <span class="linenos" data-linenos="122 "></span>
@@ -8974,7 +8972,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_native_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_native_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="172 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="173 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the length of the dataset.</span>
 <span class="linenos" data-linenos="174 "></span>
@@ -9053,7 +9051,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_native_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_native_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 77 "></span><span class="k">def</span><span class="w"> </span><span class="nf">complete_initialization</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 78 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 79 "></span>    <span class="n">controller_kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -9218,7 +9216,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="27 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="28 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="29 "></span>    <span class="n">input_columns</span><span class="p">:</span> <span class="n">Iterable</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span>
@@ -9356,7 +9354,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="120 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span>
 <span class="linenos" data-linenos="121 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span>
 <span class="linenos" data-linenos="122 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span>
@@ -9410,7 +9408,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="151 "></span><span class="k">def</span><span class="w"> </span><span class="nf">analytics_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="152 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return schema for federated analytics&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="153 "></span>    <span class="k">return</span> <span class="n">RowSpec</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_input_columns</span><span class="p">),</span> <span class="kc">None</span>
@@ -9484,7 +9482,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_tabular_dataset.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 55 "></span><span class="k">def</span><span class="w"> </span><span class="nf">complete_initialization</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 56 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 57 "></span>    <span class="n">controller_kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -9565,7 +9563,7 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/dataset/_mappings.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/dataset/_mappings.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="103 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_controller</span><span class="p">(</span>
 <span class="linenos" data-linenos="104 "></span>    <span class="n">data_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <span class="linenos" data-linenos="105 "></span>    <span class="n">controller_parameters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span>
@@ -9616,9 +9614,6 @@ scikit-learn, allowing them to be used seamlessly in a customized TrainingPlan f
 
 
 
-
-  
-  
 
 
 

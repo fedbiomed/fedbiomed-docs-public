@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Secagg</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Secagg</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6864,7 +6862,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="14 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">secret</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="15 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="16 "></span><span class="sd">    Initializes the AdditiveSecret class with the provided additive secret value.</span>
@@ -7055,7 +7053,7 @@ The sum of the shares will equal the original secret.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="40 "></span><span class="k">def</span><span class="w"> </span><span class="nf">split</span><span class="p">(</span>
 <span class="linenos" data-linenos="41 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">num_shares</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">bit_length</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="42 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;AdditiveShares&quot;</span><span class="p">:</span>
@@ -7185,7 +7183,7 @@ or a list of integers.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="104 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="105 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="106 "></span><span class="sd">    Initializes the AdditiveShare class with a given value, representing an</span>
@@ -7364,7 +7362,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="125 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;AdditiveShare&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;AdditiveShare&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="126 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="127 "></span><span class="sd">    Adds two shares together. Supports both integer and list types.</span>
@@ -7417,7 +7415,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="155 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__radd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="s2">&quot;AdditiveShare&quot;</span><span class="p">]):</span>
 <span class="linenos" data-linenos="156 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Specific for sum() function&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="157 "></span>    <span class="k">if</span> <span class="n">other</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -7445,7 +7443,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="162 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="163 "></span>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;AdditiveShare(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">)&quot;</span>
 </code></pre></div>
@@ -7546,7 +7544,7 @@ type (both int or both list).</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="179 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">shares</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">AdditiveShare</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="180 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="181 "></span><span class="sd">    Initializes the AdditiveShares class with a list of Share objects.</span>
@@ -7671,7 +7669,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="194 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;AdditiveShares&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;AdditiveShares&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="195 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="196 "></span><span class="sd">    Adds two AdditiveShares objects together.</span>
@@ -7736,7 +7734,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="236 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__radd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="s2">&quot;AdditiveShares&quot;</span><span class="p">]):</span>
 <span class="linenos" data-linenos="237 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Specific for sum() function&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="238 "></span>    <span class="k">if</span> <span class="n">other</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -7789,7 +7787,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="252 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reconstruct</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
 <span class="linenos" data-linenos="253 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="254 "></span><span class="sd">    Reconstructs the secret from the shares.</span>
@@ -7852,7 +7850,7 @@ type (both int or both list).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_additive_ss.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_additive_ss.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="243 "></span><span class="k">def</span><span class="w"> </span><span class="nf">to_list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]]:</span>
 <span class="linenos" data-linenos="244 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="245 "></span><span class="sd">    Gets the values of the shares.</span>
@@ -7996,7 +7994,7 @@ to export the private and public keys in PEM format as bytes.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_dh.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_dh.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="27 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="28 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">private_key_pem</span><span class="p">:</span> <span class="nb">bytes</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">public_key_pem</span><span class="p">:</span> <span class="nb">bytes</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="29 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -8130,7 +8128,7 @@ is not loaded.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_dh.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_dh.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="61 "></span><span class="k">def</span><span class="w"> </span><span class="nf">export_private_key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="62 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="63 "></span><span class="sd">    Exports the private key to PEM format.</span>
@@ -8192,7 +8190,7 @@ is not loaded.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_dh.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_dh.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="78 "></span><span class="k">def</span><span class="w"> </span><span class="nf">export_public_key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="79 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="80 "></span><span class="sd">    Exports the public key to PEM format.</span>
@@ -8333,7 +8331,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_dh.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_dh.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="117 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_u_id</span><span class="p">,</span> <span class="n">node_u_dh_key</span><span class="p">:</span> <span class="n">DHKey</span><span class="p">,</span> <span class="n">session_salt</span><span class="p">):</span>
 <span class="linenos" data-linenos="118 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="119 "></span><span class="sd">    Initializes the DHKeyAgreement instance.</span>
@@ -8468,7 +8466,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_dh.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_dh.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="154 "></span><span class="k">def</span><span class="w"> </span><span class="nf">agree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_v_id</span><span class="p">,</span> <span class="n">public_key_pem</span><span class="p">):</span>
 <span class="linenos" data-linenos="155 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="156 "></span><span class="sd">    Performs the key agreement and derives the shared secret.</span>
@@ -8615,7 +8613,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="297 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param</span><span class="p">:</span> <span class="n">PublicParam</span><span class="p">,</span> <span class="n">ciphertext</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="linenos" data-linenos="298 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="299 "></span>
@@ -8757,7 +8755,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="308 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;EncryptedNumber&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;EncryptedNumber&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="309 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds given value to self</span>
 <span class="linenos" data-linenos="310 "></span>
@@ -8796,7 +8794,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="326 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__iadd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
 <span class="linenos" data-linenos="327 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__add__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
 </code></pre></div>
@@ -8876,7 +8874,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="329 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__radd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="s2">&quot;EncryptedNumber&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="s2">&quot;EncryptedNumber&quot;</span><span class="p">:</span>
 <span class="linenos" data-linenos="330 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows summing parameters using built-in `sum` method</span>
 <span class="linenos" data-linenos="331 "></span>
@@ -8936,7 +8934,7 @@ the private key, performs the key exchange, and derives the shared secret using 
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="343 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="344 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Encrypted number representation</span>
 <span class="linenos" data-linenos="345 "></span>
@@ -9015,7 +9013,7 @@ equal or less than 2**32</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="574 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="575 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructs the class</span>
 <span class="linenos" data-linenos="576 "></span>
@@ -9192,7 +9190,7 @@ as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="640 "></span><span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span>
 <span class="linenos" data-linenos="641 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="642 "></span>    <span class="n">sk_0</span><span class="p">:</span> <span class="n">ServerKey</span><span class="p">,</span>
@@ -9426,7 +9424,7 @@ using secret key <span class="arithmatex">\(sk_u \in \mathbb{Z}_N^2\)</span> . I
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_jls.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_jls.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="587 "></span><span class="k">def</span><span class="w"> </span><span class="nf">protect</span><span class="p">(</span>
 <span class="linenos" data-linenos="588 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="589 "></span>    <span class="n">public_param</span><span class="p">:</span> <span class="n">PublicParam</span><span class="p">,</span>
@@ -9555,7 +9553,7 @@ using secret key <span class="arithmatex">\(sk_u \in \mathbb{Z}_N^2\)</span> . I
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_lom.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_lom.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 95 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nonce</span><span class="p">:</span> <span class="nb">bytes</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 96 "></span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">nonce</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 97 "></span>        <span class="n">nonce</span> <span class="o">=</span> <span class="n">secrets</span><span class="o">.</span><span class="n">token_bytes</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
@@ -9652,7 +9650,7 @@ using secret key <span class="arithmatex">\(sk_u \in \mathbb{Z}_N^2\)</span> . I
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_lom.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_lom.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="173 "></span><span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list_y_u_tau</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="linenos" data-linenos="174 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="175 "></span><span class="sd">    Aggregates multiple vectors into a single vector.</span>
@@ -9836,7 +9834,7 @@ can lead to computation overflow.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_lom.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_lom.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="105 "></span><span class="k">def</span><span class="w"> </span><span class="nf">protect</span><span class="p">(</span>
 <span class="linenos" data-linenos="106 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="107 "></span>    <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -9969,7 +9967,7 @@ can lead to computation overflow.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_lom.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_lom.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="26 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nonce</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="27 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_nonce</span> <span class="o">=</span> <span class="n">nonce</span>
 </code></pre></div>
@@ -10075,7 +10073,7 @@ can lead to computation overflow.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_lom.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_lom.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="30 "></span><span class="k">def</span><span class="w"> </span><span class="nf">eval_key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pairwise_secret</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">,</span> <span class="n">tau</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span><span class="p">:</span>
 <span class="linenos" data-linenos="31 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="32 "></span><span class="sd">    Evaluates a pseudorandom key for a given round.</span>
@@ -10212,7 +10210,7 @@ can lead to computation overflow.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_lom.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_lom.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="nf">eval_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">,</span> <span class="n">tau</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">input_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span><span class="p">:</span>
 <span class="linenos" data-linenos="59 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="60 "></span><span class="sd">    Evaluates a pseudorandom vector based on the seed.</span>
@@ -10285,7 +10283,7 @@ by converting it proper format for the framework.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="28 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="29 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructs ParameterEncrypter&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="30 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_jls</span> <span class="o">=</span> <span class="n">JoyeLibert</span><span class="p">()</span>
@@ -10500,7 +10498,7 @@ same clipping range used for quantization</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="137 "></span><span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span>
 <span class="linenos" data-linenos="138 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="139 "></span>    <span class="n">current_round</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
@@ -10793,7 +10791,7 @@ must grater than minimum model parameters</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 49 "></span><span class="k">def</span><span class="w"> </span><span class="nf">encrypt</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 50 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 51 "></span>    <span class="n">num_nodes</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
@@ -10957,7 +10955,7 @@ the LOM computation. Can be disclosed (public). Must not be reused.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="292 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nonce</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="293 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;LOM Secure aggregation to encrypt and aggregate</span>
 <span class="linenos" data-linenos="294 "></span>
@@ -11103,7 +11101,7 @@ same clipping range used for quantization</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="379 "></span><span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span>
 <span class="linenos" data-linenos="380 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="381 "></span>    <span class="n">params</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span>
@@ -11370,7 +11368,7 @@ must grater than minimum model parameters</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/secagg/_secagg_crypter.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="307 "></span><span class="k">def</span><span class="w"> </span><span class="nf">encrypt</span><span class="p">(</span>
 <span class="linenos" data-linenos="308 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="309 "></span>    <span class="n">current_round</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
@@ -11470,9 +11468,6 @@ must grater than minimum model parameters</p>
 
 
 
-
-  
-  
 
 
 

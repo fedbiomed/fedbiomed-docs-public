@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">TrainingPlanSecurityManager</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Node > TrainingPlanSecurityManager</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6157,7 +6155,7 @@ the database.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="50 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="51 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="52 "></span>    <span class="n">db</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6296,7 +6294,7 @@ the database.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="958 "></span><span class="k">def</span><span class="w"> </span><span class="nf">approve_training_plan</span><span class="p">(</span>
 <span class="linenos" data-linenos="959 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">extra_notes</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="960 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
@@ -6361,7 +6359,7 @@ algorithm in the config file.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="300 "></span><span class="k">def</span><span class="w"> </span><span class="nf">check_hashes_for_registered_training_plans</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="301 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks registered training plans (training plans either rejected or approved).</span>
 <span class="linenos" data-linenos="302 "></span>
@@ -6557,7 +6555,7 @@ any training plan status or type.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="358 "></span><span class="k">def</span><span class="w"> </span><span class="nf">check_training_plan_status</span><span class="p">(</span>
 <span class="linenos" data-linenos="359 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="360 "></span>    <span class="n">training_plan_source</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -6753,7 +6751,7 @@ Default training plans should be removed from the directory</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 992 "></span><span class="k">def</span><span class="w"> </span><span class="nf">delete_training_plan</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 993 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Removes training plan file from database.</span>
 <span class="linenos" data-linenos=" 994 "></span>
@@ -6960,7 +6958,7 @@ library source code but it is used for Fed-BioMed GUI.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="476 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_training_plan_by_id</span><span class="p">(</span>
 <span class="linenos" data-linenos="477 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">secure</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos" data-linenos="478 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
@@ -7103,7 +7101,7 @@ library source code but it is used for Fed-BioMed GUI.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="430 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_training_plan_by_name</span><span class="p">(</span>
 <span class="linenos" data-linenos="431 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_name</span><span class="p">:</span> <span class="nb">str</span>
 <span class="linenos" data-linenos="432 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
@@ -7246,7 +7244,7 @@ library source code but it is used for Fed-BioMed GUI.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="450 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_training_plan_from_database</span><span class="p">(</span>
 <span class="linenos" data-linenos="451 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_plan</span><span class="p">:</span> <span class="nb">str</span>
 <span class="linenos" data-linenos="452 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
@@ -7436,7 +7434,7 @@ containing fields (note that following fields are removed :'training_plan',
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1045 "></span><span class="k">def</span><span class="w"> </span><span class="nf">list_training_plans</span><span class="p">(</span>
 <span class="linenos" data-linenos="1046 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="1047 "></span>    <span class="n">sort_by</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -7735,7 +7733,7 @@ creates unique id for the training plan.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="218 "></span><span class="k">def</span><span class="w"> </span><span class="nf">register_training_plan</span><span class="p">(</span>
 <span class="linenos" data-linenos="219 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="220 "></span>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -7870,7 +7868,7 @@ conditions:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="686 "></span><span class="k">def</span><span class="w"> </span><span class="nf">register_update_default_training_plans</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="687 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Registers or updates default training plans.</span>
 <span class="linenos" data-linenos="688 "></span>
@@ -8108,7 +8106,7 @@ conditions:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="975 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reject_training_plan</span><span class="p">(</span>
 <span class="linenos" data-linenos="976 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">extra_notes</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="977 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
@@ -8184,7 +8182,7 @@ conditions:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="509 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reply_training_plan_approval_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">ApprovalRequest</span><span class="p">):</span>
 <span class="linenos" data-linenos="510 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Submits a training plan file (TrainingPlan) for approval. Needs an action from Node</span>
 <span class="linenos" data-linenos="511 "></span>
@@ -8354,7 +8352,7 @@ Formatted as TrainingPlanStatusRequest</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="617 "></span><span class="k">def</span><span class="w"> </span><span class="nf">reply_training_plan_status_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">TrainingPlanStatusRequest</span><span class="p">):</span>
 <span class="linenos" data-linenos="618 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns requested training plan file status {approved, rejected, pending}</span>
 <span class="linenos" data-linenos="619 "></span><span class="sd">    and sends TrainingPlanStatusReply to researcher.</span>
@@ -8552,7 +8550,7 @@ The new training plan file for the training plan is specified from <code>path</c
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/node/training_plan_security_manager.py</code></summary>
+              <summary>Source code in <code>fedbiomed/node/training_plan_security_manager.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="831 "></span><span class="k">def</span><span class="w"> </span><span class="nf">update_training_plan_hash</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="832 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Updates an existing training plan entry in training plan database.</span>
 <span class="linenos" data-linenos="833 "></span>
@@ -8654,9 +8652,6 @@ The new training plan file for the training plan is specified from <code>path</c
 
 
 
-
-  
-  
 
 
 

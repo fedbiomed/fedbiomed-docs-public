@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Requests</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Requests</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -7184,7 +7182,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="59 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Implements timeout attributes</span>
 <span class="linenos" data-linenos="60 "></span>
@@ -7251,7 +7249,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="106 "></span><span class="k">def</span><span class="w"> </span><span class="nf">continue_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="107 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Discards requests that reach timeout, always continue</span>
 <span class="linenos" data-linenos="108 "></span>
@@ -7367,7 +7365,7 @@ indexed by the node ID</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="173 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="174 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="175 "></span>    <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Message</span><span class="p">,</span> <span class="n">MessagesByNode</span><span class="p">],</span>
@@ -7525,7 +7523,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="238 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="239 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Context manager entry method</span>
 <span class="linenos" data-linenos="240 "></span>
@@ -7623,7 +7621,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="253 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">traceback</span><span class="p">):</span>
 <span class="linenos" data-linenos="254 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Context manager exit method</span>
 <span class="linenos" data-linenos="255 "></span>
@@ -7690,7 +7688,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="300 "></span><span class="k">def</span><span class="w"> </span><span class="nf">disconnected_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">]:</span>
 <span class="linenos" data-linenos="301 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the requests to disconnected nodes</span>
 <span class="linenos" data-linenos="302 "></span>
@@ -7749,7 +7747,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="287 "></span><span class="k">def</span><span class="w"> </span><span class="nf">errors</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">ErrorMessage</span><span class="p">]:</span>
 <span class="linenos" data-linenos="288 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns errors of each request</span>
 <span class="linenos" data-linenos="289 "></span>
@@ -7808,7 +7806,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="274 "></span><span class="k">def</span><span class="w"> </span><span class="nf">replies</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Message</span><span class="p">]:</span>
 <span class="linenos" data-linenos="275 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns replies of each request</span>
 <span class="linenos" data-linenos="276 "></span>
@@ -7844,7 +7842,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="308 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="309 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sends federated request&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="310 "></span>    <span class="k">for</span> <span class="n">req</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_requests</span><span class="p">:</span>
@@ -7872,7 +7870,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="313 "></span><span class="k">def</span><span class="w"> </span><span class="nf">wait</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="314 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Waits for the replies of the messages that are sent&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="315 "></span>    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
@@ -7954,7 +7952,7 @@ indexed by the node ID</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="171 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="172 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="173 "></span>    <span class="n">policies</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">RequestPolicy</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -8050,7 +8048,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="179 "></span><span class="k">def</span><span class="w"> </span><span class="nf">continue_all</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="180 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if all policies indicate to continue.</span>
 <span class="linenos" data-linenos="181 "></span>
@@ -8130,7 +8128,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="213 "></span><span class="k">def</span><span class="w"> </span><span class="nf">has_stopped_any</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="214 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if any of the policies indicates to stop</span>
 <span class="linenos" data-linenos="215 "></span>
@@ -8197,7 +8195,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="234 "></span><span class="k">def</span><span class="w"> </span><span class="nf">report</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="235 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Reports strategy stop status</span>
 <span class="linenos" data-linenos="236 "></span>
@@ -8449,7 +8447,7 @@ check against policies</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="51 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="52 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="53 "></span>    <span class="n">message</span><span class="p">:</span> <span class="n">RequestReply</span><span class="p">,</span>
@@ -8630,7 +8628,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="119 "></span><span class="k">def</span><span class="w"> </span><span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stopped</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="120 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Flushes the reply that has been processed</span>
 <span class="linenos" data-linenos="121 "></span>
@@ -8674,7 +8672,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 83 "></span><span class="k">def</span><span class="w"> </span><span class="nf">has_finished</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos=" 84 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Queries if the request has finished.</span>
 <span class="linenos" data-linenos=" 85 "></span>
@@ -8747,7 +8745,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="139 "></span><span class="k">def</span><span class="w"> </span><span class="nf">on_reply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reply</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="140 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Callback for node agent to execute once it replies.</span>
 <span class="linenos" data-linenos="141 "></span>
@@ -8796,7 +8794,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="102 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="103 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sends the request&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="104 "></span>
@@ -8853,7 +8851,7 @@ check against policies</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="20 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="21 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PolicyStatus</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="22 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_nodes</span> <span class="o">=</span> <span class="n">nodes</span>
@@ -8935,7 +8933,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="k">def</span><span class="w"> </span><span class="nf">completed</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="49 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Updates status of strategy as completed without any issue&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="50 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">PolicyStatus</span><span class="o">.</span><span class="n">COMPLETED</span>
@@ -8987,7 +8985,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="25 "></span><span class="k">def</span><span class="w"> </span><span class="nf">continue_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="26 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Default strategy stops collecting result once all nodes has answered</span>
 <span class="linenos" data-linenos="27 "></span>
@@ -9020,7 +9018,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="42 "></span><span class="k">def</span><span class="w"> </span><span class="nf">keep</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="43 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Keeps continue collecting replies from nodes&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="44 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">PolicyStatus</span><span class="o">.</span><span class="n">CONTINUE</span>
@@ -9049,7 +9047,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="35 "></span><span class="k">def</span><span class="w"> </span><span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="36 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Stop sign for strategy&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="37 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">PolicyStatus</span><span class="o">.</span><span class="n">STOPPED</span>
@@ -9290,7 +9288,7 @@ check against policies</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="332 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="333 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="334 "></span>    <span class="n">config</span><span class="p">:</span> <span class="n">ResearcherConfig</span><span class="p">,</span>
@@ -9403,7 +9401,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="623 "></span><span class="k">def</span><span class="w"> </span><span class="nf">add_monitor_callback</span><span class="p">(</span>
 <span class="linenos" data-linenos="624 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">callback</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Dict</span><span class="p">],</span> <span class="kc">None</span><span class="p">]</span>
 <span class="linenos" data-linenos="625 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -9507,7 +9505,7 @@ check against policies</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="506 "></span><span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="507 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Lists available data in each node</span>
 <span class="linenos" data-linenos="508 "></span>
@@ -9618,7 +9616,7 @@ monitor), not for node replies to requests.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="370 "></span><span class="k">def</span><span class="w"> </span><span class="nf">on_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">type_</span><span class="p">:</span> <span class="n">MessageType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="371 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Handles arbitrary messages received from the remote agents</span>
 <span class="linenos" data-linenos="372 "></span>
@@ -9687,7 +9685,7 @@ monitor), not for node replies to requests.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="423 "></span><span class="k">def</span><span class="w"> </span><span class="nf">ping_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="linenos" data-linenos="424 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Pings online nodes</span>
 <span class="linenos" data-linenos="425 "></span>
@@ -9762,7 +9760,7 @@ monitor), not for node replies to requests.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="393 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="394 "></span><span class="k">def</span><span class="w"> </span><span class="nf">print_node_log_message</span><span class="p">(</span><span class="n">log</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="395 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Prints logger messages coming from the node</span>
@@ -9846,7 +9844,7 @@ monitor), not for node replies to requests.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="634 "></span><span class="k">def</span><span class="w"> </span><span class="nf">remove_monitor_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="635 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Removes callback function for Monitor class.</span>
 <span class="linenos" data-linenos="636 "></span>
@@ -9948,7 +9946,7 @@ monitor), not for node replies to requests.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="466 "></span><span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tags</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="467 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Searches available data by tags</span>
 <span class="linenos" data-linenos="468 "></span>
@@ -10097,7 +10095,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="437 "></span><span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span>
 <span class="linenos" data-linenos="438 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="439 "></span>    <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Message</span><span class="p">,</span> <span class="n">MessagesByNode</span><span class="p">],</span>
@@ -10149,7 +10147,7 @@ indexed by the node ID</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="365 "></span><span class="k">def</span><span class="w"> </span><span class="nf">start_messaging</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="366 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Start communications endpoint&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="367 "></span>    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Starting researcher messaging GRPC Server endpoint&quot;</span><span class="p">)</span>
@@ -10296,7 +10294,7 @@ If the node id(s) list is None (default), the message is broadcast to all nodes.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_requests.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_requests.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="545 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_plan_approve</span><span class="p">(</span>
 <span class="linenos" data-linenos="546 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="547 "></span>    <span class="n">training_plan</span><span class="p">:</span> <span class="n">BaseTrainingPlan</span><span class="p">,</span>
@@ -10416,7 +10414,7 @@ If the node id(s) list is None (default), the message is broadcast to all nodes.
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="59 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Implements timeout attributes</span>
 <span class="linenos" data-linenos="60 "></span>
@@ -10484,7 +10482,7 @@ and timeout is reached</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="131 "></span><span class="k">def</span><span class="w"> </span><span class="nf">continue_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="132 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Continues federated request if nodes are not disconnect</span>
 <span class="linenos" data-linenos="133 "></span>
@@ -10544,7 +10542,7 @@ and timeout is reached</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="20 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="linenos" data-linenos="21 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PolicyStatus</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="linenos" data-linenos="22 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_nodes</span> <span class="o">=</span> <span class="n">nodes</span>
@@ -10605,7 +10603,7 @@ and timeout is reached</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="153 "></span><span class="k">def</span><span class="w"> </span><span class="nf">continue_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="154 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Continues federated request if nodes does not return error</span>
 <span class="linenos" data-linenos="155 "></span>
@@ -10663,7 +10661,7 @@ and timeout is reached</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="59 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Implements timeout attributes</span>
 <span class="linenos" data-linenos="60 "></span>
@@ -10731,7 +10729,7 @@ and timeout is reached</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/requests/_policies.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/requests/_policies.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="118 "></span><span class="k">def</span><span class="w"> </span><span class="nf">continue_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Request</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">PolicyStatus</span><span class="p">:</span>
 <span class="linenos" data-linenos="119 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Continues federated request if nodes dont reach timeout</span>
 <span class="linenos" data-linenos="120 "></span>
@@ -10768,9 +10766,6 @@ and timeout is reached</p>
 
 
 
-
-  
-  
 
 
 

@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Federated Workflows</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Researcher > Federated Workflows</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -7943,7 +7941,7 @@ last round's replies and aggregated params will be available. Defaults to True.<
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 76 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos=" 77 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 78 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -8084,7 +8082,7 @@ last round's replies and aggregated params will be available. Defaults to True.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="162 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="163 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="164 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Handles destruction of the Monitor when Experiment is destroyed.&quot;&quot;&quot;</span>
@@ -8150,7 +8148,7 @@ last round's replies and aggregated params will be available. Defaults to True.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="183 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="184 "></span><span class="k">def</span><span class="w"> </span><span class="nf">agg_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Optimizer</span><span class="p">]:</span>
 <span class="linenos" data-linenos="185 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the optional Optimizer used to refine aggregated model updates.</span>
@@ -8209,7 +8207,7 @@ last round's replies and aggregated params will be available. Defaults to True.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="313 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="314 "></span><span class="k">def</span><span class="w"> </span><span class="nf">aggregated_params</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="315 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves all aggregated parameters of each round of training</span>
@@ -8267,7 +8265,7 @@ last round's replies and aggregated params will be available. Defaults to True.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="170 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="171 "></span><span class="k">def</span><span class="w"> </span><span class="nf">aggregator</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Aggregator</span><span class="p">:</span>
 <span class="linenos" data-linenos="172 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves aggregator class that will be used for aggregating model parameters.</span>
@@ -8312,7 +8310,7 @@ last round's replies and aggregated params will be available. Defaults to True.<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1193 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="1194 "></span><span class="k">def</span><span class="w"> </span><span class="nf">breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="1195 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -8409,7 +8407,7 @@ same dictionary format.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1616 "></span><span class="k">def</span><span class="w"> </span><span class="nf">commit_experiment_history</span><span class="p">(</span>
 <span class="linenos" data-linenos="1617 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="1618 "></span>    <span class="n">training_replies</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span>
@@ -8483,7 +8481,7 @@ same dictionary format.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="341 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="342 "></span><span class="k">def</span><span class="w"> </span><span class="nf">info</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="343 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Prints out the information about the current status of the experiment.</span>
@@ -8651,7 +8649,7 @@ content (corrupted)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1255 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="1256 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="1257 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_breakpoint</span><span class="p">(</span>
@@ -8788,7 +8786,7 @@ content (corrupted)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1591 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_training_replies</span><span class="p">(</span>
 <span class="linenos" data-linenos="1592 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">bkpt_training_replies</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]]</span>
 <span class="linenos" data-linenos="1593 "></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -8861,7 +8859,7 @@ participate to federated training. See <a class="autorefs autorefs-internal" tit
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="301 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="302 "></span><span class="k">def</span><span class="w"> </span><span class="nf">monitor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Monitor</span><span class="p">:</span>
 <span class="linenos" data-linenos="303 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the monitor object</span>
@@ -8896,7 +8894,7 @@ participate to federated training. See <a class="autorefs autorefs-internal" tit
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="335 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="336 "></span><span class="k">def</span><span class="w"> </span><span class="nf">retain_full_history</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="337 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the status of whether the full experiment history should be kept in memory.&quot;&quot;&quot;</span>
@@ -8947,7 +8945,7 @@ participate to federated training. See <a class="autorefs autorefs-internal" tit
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="222 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="223 "></span><span class="k">def</span><span class="w"> </span><span class="nf">round_current</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="224 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the round where the experiment is at.</span>
@@ -9004,7 +9002,7 @@ to change or set round limit.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="210 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="211 "></span><span class="k">def</span><span class="w"> </span><span class="nf">round_limit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="212 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the round limit from the experiment object.</span>
@@ -9150,7 +9148,7 @@ Defaults to False</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1062 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="1063 "></span><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rounds</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">increase</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="1064 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Run one or more rounds of an experiment, continuing from the point the</span>
@@ -9404,7 +9402,7 @@ params. Intended to be used after the last training round of an experiment. Defa
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="684 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="685 "></span><span class="k">def</span><span class="w"> </span><span class="nf">run_once</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">increase</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">test_after</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="686 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Run at most one round of an experiment, continuing from the point the</span>
@@ -9734,7 +9732,7 @@ params. Intended to be used after the last training round of an experiment. Defa
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1314 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="1315 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="1316 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_aggregated_params</span><span class="p">(</span>
@@ -9868,7 +9866,7 @@ params. Intended to be used after the last training round of an experiment. Defa
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1410 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="1411 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">breakpoint_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="1412 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Save the researcher-side Optimizer attached to this Experiment.</span>
@@ -9937,7 +9935,7 @@ params. Intended to be used after the last training round of an experiment. Defa
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1574 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_training_replies</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]]:</span>
 <span class="linenos" data-linenos="1575 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Extracts a copy of `training_replies` and prepares it for saving in breakpoint</span>
 <span class="linenos" data-linenos="1576 "></span>
@@ -10056,7 +10054,7 @@ If None, equivalent to using vanilla SGD with 1.0 learning rate.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="418 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="419 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_agg_optimizer</span><span class="p">(</span>
 <span class="linenos" data-linenos="420 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -10184,7 +10182,7 @@ If None, equivalent to using vanilla SGD with 1.0 learning rate.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="383 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="384 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_aggregator</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aggregator</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Aggregator</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Aggregator</span><span class="p">:</span>
 <span class="linenos" data-linenos="385 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets aggregator + verification on arguments type</span>
@@ -10297,7 +10295,7 @@ Defaults to True.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="661 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="662 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_retain_full_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">retain_full_history_</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
 <span class="linenos" data-linenos="663 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets the status of whether the full experiment history should be kept in memory.</span>
@@ -10421,7 +10419,7 @@ for the experiment. <code>None</code> means that no limit is defined.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="479 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="480 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_round_limit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">round_limit</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="481 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets `round_limit` + verification on arguments type</span>
@@ -10561,7 +10559,7 @@ how non-responding nodes are managed. Defaults to None:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="444 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="445 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_strategy</span><span class="p">(</span>
 <span class="linenos" data-linenos="446 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">node_selection_strategy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Strategy</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
@@ -10673,7 +10671,7 @@ how non-responding nodes are managed. Defaults to None:
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="639 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="640 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_tensorboard</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tensorboard</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="641 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -10813,7 +10811,7 @@ should be compatible with corresponding metrics in [<code>sklearn.metrics</code>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="574 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="575 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_test_metric</span><span class="p">(</span>
 <span class="linenos" data-linenos="576 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">MetricTypes</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="o">**</span><span class="n">metric_args</span><span class="p">:</span> <span class="nb">dict</span>
@@ -10939,7 +10937,7 @@ updates on the node side before training model locally where aggregated model pa
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="621 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="622 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_test_on_global_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">flag</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="623 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -11058,7 +11056,7 @@ node side where model parameters are updated locally after training in each node
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="599 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="600 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_test_on_local_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">flag</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="601 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -11211,7 +11209,7 @@ controlling overfitting, doing early stopping, ....</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="547 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="548 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_test_ratio</span><span class="p">(</span>
 <span class="linenos" data-linenos="549 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">ratio</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">shuffle_testing_dataset</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
@@ -11288,7 +11286,7 @@ it is not declared yet. It means that node selection strategy will be
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="196 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="197 "></span><span class="k">def</span><span class="w"> </span><span class="nf">strategy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Strategy</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="198 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the class that represents the node selection strategy.</span>
@@ -11352,7 +11350,7 @@ None, if it isn't declared yet.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="246 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="247 "></span><span class="k">def</span><span class="w"> </span><span class="nf">test_metric</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">MetricTypes</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="248 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the metric for validation routine.</span>
@@ -11415,7 +11413,7 @@ to change/set <code>test_metric</code> and get more information on the arguments
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="261 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="262 "></span><span class="k">def</span><span class="w"> </span><span class="nf">test_metric_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="linenos" data-linenos="263 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the metric argument for the metric function that is going to be used.</span>
@@ -11476,7 +11474,7 @@ parameters by the nodes at the beginning of each round.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="288 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="289 "></span><span class="k">def</span><span class="w"> </span><span class="nf">test_on_global_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="290 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the status of whether validation will be performed on globally updated (aggregated)</span>
@@ -11538,7 +11536,7 @@ the nodes at the end of each round.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="274 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="275 "></span><span class="k">def</span><span class="w"> </span><span class="nf">test_on_local_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="276 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the status of whether validation will be performed on locally updated parameters by</span>
@@ -11600,7 +11598,7 @@ the nodes at the end of each round.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="231 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="232 "></span><span class="k">def</span><span class="w"> </span><span class="nf">test_ratio</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]:</span>
 <span class="linenos" data-linenos="233 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the ratio for validation partition of entire dataset.</span>
@@ -11662,7 +11660,7 @@ the nodes at the end of each round.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_experiment.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="323 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="324 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_replies</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">dict</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="325 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves training replies of each round of training.</span>
@@ -11829,7 +11827,7 @@ arguments are served from cache without contacting nodes.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="442 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="443 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="444 "></span>    <span class="n">fds</span><span class="p">:</span> <span class="n">FederatedDataset</span><span class="p">,</span>
@@ -11914,7 +11912,7 @@ arguments are served from cache without contacting nodes.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="737 "></span><span class="k">def</span><span class="w"> </span><span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="738 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the global count across nodes.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="739 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stat</span><span class="p">(</span><span class="n">Stats</span><span class="o">.</span><span class="n">COUNT</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">)</span>
@@ -12012,7 +12010,7 @@ Defaults to <code>["count", "mean", "variance"]</code>.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="597 "></span><span class="k">def</span><span class="w"> </span><span class="nf">fetch_stats</span><span class="p">(</span>
 <span class="linenos" data-linenos="598 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="599 "></span>    <span class="n">stats</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -12204,7 +12202,7 @@ or <code>{"col": {"quantile": {"q": 0.5}}}</code>).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="681 "></span><span class="k">def</span><span class="w"> </span><span class="nf">fetch_stats_with_args</span><span class="p">(</span>
 <span class="linenos" data-linenos="682 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos="683 "></span>    <span class="n">stats_args</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span>
@@ -12270,7 +12268,7 @@ or <code>{"col": {"quantile": {"q": 0.5}}}</code>).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="475 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_node_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="476 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the node IDs participating in this federated analytics session.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="477 "></span>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fds</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -12399,7 +12397,7 @@ or <code>{"col": {"quantile": {"q": 0.5}}}</code>).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="517 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="518 "></span><span class="k">def</span><span class="w"> </span><span class="nf">make_cache_key</span><span class="p">(</span>
 <span class="linenos" data-linenos="519 "></span>    <span class="n">node_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
@@ -12448,7 +12446,7 @@ or <code>{"col": {"quantile": {"q": 0.5}}}</code>).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="741 "></span><span class="k">def</span><span class="w"> </span><span class="nf">mean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="742 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the global mean across nodes.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="743 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stat</span><span class="p">(</span><span class="n">Stats</span><span class="o">.</span><span class="n">MEAN</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">)</span>
@@ -12475,7 +12473,7 @@ or <code>{"col": {"quantile": {"q": 0.5}}}</code>).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="749 "></span><span class="k">def</span><span class="w"> </span><span class="nf">std</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="750 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the global standard deviation across nodes.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="751 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stat</span><span class="p">(</span><span class="n">Stats</span><span class="o">.</span><span class="n">VARIANCE</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;std&quot;</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">)</span>
@@ -12502,7 +12500,7 @@ or <code>{"col": {"quantile": {"q": 0.5}}}</code>).</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_analytics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="745 "></span><span class="k">def</span><span class="w"> </span><span class="nf">variance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="linenos" data-linenos="746 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the global variance across nodes.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="747 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stat</span><span class="p">(</span><span class="n">Stats</span><span class="o">.</span><span class="n">VARIANCE</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;variance&quot;</span><span class="p">,</span> <span class="n">dataset_schema</span><span class="p">)</span>
@@ -12720,7 +12718,7 @@ file will be generated if it is not existing.</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="151 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="152 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos="153 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -13125,7 +13123,7 @@ file will be generated if it is not existing.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="327 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="328 "></span><span class="k">def</span><span class="w"> </span><span class="nf">all_federation_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="329 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns all the node ids in the federation&quot;&quot;&quot;</span>
@@ -13186,7 +13184,7 @@ yet, or error when saving breakpoint</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="880 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="881 "></span><span class="k">def</span><span class="w"> </span><span class="nf">breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">bkpt_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="882 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -13288,7 +13286,7 @@ yet, or error when saving breakpoint</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="359 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="360 "></span><span class="k">def</span><span class="w"> </span><span class="nf">experimentation_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="361 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the folder name where experiment data/result are saved.</span>
@@ -13347,7 +13345,7 @@ yet, or error when saving breakpoint</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="372 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="373 "></span><span class="k">def</span><span class="w"> </span><span class="nf">experimentation_path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="374 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the file path where experimentation folder is located and experiment related files are saved.</span>
@@ -13382,7 +13380,7 @@ yet, or error when saving breakpoint</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="332 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="333 "></span><span class="k">def</span><span class="w"> </span><span class="nf">filtered_federation_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="334 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the node ids in the federation after filtering with the nodes filter&quot;&quot;&quot;</span>
@@ -13500,7 +13498,7 @@ needed to fully run the object. Defaults to None (no check will be performed).</
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="421 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="422 "></span><span class="k">def</span><span class="w"> </span><span class="nf">info</span><span class="p">(</span>
 <span class="linenos" data-linenos="423 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">info</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">missing</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
@@ -13664,7 +13662,7 @@ bad loaded breakpoint content (corrupted)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 935 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos=" 936 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos=" 937 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_breakpoint</span><span class="p">(</span>
@@ -13855,7 +13853,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="305 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="306 "></span><span class="k">def</span><span class="w"> </span><span class="nf">nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="307 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the nodes filter for the execution of the workflow.</span>
@@ -13904,7 +13902,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1045 "></span><span class="nd">@abstractmethod</span>
 <span class="linenos" data-linenos="1046 "></span><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="linenos" data-linenos="1047 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Run the experiment&quot;&quot;&quot;</span>
@@ -13954,7 +13952,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="399 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="400 "></span><span class="k">def</span><span class="w"> </span><span class="nf">save_breakpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="401 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the status of saving breakpoint after each round of training.</span>
@@ -13987,7 +13985,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="861 "></span><span class="k">def</span><span class="w"> </span><span class="nf">secagg_setup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sampled_nodes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="862 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the secagg arguments for setup.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="863 "></span>    <span class="n">secagg_arguments</span> <span class="o">=</span> <span class="p">{}</span>
@@ -14106,7 +14104,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="745 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="746 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_experimentation_folder</span><span class="p">(</span>
 <span class="linenos" data-linenos="747 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">experimentation_folder</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
@@ -14249,7 +14247,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="570 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="571 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nodes</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="kc">None</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="572 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets the nodes filter + verifications on argument type</span>
@@ -14405,7 +14403,7 @@ If nodes is not None, then the semantics of the nodes filter are as follows:</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="696 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="697 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_preprocessing</span><span class="p">(</span>
 <span class="linenos" data-linenos="698 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -14556,7 +14554,7 @@ a crashed experiment.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="833 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="834 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_save_breakpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save_breakpoints</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="linenos" data-linenos="835 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Setter for save_breakpoints + verification on arguments type</span>
@@ -14713,7 +14711,7 @@ SecureAggregationSchemes.LOM.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="788 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="789 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_secagg</span><span class="p">(</span>
 <span class="linenos" data-linenos="790 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -14852,7 +14850,7 @@ data after an inconsistency was detected</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="504 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="505 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_tags</span><span class="p">(</span>
 <span class="linenos" data-linenos="506 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -15092,7 +15090,7 @@ Not used when <code>training_data</code> is provided.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="610 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="611 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_training_data</span><span class="p">(</span>
 <span class="linenos" data-linenos="612 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -15225,7 +15223,7 @@ Not used when <code>training_data</code> is provided.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="294 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="295 "></span><span class="k">def</span><span class="w"> </span><span class="nf">tags</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="296 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the tags from the experiment object.</span>
@@ -15286,7 +15284,7 @@ to set or update training data.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_federated_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="344 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="345 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FederatedDataset</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
 <span class="linenos" data-linenos="346 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the training data which is an instance of</span>
@@ -15457,7 +15455,7 @@ of the training plan when launching it: lr, epochs, batch_size...</p>
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 60 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos=" 61 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 62 "></span>    <span class="bp">self</span><span class="p">,</span>
@@ -15561,7 +15559,7 @@ of the training plan when launching it: lr, epochs, batch_size...</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="501 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="502 "></span><span class="k">def</span><span class="w"> </span><span class="nf">breakpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">bkpt_number</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="503 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -15683,7 +15681,7 @@ of the training plan when launching it: lr, epochs, batch_size...</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="442 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="443 "></span><span class="k">def</span><span class="w"> </span><span class="nf">check_training_plan_status</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="444 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Method for checking training plan status, ie whether it is approved or not by the nodes</span>
@@ -15834,7 +15832,7 @@ a list copntaining all the values.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="272 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="273 "></span><span class="k">def</span><span class="w"> </span><span class="nf">info</span><span class="p">(</span>
 <span class="linenos" data-linenos="274 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">info</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">missing</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
@@ -15986,7 +15984,7 @@ content (corrupted)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="554 "></span><span class="nd">@classmethod</span>
 <span class="linenos" data-linenos="555 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="556 "></span><span class="k">def</span><span class="w"> </span><span class="nf">load_breakpoint</span><span class="p">(</span>
@@ -16097,7 +16095,7 @@ content (corrupted)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="260 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="261 "></span><span class="k">def</span><span class="w"> </span><span class="nf">model_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="262 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves model arguments.</span>
@@ -16232,7 +16230,7 @@ dimension, etc.</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="409 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="410 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_model_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_args</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">keep_weights</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="411 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets `model_args` + verification on arguments type</span>
@@ -16366,7 +16364,7 @@ training plan's <code>training_routine</code> such as lr, epochs, batch_size...<
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="327 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="328 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_training_args</span><span class="p">(</span>
 <span class="linenos" data-linenos="329 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">dict</span><span class="p">,</span> <span class="n">TrainingArgs</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
@@ -16521,7 +16519,7 @@ Defaults to None (no training plan class defined yet)</p>
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="359 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="360 "></span><span class="k">def</span><span class="w"> </span><span class="nf">set_training_plan_class</span><span class="p">(</span>
 <span class="linenos" data-linenos="361 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">training_plan_class</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">TrainingPlanT</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">keep_weights</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
@@ -16620,7 +16618,7 @@ training routine: <a class="autorefs autorefs-internal" title="training_routine"
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="235 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="236 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_args</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="linenos" data-linenos="237 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves training arguments.</span>
@@ -16682,7 +16680,7 @@ training routine: <a class="autorefs autorefs-internal" title="training_routine"
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="251 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="252 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_plan</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">TrainingPlan</span><span class="p">]:</span>
 <span class="linenos" data-linenos="253 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the training plan instance currently being used in the federated workflow.</span>
@@ -16802,7 +16800,7 @@ If the node id(s) list is None (default), the message is broadcast to all nodes.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="470 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="471 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_plan_approve</span><span class="p">(</span>
 <span class="linenos" data-linenos="472 "></span>    <span class="bp">self</span><span class="p">,</span> <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;no description provided&quot;</span>
@@ -16881,7 +16879,7 @@ If the node id(s) list is None (default), the message is broadcast to all nodes.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="183 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="184 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_plan_class</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">TrainingPlanT</span><span class="p">]:</span>
 <span class="linenos" data-linenos="185 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the type of the training plan that is created for training.</span>
@@ -16994,7 +16992,7 @@ If the node id(s) list is None (default), the message is broadcast to all nodes.
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
+              <summary>Source code in <code>fedbiomed/researcher/federated_workflows/_training_plan_workflow.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="196 "></span><span class="nd">@exp_exceptions</span>
 <span class="linenos" data-linenos="197 "></span><span class="k">def</span><span class="w"> </span><span class="nf">training_plan_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">display</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="linenos" data-linenos="198 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves the path of the file where the training plan is saved, and optionally displays it.</span>
@@ -17061,9 +17059,6 @@ If the node id(s) list is None (default), the message is broadcast to all nodes.
 
 
 
-
-  
-  
 
 
 

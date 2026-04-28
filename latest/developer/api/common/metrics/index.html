@@ -510,8 +510,6 @@
         <div class="fbm-doc-hero-inner">
             <h1 class="fbm-doc-hero-title">Metrics</h1>
             
-            <p class="fbm-doc-hero-subtitle">Developer > API Reference > Common > Metrics</p>
-            
         </div>
     </div>
 </section>
@@ -951,7 +949,7 @@
   <span class="md-ellipsis">
     
   
-    PyTorch MNIST Basic Examples
+    PyTorch MNIST Basic Example
   
 
     
@@ -6176,7 +6174,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="37 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">metric_category</span><span class="p">:</span> <span class="n">_MetricCategory</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos" data-linenos="38 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_idx</span> <span class="o">=</span> <span class="n">idx</span>
 <span class="linenos" data-linenos="39 "></span>    <span class="bp">self</span><span class="o">.</span><span class="n">_metric_category</span> <span class="o">=</span> <span class="n">metric_category</span>
@@ -6376,7 +6374,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="44 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="45 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_all_metrics</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="linenos" data-linenos="46 "></span>    <span class="k">return</span> <span class="p">[</span><span class="n">metric</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">MetricTypes</span><span class="p">]</span>
@@ -6405,7 +6403,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="48 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="49 "></span><span class="k">def</span><span class="w"> </span><span class="nf">get_metric_type_by_name</span><span class="p">(</span><span class="n">metric_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="linenos" data-linenos="50 "></span>    <span class="k">for</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">MetricTypes</span><span class="p">:</span>
@@ -6432,7 +6430,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="41 "></span><span class="k">def</span><span class="w"> </span><span class="nf">metric_category</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">_MetricCategory</span><span class="p">:</span>
 <span class="linenos" data-linenos="42 "></span>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_metric_category</span>
 </code></pre></div>
@@ -6484,7 +6482,7 @@
 
 
                   <details class="mkdocstrings-source">
-                    <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+                    <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
                     <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="58 "></span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="linenos" data-linenos="59 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Constructs metric class with provided metric types: metric function</span>
 <span class="linenos" data-linenos="60 "></span>
@@ -6670,7 +6668,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="122 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="123 "></span><span class="k">def</span><span class="w"> </span><span class="nf">accuracy</span><span class="p">(</span>
 <span class="linenos" data-linenos="124 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -6852,7 +6850,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 75 "></span><span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span>
 <span class="linenos" data-linenos=" 76 "></span>    <span class="bp">self</span><span class="p">,</span>
 <span class="linenos" data-linenos=" 77 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span>
@@ -7036,7 +7034,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="325 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="326 "></span><span class="k">def</span><span class="w"> </span><span class="nf">explained_variance</span><span class="p">(</span>
 <span class="linenos" data-linenos="327 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -7204,7 +7202,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="228 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="229 "></span><span class="k">def</span><span class="w"> </span><span class="nf">f1_score</span><span class="p">(</span>
 <span class="linenos" data-linenos="230 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -7378,7 +7376,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="295 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="296 "></span><span class="k">def</span><span class="w"> </span><span class="nf">mae</span><span class="p">(</span>
 <span class="linenos" data-linenos="297 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -7545,7 +7543,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="265 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="266 "></span><span class="k">def</span><span class="w"> </span><span class="nf">mse</span><span class="p">(</span>
 <span class="linenos" data-linenos="267 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -7712,7 +7710,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="155 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="156 "></span><span class="k">def</span><span class="w"> </span><span class="nf">precision</span><span class="p">(</span>
 <span class="linenos" data-linenos="157 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -7885,7 +7883,7 @@
 
 
             <details class="mkdocstrings-source">
-              <summary>Source code in <code>fedbiomed-src/fedbiomed/common/metrics.py</code></summary>
+              <summary>Source code in <code>fedbiomed/common/metrics.py</code></summary>
               <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="191 "></span><span class="nd">@staticmethod</span>
 <span class="linenos" data-linenos="192 "></span><span class="k">def</span><span class="w"> </span><span class="nf">recall</span><span class="p">(</span>
 <span class="linenos" data-linenos="193 "></span>    <span class="n">y_true</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span>
@@ -7950,9 +7948,6 @@
 
 
 
-
-  
-  
 
 
 
