@@ -1778,26 +1778,62 @@ body.fbm-nav-lock {
   margin-left: auto;
 }
 
+/* ── Search button – stile coerente con la navbar ── */
 .fbm-search-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  height: 2.2rem;
-  padding: 0 1rem;
-  min-width: 160px;          /* larghezza minima */
-  border: 1px solid rgba(20, 30, 70, 0.2);
-  border-radius: 6px;        /* angoli meno arrotondati */
-  background: rgba(255,255,255,0.9);
-  color: #6b7280;            /* colore placeholder */
-  cursor: pointer;
-  font-size: 0.85rem;
-  line-height: 1;
+  height: 2rem;
+  padding: 0 0.85rem;
+  min-width: 140px;
+  border: 1px solid rgba(20, 30, 70, 0.18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #9ca3af;
+  cursor: text;
+  font-size: 0.8rem;
+  font-family: inherit;
   white-space: nowrap;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);
+  transition: border-color 0.15s, background 0.15s;
 }
 
 .fbm-search-btn:hover {
   border-color: rgba(20, 30, 70, 0.35);
   background: #fff;
-  color: #374151;
+}
+
+/* ── Fix: porta il dialog Material sopra tutto ── */
+.md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  min-height: 0;
+  overflow: visible;
+  z-index: 999;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.md-header .md-search {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.md-search__inner {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 10000 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.md-search__overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 9999 !important;
 }
