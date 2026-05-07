@@ -164,6 +164,22 @@
     }
   });
 })();
+
+// ── Search focus fix ─────────────────────────────────────────
+(function () {
+  var searchBtn = document.querySelector('.fbm-search-btn');
+  if (!searchBtn) return;
+
+  searchBtn.addEventListener('click', function () {
+    setTimeout(function () {
+      var input = document.querySelector('.md-search__input');
+      if (input) {
+        input.focus();
+        input.click();
+      }
+    }, 50);
+  });
+})();
 </script> <section class=fbm-doc-hero> <div class=fbm-doc-hero-container> <div class=fbm-doc-hero-inner> <h1 class=fbm-doc-hero-title>Welcome to Sergen and Yannick!</h1> </div> </div> </section> <div class=fbm-mobile-doc-toolbar aria-label="Documentation navigation"> <div class=fbm-mobile-doc-toolbar-inner> <label class=fbm-mobile-doc-tool for=__drawer tabindex=0> <span class="fbm-mobile-doc-tool__icon fbm-mobile-doc-tool__icon--nav" aria-hidden=true></span> <span>Browse docs</span> </label> <label class="fbm-mobile-doc-tool fbm-mobile-doc-tool--secondary" for=__toc tabindex=0> <span class="fbm-mobile-doc-tool__icon fbm-mobile-doc-tool__icon--toc" aria-hidden=true></span> <span>On this page</span> </label> </div> </div> <script>
 (function () {
   var toolbar = document.querySelector('.fbm-mobile-doc-toolbar');

@@ -280,4 +280,20 @@
     }
   });
 })();
+
+// ── Search focus fix ─────────────────────────────────────────
+(function () {
+  var searchBtn = document.querySelector('.fbm-search-btn');
+  if (!searchBtn) return;
+
+  searchBtn.addEventListener('click', function () {
+    setTimeout(function () {
+      var input = document.querySelector('.md-search__input');
+      if (input) {
+        input.focus();
+        input.click();
+      }
+    }, 50);
+  });
+})();
 </script>
