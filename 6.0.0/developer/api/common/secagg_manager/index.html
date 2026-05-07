@@ -166,16 +166,35 @@
 })();
 
 // ── Search ───────────────────────────────────────────────────
-// In Material 9.x, id="__search" is the text input, not a checkbox.
-// Focusing it is enough to trigger Material's search overlay to open.
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     var searchBtn = document.querySelector('.fbm-search-btn');
-    if (!searchBtn) return;
+    var input     = document.querySelector('.md-search__input');
 
-    searchBtn.addEventListener('click', function () {
-      var input = document.querySelector('.md-search__input');
+    function openSearch() {
+      document.body.classList.add('fbm-search-active');
       if (input) input.focus();
+    }
+
+    function closeSearch() {
+      document.body.classList.remove('fbm-search-active');
+    }
+
+    if (searchBtn) searchBtn.addEventListener('click', openSearch);
+
+    // Catch any other mechanism that focuses the input (keyboard shortcuts)
+    if (input) {
+      input.addEventListener('focus', function () {
+        document.body.classList.add('fbm-search-active');
+      });
+      // Delay so clicks on result links fire before we close
+      input.addEventListener('blur', function () {
+        setTimeout(closeSearch, 200);
+      });
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeSearch();
     });
   });
 })();
