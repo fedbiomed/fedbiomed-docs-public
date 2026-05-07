@@ -1868,8 +1868,8 @@ body.fbm-search-active .fbm-nav-search {
      Border-radius is applied to children instead (see below).      */
   position: fixed !important;
   top: calc(var(--fbm-navbar-height) + 10px) !important;
-  left: max(1rem, calc(50% - 340px)) !important;
-  right: max(1rem, calc(50% - 340px)) !important;
+  left: max(1rem, calc(50% - 415px)) !important;
+  right: max(1rem, calc(50% - 415px)) !important;
   width: auto !important;
   max-width: none !important;
   border-radius: 0.875rem !important;
