@@ -281,19 +281,39 @@
   });
 })();
 
-// ── Search focus fix ─────────────────────────────────────────
+// ── Search fix ───────────────────────────────────────────────
 (function () {
   var searchBtn = document.querySelector('.fbm-search-btn');
   if (!searchBtn) return;
 
-  searchBtn.addEventListener('click', function () {
-    setTimeout(function () {
-      var input = document.querySelector('.md-search__input');
-      if (input) {
-        input.focus();
-        input.click();
+  var searchDialog = document.querySelector('.md-search');
+  var searchInput  = document.querySelector('.md-search__input');
+  if (!searchDialog || !searchInput) return;
+
+  function openSearch() {
+    searchDialog.setAttribute('aria-expanded', 'true');
+    searchInput.focus();
+  }
+
+  function closeSearch() {
+    searchDialog.setAttribute('aria-expanded', 'false');
+  }
+
+  searchBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    openSearch();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeSearch();
+  });
+
+  document.addEventListener('click', function (e) {
+    if (searchDialog.getAttribute('aria-expanded') === 'true') {
+      if (!searchDialog.contains(e.target) && e.target !== searchBtn) {
+        closeSearch();
       }
-    }, 50);
+    }
   });
 })();
 </script>
