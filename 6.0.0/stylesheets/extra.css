@@ -1922,6 +1922,7 @@ body.fbm-search-active .md-search__inner {
   opacity: 1 !important;
   border-radius: 0 0 0.875rem 0.875rem !important;
   overflow: hidden !important;
+  top: 0 !important;
 }
 
 /* Material defaults: max-height:0 — override so results scroll area
