@@ -192,6 +192,12 @@ body,
   min-width: 0;
 }
 
+.fbm-doc-hero-logo {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
 .fbm-doc-hero-subtitle {
   max-width: 880px;
   margin: 0 auto;
