@@ -284,32 +284,15 @@
 // ── Search ───────────────────────────────────────────────────
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
-    // Sposta .md-search fuori dall'header così non eredita display:none
-    var searchEl = document.querySelector('.md-search');
-    if (searchEl) document.body.appendChild(searchEl);
+    var searchBtn = document.querySelector('.fbm-search-btn');
+    var checkbox  = document.getElementById('__search');
+    var input     = document.querySelector('.md-search__input');
+    if (!searchBtn || !checkbox) return;
 
-    var searchBtn    = document.querySelector('.fbm-search-btn');
-    var searchInput  = document.querySelector('.md-search__input');
-    var searchOverlay = document.querySelector('.md-search__overlay');
-    if (!searchBtn || !searchEl) return;
-
-    function openSearch() {
-      searchEl.classList.add('fbm-search-open');
-      if (searchInput) setTimeout(function () { searchInput.focus(); }, 30);
-    }
-
-    function closeSearch() {
-      searchEl.classList.remove('fbm-search-open');
-      if (searchInput) {
-        searchInput.value = '';
-        searchInput.dispatchEvent(new Event('input'));
-      }
-    }
-
-    searchBtn.addEventListener('click', openSearch);
-    if (searchOverlay) searchOverlay.addEventListener('click', closeSearch);
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeSearch();
+    searchBtn.addEventListener('click', function () {
+      checkbox.checked = true;
+      checkbox.dispatchEvent(new Event('change'));
+      if (input) setTimeout(function () { input.focus(); }, 50);
     });
   });
 })();

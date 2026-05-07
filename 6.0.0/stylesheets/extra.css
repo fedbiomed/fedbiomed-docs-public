@@ -1809,32 +1809,27 @@ body.fbm-nav-lock {
 }
 
 /* Search overlay – default nascosto */
-.md-search {
-  position: fixed !important;
-  inset: 0 !important;
-  z-index: 10000 !important;
-  display: none !important;
-  background: rgba(0, 0, 0, 0.54);
+/* Header Material: zero spazio, invisibile, ma overflow visible per il search dialog */
+.md-header {
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
-.md-search.fbm-search-open {
-  display: block !important;
+/* Nascondi tutto il contenuto dell'header tranne il search */
+.md-header__inner {
+  display: none !important;
+}
+
+/* Il dialog search usa position:fixed, deve stare sopra la navbar custom */
+.md-search__inner {
+  z-index: 10001 !important;
 }
 
 .md-search__overlay {
-  position: fixed !important;
-  inset: 0 !important;
-  z-index: 0 !important;
-  background: transparent !important;
-  cursor: pointer;
-}
-
-.md-search__inner {
-  position: relative !important;
-  z-index: 1 !important;
-  max-width: 740px !important;
-  margin: 0 auto !important;
-  width: 100% !important;
+  z-index: 10000 !important;
 }
 
 @media screen and (max-width: 1199.98px) {
