@@ -2012,6 +2012,6 @@ body.fbm-search-active .md-search__inner {
 
 @media screen and (min-width: 60em) {
   .md-search__output {
-    top: 0 !important;
+    top: auto !important;
   }
 }
