@@ -41,11 +41,30 @@ body,
 
 
 
-/* ── Hide Material's own header / tabs / footer ───────────── */
-.md-header,
+/* ── Hide Material's own tabs / footer ───────────────────── */
 .md-tabs,
 .md-footer {
   display: none !important;
+}
+
+/* ── Hide Material header visually but keep search functional ── */
+/* display:none would hide children too; use height:0 instead   */
+.md-header {
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* visibility:hidden on inner lets .md-search override to visible */
+.md-header__inner {
+  visibility: hidden !important;
+  overflow: visible !important;
+}
+
+.md-header__inner .md-search {
+  visibility: visible !important;
 }
 
 /* ── Keep content flush under our sticky navbar ───────────── */
@@ -1803,25 +1822,7 @@ body.fbm-nav-lock {
   background: #fff;
 }
 
-/* Nascondi l'header Material completamente */
-.md-header {
-  display: none !important;
-}
-
-/* Search overlay – default nascosto */
-/* Header Material: zero spazio, invisibile, ma overflow visible per il search dialog */
-.md-header {
-  height: 0 !important;
-  min-height: 0 !important;
-  overflow: visible !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Nascondi tutto il contenuto dell'header tranne il search */
-.md-header__inner {
-  display: none !important;
-}
+/* (rules moved to the top of the file) */
 
 /* Il dialog search usa position:fixed, deve stare sopra la navbar custom */
 .md-search__inner {
