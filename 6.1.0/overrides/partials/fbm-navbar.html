@@ -37,6 +37,14 @@
     </div>
 
     <div class="fbm-nav-other">
+
+      <div class="fbm-nav-search">
+        <label class="fbm-search-btn" for="__search" aria-label="Search">
+          <span class="fbm-search-icon" aria-hidden="true"></span>
+          <span class="fbm-search-text">Search</span>
+        </label>
+      </div>
+
       <div class="fbm-version-selector" id="fbm-version-selector">
         <button class="fbm-version-btn" id="fbm-version-btn" aria-haspopup="true" aria-expanded="false">
           <span id="fbm-version-label">...</span>
@@ -271,4 +279,17 @@
     }
   });
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  var target = document.getElementById("fbm-nav-search");
+  var searchButton = document.querySelector('.md-header label[for="__search"]');
+  var searchDialog = document.querySelector(".md-header .md-search");
+
+  if (!target || !searchButton || !searchDialog) return;
+
+  target.appendChild(searchButton);
+  target.appendChild(searchDialog);
+});
 </script>
+
+
