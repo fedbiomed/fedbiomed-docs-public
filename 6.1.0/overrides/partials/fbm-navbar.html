@@ -39,11 +39,12 @@
     <div class="fbm-nav-other">
 
       <div class="fbm-nav-search">
-        <label class="fbm-search-btn" for="__search" aria-label="Search">
+        <button class="fbm-search-btn" type="button" aria-label="Open search">
           <span class="fbm-search-icon" aria-hidden="true"></span>
-          <span class="fbm-search-text">Search</span>
-        </label>
+          <span class="fbm-search-text">Search docs…</span>
+        </button>
       </div>
+
 
       <div class="fbm-version-selector" id="fbm-version-selector">
         <button class="fbm-version-btn" id="fbm-version-btn" aria-haspopup="true" aria-expanded="false">
@@ -280,16 +281,50 @@
   });
 })();
 
-document.addEventListener("DOMContentLoaded", function () {
-  var target = document.getElementById("fbm-nav-search");
-  var searchButton = document.querySelector('.md-header label[for="__search"]');
-  var searchDialog = document.querySelector(".md-header .md-search");
+// ── Search ───────────────────────────────────────────────────
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var searchBtn = document.querySelector('.fbm-search-btn');
+    var input     = document.querySelector('.md-search__input');
+    // Material 9.x may use a hidden checkbox to manage search state
+    var toggle    = document.querySelector('[data-md-toggle="search"]');
 
-  if (!target || !searchButton || !searchDialog) return;
+    function openSearch() {
+      // Show panel FIRST (opacity: 0 → 1), then focus so Material
+      // receives the focus event with the panel already visible.
+      document.body.classList.add('fbm-search-active');
+      if (toggle) {
+        toggle.checked = true;
+        toggle.dispatchEvent(new Event('change'));
+      }
+      if (input) input.focus();
+    }
 
-  target.appendChild(searchButton);
-  target.appendChild(searchDialog);
-});
+    function closeSearch() {
+      document.body.classList.remove('fbm-search-active');
+      if (toggle) {
+        toggle.checked = false;
+        toggle.dispatchEvent(new Event('change'));
+      }
+      if (input) input.blur();
+    }
+
+    if (searchBtn) searchBtn.addEventListener('click', openSearch);
+
+    // Also catch keyboard shortcuts (S, F, /) that focus the input directly
+    if (input) {
+      input.addEventListener('focus', function () {
+        document.body.classList.add('fbm-search-active');
+      });
+      // Delay so result-link clicks can fire before we close
+      input.addEventListener('blur', function () {
+        setTimeout(closeSearch, 200);
+      });
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeSearch();
+    });
+  });
+})();
 </script>
-
-
