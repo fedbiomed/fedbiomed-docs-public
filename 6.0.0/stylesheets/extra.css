@@ -48,13 +48,16 @@ body,
 }
 
 /* ── Hide Material header visually but keep search functional ── */
-/* display:none would hide children too; use height:0 instead   */
+/* display:none would hide children too; use height:0 instead.  */
+/* z-index must be higher than .fbm-topbar (1050) so the search  */
+/* overlay (a child fixed element) stacks above our navbar.      */
 .md-header {
   height: 0 !important;
   min-height: 0 !important;
   overflow: visible !important;
   background: transparent !important;
   box-shadow: none !important;
+  z-index: 10002 !important;
 }
 
 /* visibility:hidden on inner lets .md-search override to visible */
@@ -73,10 +76,11 @@ body,
   margin-top: 0 !important;
 }
 
-/* ── Fix sidebar positioning (Material uses --md-header-height
-      which is 0 since we hid .md-header; override to our 64px navbar) */
+/* ── Fix sidebar positioning (Material uses --md-header-height)       */
+/* Match actual .fbm-topbar-container min-height (92px desktop)       */
 :root {
-  --md-header-height: 64px;
+  --md-header-height:  92px;
+  --fbm-navbar-height: 92px;   /* used for search positioning */
 }
 
 /* sidebar sinistra */
@@ -1844,5 +1848,170 @@ body.fbm-nav-lock {
 @media screen and (max-width: 1199.98px) {
   .fbm-nav-search {
     display: none;
+  }
+}
+
+
+/* ============================================================
+   MATERIAL SEARCH OVERLAY — FBM style overrides
+   Structure (Material 9.x):
+     .md-search
+       .md-search__overlay        (click-outside backdrop)
+       .md-search__inner          (panel, position:fixed)
+         .md-search__form         (input row)
+           input.md-search__input
+         .md-search__output
+           .md-search__scrollwrap
+             .md-search-result
+               .md-search-result__meta
+               ol.md-search-result__list
+                 li.md-search-result__item
+                   article.md-search-result__article
+   ============================================================ */
+
+/* ── Backdrop ──────────────────────────────────────────────── */
+.md-search__overlay {
+  background: rgba(3, 4, 94, 0.25) !important;
+  z-index: 10000 !important;
+}
+
+/* ── Main panel ────────────────────────────────────────────── */
+.md-search__inner {
+  position: fixed !important;
+  top: var(--fbm-navbar-height) !important;  /* flush below our navbar */
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  border-top: 2px solid var(--fbm-tertiary) !important;
+  box-shadow: 0 12px 36px rgba(3, 4, 94, 0.12) !important;
+  z-index: 10001 !important;
+  /* kill Material's default slide-in / opacity animation */
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* ── Input row ─────────────────────────────────────────────── */
+.md-search__form {
+  background: #fff !important;
+  border-radius: 0 !important;
+  height: 3.5rem !important;
+  padding: 0 max(1.5rem, calc((100% - 1320px) / 2 + 1.5rem)) !important;
+  border-bottom: 1px solid rgba(3, 4, 94, 0.08) !important;
+  box-shadow: none !important;
+}
+
+.md-search__input {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  color: var(--fbm-primary) !important;
+  background: transparent !important;
+}
+
+.md-search__input::placeholder {
+  color: #9ca3af !important;
+  font-weight: 400 !important;
+}
+
+/* search & reset icons */
+.md-search__icon.md-icon {
+  color: var(--fbm-secondary) !important;
+}
+
+/* ── Results area ──────────────────────────────────────────── */
+.md-search__output {
+  background: #fff !important;
+}
+
+.md-search__scrollwrap {
+  background: #fff !important;
+  /* limit height so it doesn't cover the whole viewport */
+  max-height: min(480px, calc(100vh - var(--fbm-navbar-height) - 3.5rem)) !important;
+}
+
+/* "N results for …" bar */
+.md-search-result__meta {
+  background: rgba(202, 240, 246, 0.3) !important;
+  color: var(--fbm-body) !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  padding-left: max(1.5rem, calc((100% - 1320px) / 2 + 1.5rem)) !important;
+}
+
+/* single result item */
+.md-search-result__item {
+  border-bottom: 1px solid rgba(3, 4, 94, 0.05) !important;
+}
+
+.md-search-result__link {
+  border-radius: 0 !important;
+  padding-left: max(1.5rem, calc((100% - 1320px) / 2 + 1.5rem)) !important;
+}
+
+.md-search-result__link:focus,
+.md-search-result__link:hover {
+  background: rgba(202, 240, 246, 0.22) !important;
+}
+
+/* title inside result */
+.md-search-result__article--document .md-search-result__title,
+.md-search-result__title {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  color: var(--fbm-primary) !important;
+}
+
+/* excerpt text */
+.md-search-result__teaser {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 0.78rem !important;
+  color: var(--fbm-body) !important;
+}
+
+/* highlighted search terms */
+.md-search-result mark {
+  color: var(--fbm-secondary) !important;
+  background: rgba(0, 180, 216, 0.13) !important;
+  border-radius: 2px !important;
+}
+
+/* page/section icon */
+.md-search-result__icon.md-icon {
+  color: var(--fbm-tertiary) !important;
+}
+
+/* "More results" detail summary */
+.md-search-result__more > summary {
+  color: var(--fbm-secondary) !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 0.78rem !important;
+  padding-left: max(1.5rem, calc((100% - 1320px) / 2 + 1.5rem)) !important;
+}
+
+/* ── Mobile (below 1200px): navbar is 68px tall ────────────── */
+@media screen and (max-width: 1199.98px) {
+  :root {
+    --fbm-navbar-height: 68px;
+  }
+
+  .md-search__inner {
+    top: var(--fbm-navbar-height) !important;
+  }
+
+  .md-search__form {
+    padding: 0 1rem !important;
+    height: 3rem !important;
+  }
+
+  .md-search-result__meta,
+  .md-search-result__link,
+  .md-search-result__more > summary {
+    padding-left: 1rem !important;
   }
 }
