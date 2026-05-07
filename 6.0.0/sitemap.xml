@@ -25,7 +25,15 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/federated-analytics/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
          <loc>https://docs.fedbiomed.org/6.0.0/developer/messaging/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/security-logging/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
@@ -34,6 +42,10 @@
     </url>
     <url>
          <loc>https://docs.fedbiomed.org/6.0.0/developer/usage_and_tools/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/analytics/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
@@ -53,7 +65,27 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
-         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/data/</loc>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/dataloader/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/dataloadingplan/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/datamanager/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/dataset_controller/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/common/dataset_reader/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
@@ -154,6 +186,10 @@
     </url>
     <url>
          <loc>https://docs.fedbiomed.org/6.0.0/developer/api/node/history_monitor/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/developer/api/node/jobs/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
@@ -301,6 +337,10 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/news/Release-02-2025/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
          <loc>https://docs.fedbiomed.org/6.0.0/news/Release-04-2023/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
@@ -393,6 +433,10 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/tutorials/analytics/tabular_dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
          <loc>https://docs.fedbiomed.org/6.0.0/tutorials/concrete-ml/concrete-ml/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
@@ -401,11 +445,11 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
-         <loc>https://docs.fedbiomed.org/6.0.0/tutorials/flamby/flamby-integration-into-fedbiomed/</loc>
+         <loc>https://docs.fedbiomed.org/6.0.0/tutorials/flamby/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
-         <loc>https://docs.fedbiomed.org/6.0.0/tutorials/flamby/flamby/</loc>
+         <loc>https://docs.fedbiomed.org/6.0.0/tutorials/flamby/flamby-integration-into-fedbiomed/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
@@ -414,6 +458,10 @@
     </url>
     <url>
          <loc>https://docs.fedbiomed.org/6.0.0/tutorials/medical/download_and_split_ixi/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/tutorials/medical/mcvae_using_adni_data/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
@@ -501,6 +549,42 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/applying-transformations/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/custom-dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/default-datasets/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/federated-analytics/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/image-dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/medical-folder-dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/native-dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/datasets/tabular-dataset/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
          <loc>https://docs.fedbiomed.org/6.0.0/user-guide/deployment/deployment-vpn-node2/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
@@ -549,6 +633,10 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/nodes/federated-analytics/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
          <loc>https://docs.fedbiomed.org/6.0.0/user-guide/nodes/node-gui/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
@@ -578,6 +666,10 @@
     </url>
     <url>
          <loc>https://docs.fedbiomed.org/6.0.0/user-guide/researcher/experiment/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.fedbiomed.org/6.0.0/user-guide/researcher/federated-analytics/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
