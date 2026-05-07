@@ -1862,6 +1862,9 @@ body.fbm-search-active .fbm-nav-search {
 .md-search__inner {
   opacity: 0 !important;
   pointer-events: none !important;
+  /* Material defaults: height:0 (hides panel) — override with auto
+     so the card sizes to its content (form + results).            */
+  height: auto !important;
   /* positioning / style (always applied) */
   position: fixed !important;
   top: calc(var(--fbm-navbar-height) + 10px) !important;
@@ -1913,13 +1916,19 @@ body.fbm-search-active .md-search__inner {
 }
 
 /* ── Results area ──────────────────────────────────────────── */
+/* Material defaults: opacity:0 on desktop (≥960px) for the output —
+   override to 1 so results are visible inside our custom panel.   */
 .md-search__output {
   background: #fff !important;
+  opacity: 1 !important;
 }
 
+/* Material defaults: max-height:0 — override so results scroll area
+   is properly sized regardless of toggle-checkbox state.           */
 .md-search__scrollwrap {
   background: #fff !important;
   max-height: min(440px, calc(100vh - var(--fbm-navbar-height) - 3.25rem - 1.5rem)) !important;
+  overflow-y: auto !important;
 }
 
 /* "N results for …" meta bar */
