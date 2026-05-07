@@ -60,14 +60,12 @@ body,
   z-index: 10002 !important;
 }
 
-/* visibility:hidden on inner lets .md-search override to visible */
+/* height:0 + overflow:hidden hides static header content (logo, nav items)
+   WITHOUT affecting position:fixed descendants like .md-search__inner.
+   Elements inside remain focusable programmatically (unlike display/visibility). */
 .md-header__inner {
-  visibility: hidden !important;
-  overflow: visible !important;
-}
-
-.md-header__inner .md-search {
-  visibility: visible !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 
 /* ── Keep content flush under our sticky navbar ───────────── */
@@ -1858,10 +1856,13 @@ body.fbm-search-active .fbm-nav-search {
   z-index: 10000 !important;
 }
 
-/* ── Main panel — centered floating card ───────────────────── */
-/* Center with left+right (not transform) so Material's       */
-/* translateY slide-in animation still works correctly.        */
+/* ── Main panel — hidden by default, shown only when active ── */
+/* opacity:0 + pointer-events:none hides the panel but still   */
+/* allows programmatic focus() on the input inside.            */
 .md-search__inner {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  /* positioning / style (always applied) */
   position: fixed !important;
   top: calc(var(--fbm-navbar-height) + 10px) !important;
   left: max(1rem, calc(50% - 340px)) !important;
@@ -1874,7 +1875,13 @@ body.fbm-search-active .fbm-nav-search {
   border-top: 2px solid var(--fbm-tertiary) !important;
   box-shadow: 0 16px 48px rgba(3, 4, 94, 0.16) !important;
   z-index: 10001 !important;
-  /* Material animates transform+opacity; we don't override them */
+  transition: opacity 0.15s ease !important;
+}
+
+/* Show panel when search is active */
+body.fbm-search-active .md-search__inner {
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 
 /* ── Input row ─────────────────────────────────────────────── */
